@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B2524DF0-2F9B-435D-9E04-5E62C72E6DA4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>CapaPresentacion</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Adelmo\Instalador SISGES2022\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>0749D1A56E4A1A9B7A386C7080384A5591FD936C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CapaPresentacion_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Bunifu_UI_v1.5.3\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dataset_Reportes\dst_ImprimirControlTotalGestante.cs">
+      <DependentUpon>dst_ImprimirControlTotalGestante.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset_Reportes\dst_ImprimirControlTotalGestante.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dst_ImprimirControlTotalGestante.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddGestante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddGestante.Designer.cs">
+      <DependentUpon>frmAddGestante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAyuda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAyuda.Designer.cs">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfigIpress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfigIpress.Designer.cs">
+      <DependentUpon>frmConfigIpress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmbarazo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmbarazo.Designer.cs">
+      <DependentUpon>frmEmbarazo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEstablecimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEstablecimiento.Designer.cs">
+      <DependentUpon>frmEstablecimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmIngresarClave.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmIngresarClave.Designer.cs">
+      <DependentUpon>frmIngresarClave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMascara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMascara.Designer.cs">
+      <DependentUpon>frmMascara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRadarGestante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRadarGestante.Designer.cs">
+      <DependentUpon>frmRadarGestante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporteGeneral.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporteGeneral.Designer.cs">
+      <DependentUpon>frmReporteGeneral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSplash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSplash.Designer.cs">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVistaExportador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVistaExportador.Designer.cs">
+      <DependentUpon>frmVistaExportador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reportes\crReporteDatosPaciente.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>crReporteDatosPaciente.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmImpresion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmImpresion.Designer.cs">
+      <DependentUpon>frmImpresion.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAddGestante.resx">
+      <DependentUpon>frmAddGestante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAyuda.resx">
+      <DependentUpon>frmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfigIpress.resx">
+      <DependentUpon>frmConfigIpress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmbarazo.resx">
+      <DependentUpon>frmEmbarazo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEstablecimiento.resx">
+      <DependentUpon>frmEstablecimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmIngresarClave.resx">
+      <DependentUpon>frmIngresarClave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMascara.resx">
+      <DependentUpon>frmMascara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRadarGestante.resx">
+      <DependentUpon>frmRadarGestante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporteGeneral.resx">
+      <DependentUpon>frmReporteGeneral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSplash.resx">
+      <DependentUpon>frmSplash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVistaExportador.resx">
+      <DependentUpon>frmVistaExportador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reportes\crReporteDatosPaciente.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>crReporteDatosPaciente.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmImpresion.resx">
+      <DependentUpon>frmImpresion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="CapaPresentacion_TemporaryKey.pfx" />
+    <None Include="Dataset_Reportes\dst_ImprimirControlTotalGestante.xsc">
+      <DependentUpon>dst_ImprimirControlTotalGestante.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset_Reportes\dst_ImprimirControlTotalGestante.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dst_ImprimirControlTotalGestante.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset_Reportes\dst_ImprimirControlTotalGestante.xss">
+      <DependentUpon>dst_ImprimirControlTotalGestante.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaEntidad\CapaEntidad.csproj">
+      <Project>{4eecb412-aa94-4518-98ee-fae9c2558e9d}</Project>
+      <Name>CapaEntidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj">
+      <Project>{8741a113-3d7a-40a6-a6b4-0d217bc56fdd}</Project>
+      <Name>CapaNegocio</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_workspace_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reports.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grifo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-hay-resultados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lapiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mas-informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\counting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\like.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out-of-stock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advertencia_uk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\campana-de-notificacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6172512.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\7211791.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aprobar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_print_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
