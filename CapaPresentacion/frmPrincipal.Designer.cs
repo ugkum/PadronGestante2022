@@ -385,6 +385,7 @@
             this.lblFechaCaducidad.Size = new System.Drawing.Size(43, 17);
             this.lblFechaCaducidad.TabIndex = 7;
             this.lblFechaCaducidad.Text = "label1";
+            this.lblFechaCaducidad.Visible = false;
             // 
             // lblTiempo
             // 
@@ -394,6 +395,7 @@
             this.lblTiempo.Size = new System.Drawing.Size(43, 17);
             this.lblTiempo.TabIndex = 7;
             this.lblTiempo.Text = "label1";
+            this.lblTiempo.Visible = false;
             // 
             // lblNotificacion
             // 
@@ -449,7 +451,7 @@
             this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(927, 8);
+            this.menuStrip1.Location = new System.Drawing.Point(929, 3);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(91, 31);
             this.menuStrip1.TabIndex = 1;
@@ -594,7 +596,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 5;
+            this.bunifuElipse1.ElipseRadius = 0;
             this.bunifuElipse1.TargetControl = this;
             // 
             // bunifuElipse2
@@ -604,7 +606,7 @@
             // 
             // bunifuElipse3
             // 
-            this.bunifuElipse3.ElipseRadius = 20;
+            this.bunifuElipse3.ElipseRadius = 0;
             this.bunifuElipse3.TargetControl = this;
             // 
             // timer1
@@ -628,6 +630,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema de Padron Nominal 1.0";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

@@ -16,8 +16,10 @@ namespace CapaDatos
         {
             try
             {
-                
-                con = new SqlConnection(@"SERVER=UTIE\UTIE\,49500;DATABASE=BD_PADRON_GEST;User=sa;Password=root");
+                //1: Conexion Local
+                con = new SqlConnection(@"SERVER=DESKTOP-ICB9S84;DATABASE=BD_PADRON_GEST;User=sa;Password=sa123");
+                //2: Conexion red Local
+                //con = new SqlConnection(@"SERVER=UTIE\UTIE\,49500;DATABASE=BD_PADRON_GEST;User=sa;Password=root");
                 con.Open();
             }
             catch (Exception)

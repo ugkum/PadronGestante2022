@@ -22,7 +22,8 @@ namespace CapaPresentacion
 
         NegocioEmbarazo objEmbarao = new NegocioEmbarazo();
         NegocioGestantes objGesta = new NegocioGestantes();
-
+        NegocioIpressUbicacion objIpre = new NegocioIpressUbicacion();
+        NegocioEstablecimiento objEss = new NegocioEstablecimiento();
 
         void cargarResumenGeneralReporte()
         {
@@ -176,13 +177,36 @@ namespace CapaPresentacion
             }
         }
                     private void frmReporteGeneral_Load(object sender, EventArgs e)
-        {
-            graficar();
-            listarEmbarazos();
-            cargarResumenGeneralReporte();
-            listarControlesNorifiacion();
-        }
+                    {
+                        graficar();
+                        listarEmbarazos();
+                        cargarResumenGeneralReporte();
+                        listarControlesNorifiacion();
+            cargarUbicacionIpress();
+            
+                    }
 
+        void cargarUbicacionIpress()
+        {
+            DataTable fila = objIpre.ListarUbicacionIpress();
+            if (fila.Rows.Count > 0)
+            {
+                string idEs = fila.Rows[0].ItemArray[2].ToString();
+                cargarMicroredes(idEs);
+
+            }
+        }
+        void cargarMicroredes(string id)
+        {
+            DataTable dt = objEss.ListarEstablecimiento(id);
+            if (dt.Rows.Count > 0)
+            {
+                cmbEss.Items.Clear();
+                cmbEss.DataSource= dt;
+                cmbEss.DisplayMember = "Nombre_Establecimiento";
+                cmbEss.ValueMember = "Id_Establecimiento";
+            }
+        }
         private void bunifuCustomLabel10_Click(object sender, EventArgs e)
         {
             this.Close();

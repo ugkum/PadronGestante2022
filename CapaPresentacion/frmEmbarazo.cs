@@ -176,7 +176,7 @@ namespace CapaPresentacion
                     row.DefaultCellStyle.ForeColor = Color.Red;
                 }
             }
-
+            paneles_22();
         }
 
         void limpiarNuevoEmbarazo()
@@ -1564,14 +1564,14 @@ namespace CapaPresentacion
                 btnVerCulminacion.Visible = false;
                 //se activaran cuando finalize la gestantacio
                 // 7   Atencion del puerperio
-                TapaPuerpera.Visible = true;
+                TapaPuerpera.Visible = false;
                 pbAtencionPuerpera.Visible = true;
                 pbAtencionPuerpera.Image = Properties.Resources.out_of_stock;
                 lblmensajeAtencionPuerpera.Visible = true;
                 lblmensajeAtencionPuerpera.Text = "No Disponible, Falta Culminar Embarazo";
                 btnVerPuerpera.Visible = false;
                 // 8   Atencion del puerperio
-                TapaPlani.Visible = true;
+                TapaPlani.Visible = false;
                 pbPlanificacion.Visible = true;
                 pbPlanificacion.Image = Properties.Resources.out_of_stock;
                 lblMensajePlanificacion.Visible = true;
@@ -1720,9 +1720,10 @@ namespace CapaPresentacion
                 lblMensajePlanificacion.Visible = true;
                 lblMensajePlanificacion.Text = "No Disponible, Falta Culminar Embarazo";
                 btnVerPlanificacion.Visible = false;
-                // 9   Atencion del puerperio
+                // 9   Planificacion Familiar
+              
                 pbAdional.Visible = true;
-                pbAdional.Image = Properties.Resources.counting;
+                pbAdional.Image = Properties.Resources.out_of_stock;
                 lblMensajeAdicional.Visible = true;
                 lblMensajeAdicional.Text = "Seleccione una Embarazo Para Iniciar...!";
                 btnVerAdicional.Visible = false;
@@ -1784,7 +1785,56 @@ namespace CapaPresentacion
         string esEditarExamen = "";
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+            if (esEditarExamen == "")
+            {
+                nroExamenes = new List<int>();
+                nroExamenes.Clear();
+                for (int i = 0; i < 2; i++) { nroExamenes.Add(i); }
+
+                for (int i = 0; i < this.dataListadoExamen.Rows.Count; i++)
+                {
+                    if (this.dataListadoExamen.Rows[i].Cells[1].Value.ToString() == this.cmbTipoExamen.Text)
+                    {
+                        if (this.dataListadoExamen.Rows[i].Cells[2].Value.ToString() == "1") { nroExamenes.Remove(1); }
+                        if (this.dataListadoExamen.Rows[i].Cells[2].Value.ToString() == "2") { nroExamenes.Remove(2); }
+                    }
+
+                }
+                if (cmbTipoExamen.Text == "SIFILIS" || cmbTipoExamen.Text == "VIH")
+                {
+                    txtResultadoExamen.Visible = false;
+                    cmbtNroExamen.Enabled = true;
+                    cmbResultado.Visible = true;
+                    cmbResultado.Items.Clear();
+                    cmbResultado.Items.Add("REACTIVO");
+                    cmbResultado.Items.Add("NO REACTIVO");
+                }
+                else if (cmbTipoExamen.Text == "ORINA" || cmbTipoExamen.Text == "HEPATITIS")
+                {
+                    txtResultadoExamen.Visible = false;
+                    cmbtNroExamen.Enabled = false;
+                    cmbResultado.Visible = true;
+                    cmbResultado.Items.Clear();
+                    cmbResultado.Items.Add("POSITIVO");
+                    cmbResultado.Items.Add("NEGATIVO");
+                }
+                else if (cmbTipoExamen.Text == "HEMOGLOBINA" || cmbTipoExamen.Text == "GLUCOSA(mg/dl)")
+                {
+                    cmbResultado.Visible = false;
+                    cmbtNroExamen.Enabled = true;
+                    txtResultadoExamen.Visible = true;
+                }
+                else if (cmbTipoExamen.Text == "PROTEINA")
+                {
+                    cmbResultado.Visible = true;
+                    cmbtNroExamen.Enabled = true;
+                    cmbResultado.Items.Clear();
+                    txtResultadoExamen.Visible = false;
+
+                    cmbResultado.Items.Add("(-)");
+                    cmbResultado.Items.Add("(+)");
+                }
+            }
         }
 
         string validarExamenes()
@@ -1794,7 +1844,7 @@ namespace CapaPresentacion
                 this.cmbTipoExamen.Focus();
                 return "Seleccione Tipo de Examen";
             }
-            else if (this.cmbtNroExamen.Text == "")
+            else if ((cmbTipoExamen.Text == "HEMOGLOBINA" || cmbTipoExamen.Text == "GLUCOSA(mg/dl)" || cmbTipoExamen.Text == "SIFILIS" || cmbTipoExamen.Text == "VIH" || cmbTipoExamen.Text == "PROTEINA") && this.cmbtNroExamen.Text == "")
             {
                 this.cmbtNroExamen.Focus();
                 return "Seleccione Nro Examen";
@@ -1854,6 +1904,7 @@ namespace CapaPresentacion
             cmbTipoExamen.Items.Clear();
             cmbTipoExamen.Items.Add("SIFILIS");
             cmbTipoExamen.Items.Add("VIH");
+            cmbTipoExamen.Items.Add("ORINA");
             cmbTipoExamen.Items.Add("HEPATITIS");
             cmbTipoExamen.Items.Add("HEMOGLOBINA");
             cmbTipoExamen.Items.Add("GLUCOSA(mg/dl)");
@@ -1936,15 +1987,17 @@ namespace CapaPresentacion
                 EntidadExamenes objExa = new EntidadExamenes();
                 objExa.id_embarazo = int.Parse(this.DataListado.CurrentRow.Cells[2].Value.ToString());
                 objExa.prueba = this.cmbTipoExamen.Text;
-                objExa.num_prueba = this.cmbtNroExamen.Text;
+                
                 objExa.fecha_prueba = this.dtpFechaExamen.Value;
                 if (cmbTipoExamen.Text == "SIFILIS" || cmbTipoExamen.Text == "VIH" || cmbTipoExamen.Text == "ORINA" || cmbTipoExamen.Text == "HEPATITIS" || cmbTipoExamen.Text == "PROTEINA")
                 {
                     objExa.resultado = this.cmbResultado.Text;
+                    objExa.num_prueba = this.cmbtNroExamen.Text;
                 }
                 else
                 {
                     objExa.resultado = this.txtResultadoExamen.Text;
+                    objExa.num_prueba = "-";
                 }
                     
 
@@ -2056,51 +2109,7 @@ namespace CapaPresentacion
 
         private void cmbTipoExamen_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            if (esEditarExamen == "")
-            {
-                nroExamenes = new List<int>();
-                nroExamenes.Clear();
-                for (int i = 0; i < 2; i++){nroExamenes.Add(i);}
-
-                for (int i = 0; i < this.dataListadoExamen.Rows.Count; i++)
-                {
-                    if (this.dataListadoExamen.Rows[i].Cells[1].Value.ToString() == this.cmbTipoExamen.Text)
-                    {
-                        if (this.dataListadoExamen.Rows[i].Cells[2].Value.ToString() == "1"){nroExamenes.Remove(1);}
-                        if (this.dataListadoExamen.Rows[i].Cells[2].Value.ToString() == "2"){nroExamenes.Remove(2);}
-                    }
-
-                }
-                if(cmbTipoExamen.Text=="SIFILIS" || cmbTipoExamen.Text == "VIH")
-                {
-                    txtResultadoExamen.Visible = false;
-                    cmbResultado.Visible = true;
-                    cmbResultado.Items.Clear();
-                    cmbResultado.Items.Add("REACTIVO");
-                    cmbResultado.Items.Add("NO REACTIVO");
-                }else if (cmbTipoExamen.Text == "ORINA" || cmbTipoExamen.Text == "HEPATITIS")
-                {
-                    txtResultadoExamen.Visible = false;
-                    cmbResultado.Visible = true;
-                    cmbResultado.Items.Clear();
-                    cmbResultado.Items.Add("POSITIVO");
-                    cmbResultado.Items.Add("NEGATIVO");
-                }
-                else if (cmbTipoExamen.Text == "HEMOGLOBINA" || cmbTipoExamen.Text == "GLUCOSA(mg/dl)")
-                {
-                    cmbResultado.Visible = false;
-                    txtResultadoExamen.Visible = true;
-                }
-                else if (cmbTipoExamen.Text == "PROTEINA")
-                {
-                    cmbResultado.Visible = true;
-                    cmbResultado.Items.Clear();
-                    txtResultadoExamen.Visible = false;
-                   
-                    cmbResultado.Items.Add("(-)");
-                    cmbResultado.Items.Add("(+)");
-                }
-            }
+            
         }
 
         private void btnEliminarExamen_Click(object sender, EventArgs e)
@@ -3944,7 +3953,9 @@ namespace CapaPresentacion
             if(tabControl3.SelectedTab.Text=="ATENCION DEL PUERPERIO")
             {
                 MostrarAtencionPuerperio();
+                paneles_22();
             }
+            paneles_22();
         }
 
         private void DataListadoPuerpera_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)

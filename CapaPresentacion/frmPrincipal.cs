@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Web.Management;
 using System.Windows.Forms;
 
 using CapaEntidad;
@@ -846,6 +847,20 @@ namespace CapaPresentacion
             if(obj.Tag.ToString() == "A")
             {
                 cargarUbicacionIpress();
+            }
+        }
+
+        private void frmPrincipal_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if(MessageBox.Show("Estas seguro que quieres salir del sistema", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Dispose();
+                Application.Exit();
+                e.Cancel = false;
+            }
+            else
+            {
+                e.Cancel = true;
             }
         }
     }

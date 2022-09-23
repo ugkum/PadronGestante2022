@@ -478,7 +478,8 @@
             this.txtTipoSangre.FormattingEnabled = true;
             this.txtTipoSangre.Items.AddRange(new object[] {
             "(+)",
-            "(-)"});
+            "(-)",
+            "N/A"});
             this.txtTipoSangre.Location = new System.Drawing.Point(392, 218);
             this.txtTipoSangre.Name = "txtTipoSangre";
             this.txtTipoSangre.Size = new System.Drawing.Size(180, 25);
@@ -734,12 +735,10 @@
             this.cmbEtnia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbEtnia.FormattingEnabled = true;
             this.cmbEtnia.Items.AddRange(new object[] {
-            "Indigena Amazonico",
-            "Pueblos y comunidades indígenas",
-            "Comunidades negras o afrocolombianas",
-            "Comunidad raizal",
-            "Pueblo Rom o Gitano",
-            "Actualidad"});
+            "AWAJUN",
+            "WAMPIS",
+            "MESTIZO",
+            "OTRO"});
             this.cmbEtnia.Location = new System.Drawing.Point(109, 88);
             this.cmbEtnia.Name = "cmbEtnia";
             this.cmbEtnia.Size = new System.Drawing.Size(205, 21);
@@ -763,6 +762,7 @@
             this.cmbEstadoCivil.Items.AddRange(new object[] {
             "SOLTERO(A)",
             "CASADO(A)",
+            "CONVIVIENTE",
             "VIUDO(A)",
             "DIVORCIADO(A)"});
             this.cmbEstadoCivil.Location = new System.Drawing.Point(425, 61);
@@ -838,11 +838,15 @@
             this.cmbNivelInstruccion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cmbNivelInstruccion.FormattingEnabled = true;
             this.cmbNivelInstruccion.Items.AddRange(new object[] {
-            "Primarios y menos",
-            "Formación Profesional",
-            "Secundarios",
-            "Medios-Superiores",
-            "Superiores"});
+            "ANALFABETA",
+            "PRIMARIA COMPLETA",
+            "PRIMARIA INCOMPLETA",
+            "SECUNDARIA COMPLETA",
+            "SECUNDARIA INCOMPLETA",
+            "SUPERIOR NO UNIVERSITARIA COMPLETA",
+            "SUPERIOR NO UNIVERSITARIA INCOMPLETA",
+            "SUPERIOR UNIVERSITARIA COMPLETA",
+            "SUPERIOR UNIVERSITARIA INCOMPLETA"});
             this.cmbNivelInstruccion.Location = new System.Drawing.Point(425, 32);
             this.cmbNivelInstruccion.Name = "cmbNivelInstruccion";
             this.cmbNivelInstruccion.Size = new System.Drawing.Size(173, 21);
@@ -949,7 +953,7 @@
             this.panelPregunta.Controls.Add(this.label10);
             this.panelPregunta.Location = new System.Drawing.Point(0, 0);
             this.panelPregunta.Name = "panelPregunta";
-            this.panelPregunta.Size = new System.Drawing.Size(913, 470);
+            this.panelPregunta.Size = new System.Drawing.Size(913, 469);
             this.panelPregunta.TabIndex = 14;
             this.panelPregunta.Visible = false;
             this.panelPregunta.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPregunta_Paint);
@@ -1151,7 +1155,8 @@
             "A",
             "B",
             "AB",
-            "O"});
+            "O",
+            "N/A"});
             this.cmbGrupoSanguineo.Location = new System.Drawing.Point(122, 219);
             this.cmbGrupoSanguineo.Name = "cmbGrupoSanguineo";
             this.cmbGrupoSanguineo.Size = new System.Drawing.Size(158, 25);
