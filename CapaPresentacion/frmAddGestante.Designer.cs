@@ -953,7 +953,7 @@
             this.panelPregunta.Controls.Add(this.label10);
             this.panelPregunta.Location = new System.Drawing.Point(0, 0);
             this.panelPregunta.Name = "panelPregunta";
-            this.panelPregunta.Size = new System.Drawing.Size(913, 470);
+            this.panelPregunta.Size = new System.Drawing.Size(913, 471);
             this.panelPregunta.TabIndex = 14;
             this.panelPregunta.Visible = false;
             this.panelPregunta.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPregunta_Paint);

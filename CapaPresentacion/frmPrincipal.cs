@@ -873,5 +873,10 @@ namespace CapaPresentacion
             obj.ShowDialog();
             fil.Hide();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
