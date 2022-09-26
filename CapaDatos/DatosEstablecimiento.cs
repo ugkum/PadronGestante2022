@@ -91,5 +91,29 @@ namespace CapaDatos
             return dt;
 
         }
+        public DataTable BuscarCodigoUnicoEss(int codigo)
+        {
+            Conectar();
+           
+            SqlDataAdapter da = new SqlDataAdapter("sp_obtener_ID_Ipress", Conectar());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.AddWithValue("@id", codigo);
+            da.SelectCommand.ResetCommandTimeout();
+            da.SelectCommand.CommandTimeout = 0;
+            DataTable dt = new DataTable();
+            try
+            {
+                da.Fill(dt);
+               da.Dispose();
+                
+            }
+            catch (Exception)
+            {
+                da.Dispose();
+                Desconectar();
+            }
+            Desconectar();
+            return dt;
+        }
     }
 }

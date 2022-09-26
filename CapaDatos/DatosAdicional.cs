@@ -17,6 +17,7 @@ namespace CapaDatos
             Conectar();
             SqlDataAdapter da = new SqlDataAdapter("sp_listar_adicional", Conectar());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            
             da.SelectCommand.Parameters.AddWithValue("@id_ges", idGestante);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -29,6 +30,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_insertar_adicinal", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@tipo_seguro", objA.tipoSeguro);
             cmd.Parameters.AddWithValue("@nivel_instruccion", objA.nivel_instruccion);
             cmd.Parameters.AddWithValue("@lengua",objA.lengua);

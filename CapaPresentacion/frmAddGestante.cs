@@ -404,7 +404,7 @@ namespace CapaPresentacion
                     //detalle de la ubicacion
                     objDetUbicacion.EditarUbicacion(this.cmbDepartamento.Text, this.cmbProvincia.Text, this.cmbDistrito.Text, this.txtCentroPoblado.Text,this.txtDireccionActual.Text, int.Parse(lblIDGestante.Text));
                     //agregar paciente al ess actual
-                    objAtencion.registrarAtencionGestante( int.Parse( lblIDGestante.Text), int.Parse(lblNombreIpress.Name), this.txtHistoriaCli.Text, "ACTIVO");
+                    objAtencion.registrarAtencionGestante(1, int.Parse( lblIDGestante.Text), int.Parse(lblNombreIpress.Name), this.txtHistoriaCli.Text, "ACTIVO");
                    
                 }
                 else
@@ -425,7 +425,7 @@ namespace CapaPresentacion
                     objAdicional.registrarAdicional(objEa);
 
                     //registrar donde se atendera gestante
-                    objAtencion.registrarAtencionGestante(UltimoRegisto, int.Parse(lblNombreIpress.Name), this.txtHistoriaCli.Text, "ACTIVO");
+                    objAtencion.registrarAtencionGestante(1,UltimoRegisto, int.Parse(lblNombreIpress.Name), this.txtHistoriaCli.Text, "ACTIVO");
                 }
                
 

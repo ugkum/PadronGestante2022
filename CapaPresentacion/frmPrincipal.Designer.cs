@@ -68,6 +68,7 @@
             this.usuarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verRadarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reporteGeneralToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.importarPadronGestanteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eportarPadronNomimalToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripSeparator();
             this.recuperarClaveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -463,6 +464,7 @@
             this.usuarioToolStripMenuItem,
             this.verRadarToolStripMenuItem,
             this.reporteGeneralToolStripMenuItem,
+            this.importarPadronGestanteToolStripMenuItem,
             this.eportarPadronNomimalToolStripMenuItem,
             this.toolStripMenuItem1,
             this.recuperarClaveToolStripMenuItem,
@@ -480,14 +482,14 @@
             // 
             this.usuarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("usuarioToolStripMenuItem.Image")));
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
-            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.usuarioToolStripMenuItem.Text = "Usuario";
             // 
             // verRadarToolStripMenuItem
             // 
             this.verRadarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("verRadarToolStripMenuItem.Image")));
             this.verRadarToolStripMenuItem.Name = "verRadarToolStripMenuItem";
-            this.verRadarToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.verRadarToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.verRadarToolStripMenuItem.Text = "Ver Radar";
             this.verRadarToolStripMenuItem.Click += new System.EventHandler(this.verRadarToolStripMenuItem_Click);
             // 
@@ -495,41 +497,49 @@
             // 
             this.reporteGeneralToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("reporteGeneralToolStripMenuItem.Image")));
             this.reporteGeneralToolStripMenuItem.Name = "reporteGeneralToolStripMenuItem";
-            this.reporteGeneralToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.reporteGeneralToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.reporteGeneralToolStripMenuItem.Text = "Reporte General";
             this.reporteGeneralToolStripMenuItem.Click += new System.EventHandler(this.reporteGeneralToolStripMenuItem_Click);
+            // 
+            // importarPadronGestanteToolStripMenuItem
+            // 
+            this.importarPadronGestanteToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("importarPadronGestanteToolStripMenuItem.Image")));
+            this.importarPadronGestanteToolStripMenuItem.Name = "importarPadronGestanteToolStripMenuItem";
+            this.importarPadronGestanteToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
+            this.importarPadronGestanteToolStripMenuItem.Text = "Importar Padron Gestante";
+            this.importarPadronGestanteToolStripMenuItem.Click += new System.EventHandler(this.importarPadronGestanteToolStripMenuItem_Click);
             // 
             // eportarPadronNomimalToolStripMenuItem
             // 
             this.eportarPadronNomimalToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("eportarPadronNomimalToolStripMenuItem.Image")));
             this.eportarPadronNomimalToolStripMenuItem.Name = "eportarPadronNomimalToolStripMenuItem";
-            this.eportarPadronNomimalToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.eportarPadronNomimalToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.eportarPadronNomimalToolStripMenuItem.Text = "Eportar Padron Nomimal";
             this.eportarPadronNomimalToolStripMenuItem.Click += new System.EventHandler(this.eportarPadronNomimalToolStripMenuItem_Click);
             // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(247, 6);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(252, 6);
             // 
             // recuperarClaveToolStripMenuItem
             // 
             this.recuperarClaveToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("recuperarClaveToolStripMenuItem.Image")));
             this.recuperarClaveToolStripMenuItem.Name = "recuperarClaveToolStripMenuItem";
-            this.recuperarClaveToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.recuperarClaveToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.recuperarClaveToolStripMenuItem.Text = "Cambiar MicroRed";
             this.recuperarClaveToolStripMenuItem.Click += new System.EventHandler(this.recuperarClaveToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(247, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(252, 6);
             // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("ayudaToolStripMenuItem.Image")));
             this.ayudaToolStripMenuItem.Name = "ayudaToolStripMenuItem";
-            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.ayudaToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.ayudaToolStripMenuItem.Text = "Ayuda";
             this.ayudaToolStripMenuItem.Click += new System.EventHandler(this.ayudaToolStripMenuItem_Click);
             // 
@@ -537,13 +547,13 @@
             // 
             this.verMasToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("verMasToolStripMenuItem.Image")));
             this.verMasToolStripMenuItem.Name = "verMasToolStripMenuItem";
-            this.verMasToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.verMasToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.verMasToolStripMenuItem.Text = "Ver mas";
             // 
             // cerrarSistemaToolStripMenuItem
             // 
             this.cerrarSistemaToolStripMenuItem.Name = "cerrarSistemaToolStripMenuItem";
-            this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(250, 24);
+            this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.cerrarSistemaToolStripMenuItem.Text = "Cerrar Sistema";
             this.cerrarSistemaToolStripMenuItem.Click += new System.EventHandler(this.cerrarSistemaToolStripMenuItem_Click_1);
             // 
@@ -703,6 +713,7 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.Label lblFechaCaducidad;
+        private System.Windows.Forms.ToolStripMenuItem importarPadronGestanteToolStripMenuItem;
     }
 }
 

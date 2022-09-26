@@ -19,6 +19,7 @@ namespace CapaDatos
             Conectar();
             SqlDataAdapter da = new SqlDataAdapter("sp_listar_ipress", Conectar());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
+          
             DataTable dt = new DataTable();
             da.Fill(dt);
             Desconectar();
@@ -30,6 +31,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_insertar_ipress", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@renaes", objEI.renaes);
             cmd.Parameters.AddWithValue("@nombre", objEI.nombre);
             cmd.Parameters.AddWithValue("@microred", objEI.microred);

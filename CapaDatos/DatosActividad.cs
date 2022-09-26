@@ -18,6 +18,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_registrar_actividad", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@actividad", objAc.actividad);
             cmd.Parameters.AddWithValue("@nroAtencion", objAc.nro_atencion);
             cmd.Parameters.AddWithValue("@fecha_atencion", objAc.fecha_atencion);

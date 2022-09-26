@@ -19,6 +19,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("insertar_suplementacion", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@suplementacion", objESup.suplementacion);
             cmd.Parameters.AddWithValue("@num_sup", objESup.num_suplementacion);
             cmd.Parameters.AddWithValue("@fecha_sup", objESup.fecha_suplementacion);

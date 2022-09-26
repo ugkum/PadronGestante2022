@@ -19,6 +19,10 @@ namespace CapaNegocio
            objDetUbicacion.RegistrarUbicacion(dep,prov,distr,centroPob,direccion,idGesta);
         }
 
+        public void RegistrarUbicacion_procedure(string dep, string prov, string distr, string centroPob, string direccion, int idGesta)
+        {
+            objDetUbicacion.RegistrarUbicacion_procedure(dep, prov, distr, centroPob, direccion, idGesta);
+        }
         public void EditarUbicacion(string dep, string prov, string distr, string centroPob,string direccion, int idGesta)
         {
             objDetUbicacion.EditarUbicacion(dep, prov, distr, centroPob, direccion,  idGesta);

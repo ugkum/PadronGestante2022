@@ -19,13 +19,26 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_registrar_embarazo", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
+            cmd.Parameters.AddWithValue("@idEm", objEE.id_embaazo);
             cmd.Parameters.AddWithValue("@FUR", objEE.fecha_ultima_regla);
             cmd.Parameters.AddWithValue("@FPP", objEE.fecha_plan_parto);
             cmd.Parameters.AddWithValue("@gesta", objEE.gesta);
             cmd.Parameters.AddWithValue("@pariedad", objEE.pariedad);
             cmd.Parameters.AddWithValue("@ID_ATENCION", objEE.id_gestante);
-            cmd.ExecuteNonQuery();
-            Desconectar();
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                cmd.Dispose();
+                Desconectar();
+            }
+            finally
+            {
+                Desconectar();
+            }
         }
 
         public void EditarEmbarazo(EntidadEmbarazo objEE)

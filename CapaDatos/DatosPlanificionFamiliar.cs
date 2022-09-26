@@ -18,6 +18,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_registrar_plan_familiar", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@orientacion", objPlanFam.orientacion_consejeria);
             cmd.Parameters.AddWithValue("@fecha_atencion", objPlanFam.fecha_plan);
             cmd.Parameters.AddWithValue("@metodo", objPlanFam.metodo_aplicado);

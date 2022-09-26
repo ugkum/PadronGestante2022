@@ -17,6 +17,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_insertar_vacuna", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@num_vacuna", objEVac.num_vacunas);
             cmd.Parameters.AddWithValue("@vacuna", objEVac.vacuna);
             cmd.Parameters.AddWithValue("@fecha", objEVac.fecha);

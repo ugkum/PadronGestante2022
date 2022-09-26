@@ -14,11 +14,15 @@ namespace CapaNegocio
 
         DatosAtencionPaciente objAtencion = new DatosAtencionPaciente();
 
-        public void registrarAtencionGestante(int idGes, int idEst, string his_clinica,string   estado)
+        public void registrarAtencionGestante(int idAte, int idGes, int idEst, string his_clinica,string   estado)
         {
-            objAtencion.registrarAtencionGestante(idGes, idEst, his_clinica,estado);
+            objAtencion.registrarAtencionGestante(idAte, idGes, idEst, his_clinica,estado);
         }
 
+        public void registrarAtencionGestante_procedure(int idAte, int idGes, int idEst, string his_clinica, string estado)
+        {
+            objAtencion.registrarAtencionGestante_procedure(idAte, idGes, idEst, his_clinica, estado);
+        }
         public void EditarAtencionGestante(int idGes, int idEst, string his_clinica, string estado)
         {
             objAtencion.EditarAtencionGestante(idGes,idEst,his_clinica,estado);

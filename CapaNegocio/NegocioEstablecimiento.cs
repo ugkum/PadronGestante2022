@@ -52,6 +52,9 @@ namespace CapaNegocio
         {
             return objEst.ListarDistritoPorProvDep(dep, prov);
         }
-
+        public DataTable BuscarCodigoUnicoEss(int codigo)
+        {
+            return objEst.BuscarCodigoUnicoEss(codigo);
+        }
     }
 }

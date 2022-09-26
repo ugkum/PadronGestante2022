@@ -18,6 +18,7 @@ namespace CapaDatos
         {
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_insertar_ecografia", Conectar());
+            cmd.CommandTimeout = 0;
             cmd.CommandType = CommandType.StoredProcedure;
             cmd.Parameters.AddWithValue("@nro_eco", objEco.nro_eco);
             cmd.Parameters.AddWithValue("@fecha", objEco.fecha_ecografia);

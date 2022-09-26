@@ -129,6 +129,12 @@
     <Compile Include="frmEstablecimiento.Designer.cs">
       <DependentUpon>frmEstablecimiento.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmImportarPadronGesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportarPadronGesta.Designer.cs">
+      <DependentUpon>frmImportarPadronGesta.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmIngresarClave.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -199,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmEstablecimiento.resx">
       <DependentUpon>frmEstablecimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmImportarPadronGesta.resx">
+      <DependentUpon>frmImportarPadronGesta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmIngresarClave.resx">
       <DependentUpon>frmIngresarClave.cs</DependentUpon>

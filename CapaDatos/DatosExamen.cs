@@ -17,6 +17,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_insertar_examen",Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@prueba",objExa.prueba);
             cmd.Parameters.AddWithValue("@num_prueba", objExa.num_prueba);
             cmd.Parameters.AddWithValue("@fecha", objExa.fecha_prueba);

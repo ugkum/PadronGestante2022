@@ -19,6 +19,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_registrar_purperio", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@nro_atencion", objPp.nro_atencion);
             cmd.Parameters.AddWithValue("@fecha_atencion", objPp.fecha_atencion); 
             cmd.Parameters.AddWithValue("@valor_hbb", objPp.valor_HBV);

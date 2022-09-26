@@ -140,21 +140,24 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_insertar_gestante", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@tipo_doc", objEG.tipoDoc);
-            cmd.Parameters.AddWithValue("@num_doc", objEG.nroDoc);
-            cmd.Parameters.AddWithValue("@paterno", objEG.paterno);
-            cmd.Parameters.AddWithValue("@materno", objEG.materno);
-            cmd.Parameters.AddWithValue("@nombre", objEG.nombre);
-            cmd.Parameters.AddWithValue("@nombre2", objEG.nombre2);
-            cmd.Parameters.AddWithValue("@fecha_nac", objEG.fechaNac);
-            cmd.Parameters.AddWithValue("@edad", objEG.edad);
-            cmd.Parameters.AddWithValue("@grupo_sanguineo", objEG.grupo_sanguineo);
-            cmd.Parameters.AddWithValue("@tipo_sangre", objEG.tipo_sangre);
-            cmd.Parameters.AddWithValue("@telefono", objEG.telefono);
-            cmd.Parameters.AddWithValue("@id_establecimiento", objEG.id_ipress);
+            cmd.CommandTimeout = 0;
+            cmd.Parameters.AddWithValue("@idGesta", objEG.id_gestantes);    //0
+            cmd.Parameters.AddWithValue("@tipo_doc", objEG.tipoDoc);    //1
+            cmd.Parameters.AddWithValue("@num_doc", objEG.nroDoc);      //2
+            cmd.Parameters.AddWithValue("@paterno", objEG.paterno);     //3
+            cmd.Parameters.AddWithValue("@materno", objEG.materno); //4
+            cmd.Parameters.AddWithValue("@nombre", objEG.nombre);   //5
+            cmd.Parameters.AddWithValue("@nombre2", objEG.nombre2); //6
+            cmd.Parameters.AddWithValue("@fecha_nac", objEG.fechaNac);//7
+            cmd.Parameters.AddWithValue("@edad", objEG.edad);   //8
+            cmd.Parameters.AddWithValue("@grupo_sanguineo", objEG.grupo_sanguineo);//9
+            cmd.Parameters.AddWithValue("@tipo_sangre", objEG.tipo_sangre); //10
+            cmd.Parameters.AddWithValue("@telefono", objEG.telefono);   //11
+            cmd.Parameters.AddWithValue("@id_establecimiento", objEG.id_ipress);    //12
             try
             {
-                cmd.ExecuteNonQuery();
+                 cmd.ExecuteNonQuery();
+               
             }
             catch (Exception)
             {

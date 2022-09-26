@@ -863,5 +863,15 @@ namespace CapaPresentacion
                 e.Cancel = true;
             }
         }
+
+        private void importarPadronGestanteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmImportarPadronGesta obj = new frmImportarPadronGesta();
+            frmMascara fil = new frmMascara();
+            fil.Show();
+
+            obj.ShowDialog();
+            fil.Hide();
+        }
     }
 }

@@ -16,6 +16,7 @@ namespace CapaDatos
             Conectar();
             string sql = "INSERT INTO config_ipress (red,microred) values('" + red + "' , '"+ microred +"')";
             SqlCommand cmd = new SqlCommand(sql, Conectar());
+            cmd.CommandTimeout = 0;
             cmd.ExecuteNonQuery();
             Desconectar();
         }

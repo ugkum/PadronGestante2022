@@ -17,6 +17,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_registrar_controles", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@num_control", objECon.num_control);
             cmd.Parameters.AddWithValue("@fecha", objECon.fecha_control);
             cmd.Parameters.AddWithValue("@edad_ges", objECon.edad_ges);

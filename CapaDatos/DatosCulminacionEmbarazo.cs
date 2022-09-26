@@ -19,6 +19,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_registrar_culminacion_embarazo", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@tipo_parto", objCul.tipo_parto);
             cmd.Parameters.AddWithValue("@via", objCul.via);
             cmd.Parameters.AddWithValue("@lugar", objCul.lugar);

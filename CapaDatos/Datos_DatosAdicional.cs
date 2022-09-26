@@ -18,6 +18,7 @@ namespace CapaDatos
             Conectar();
             SqlCommand cmd = new SqlCommand("sp_registrar_datos_adicional", Conectar());
             cmd.CommandType = CommandType.StoredProcedure;
+            cmd.CommandTimeout = 0;
             cmd.Parameters.AddWithValue("@nombre_contacto", objDatAd.nombre);
             cmd.Parameters.AddWithValue("@telefono", objDatAd.telefono);
             cmd.Parameters.AddWithValue("@observacion", objDatAd.observacion);
