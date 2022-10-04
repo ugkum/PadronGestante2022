@@ -235,10 +235,22 @@ namespace CapaPresentacion
                 MessageBox.Show("Fecha Ultima Regla No debe ser mayor a Fecha Probable del Parto", "Sistema Validacion", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            
+
+            DataTable dstultimoEm = objEmbarazo.ultimoEmbarazo();
+            int idEmbarazo = 0;
+            if (dstultimoEm.Rows.Count > 0)
+            {
+                idEmbarazo =Convert.ToInt32( dstultimoEm.Rows[0][0].ToString())+1;
+            }
+            else
+            {
+                idEmbarazo = 1;
+            }
+
             //objeto de la entidadEmbarazo
             EntidadEmbarazo objEE = new EntidadEmbarazo();
             //envio de datos a entidad embarazo
+            objEE.id_embaazo = idEmbarazo;
             objEE.fecha_ultima_regla = DateTime.Parse(txtUltimaRegla.Text);
             objEE.fecha_plan_parto = DateTime.Parse(txtFechaPlanParto.Text);
             objEE.gesta = txtGesta.Text;

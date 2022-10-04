@@ -111,6 +111,12 @@
     <Compile Include="frmAyuda.Designer.cs">
       <DependentUpon>frmAyuda.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConexionConfigurado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConexionConfigurado.Designer.cs">
+      <DependentUpon>frmConexionConfigurado.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmConfigIpress.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAyuda.resx">
       <DependentUpon>frmAyuda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConexionConfigurado.resx">
+      <DependentUpon>frmConexionConfigurado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmConfigIpress.resx">
       <DependentUpon>frmConfigIpress.cs</DependentUpon>
@@ -341,6 +350,15 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\importar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exportar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boton-x1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

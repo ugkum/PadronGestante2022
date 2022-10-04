@@ -41,6 +41,17 @@ namespace CapaDatos
             }
         }
 
+        public DataTable ultimoEmbarazo()
+        {
+            Conectar();
+            string sql = "SELECT top 1 * FROM embarazo order by id_embarazo desc";
+            SqlDataAdapter da = new SqlDataAdapter(sql, Conectar());
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            Desconectar();
+            return dt;
+
+        }
         public void EditarEmbarazo(EntidadEmbarazo objEE)
         {
             Conectar();

@@ -22,6 +22,17 @@ namespace CapaDatos
             Desconectar();
         }
 
+        public DataTable ObtenerUltimoRegistroAtencion()
+        {
+            Conectar();
+            string sql = "select top 1 * from Atencion order by id_atencion desc";
+            SqlDataAdapter  da = new SqlDataAdapter(sql,    Conectar());
+            DataTable dst = new DataTable();
+            da.Fill(dst);
+            Desconectar();
+            return dst;
+        } 
+
         public void registrarAtencionGestante_procedure(int idAte, int idGes, int idEst, string his_clinica, string estado)
         {
             Conectar();

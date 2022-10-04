@@ -19,6 +19,10 @@ namespace CapaNegocio
             objAtencion.registrarAtencionGestante(idAte, idGes, idEst, his_clinica,estado);
         }
 
+        public DataTable ObtenerUltimoRegistroAtencion()
+        {
+            return   objAtencion.ObtenerUltimoRegistroAtencion();
+        }
         public void registrarAtencionGestante_procedure(int idAte, int idGes, int idEst, string his_clinica, string estado)
         {
             objAtencion.registrarAtencionGestante_procedure(idAte, idGes, idEst, his_clinica, estado);

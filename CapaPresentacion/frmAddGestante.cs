@@ -373,12 +373,13 @@ namespace CapaPresentacion
             DataTable ultimoGestaDT = objGesta.UltimoRegistro();
             if (ultimoGestaDT.Rows.Count > 0)
             {
-                UltimoId =Convert.ToInt32( ultimoGestaDT.Rows[0][0].ToString());
+                UltimoId =Convert.ToInt32( ultimoGestaDT.Rows[0][0].ToString())+1;
             }
             else
             {
                 UltimoId = 1;
             }
+
             //datos del gestante
             EntidadGestante objEg = new EntidadGestante();
             objEg.id_gestantes = UltimoId;
@@ -435,8 +436,20 @@ namespace CapaPresentacion
                     //registrar datos adicional de gestante
                     objAdicional.registrarAdicional(objEa);
 
+                    //ultimo registro de atencion
+                    DataTable dtUltimoAtencion = objAtencion.ObtenerUltimoRegistroAtencion();
+                    int ultimoAtencion = 0;
+                    if (dtUltimoAtencion.Rows.Count > 0)
+                    {
+                        ultimoAtencion = Convert.ToInt32(dtUltimoAtencion.Rows[0][0].ToString()) + 1;
+                    }
+                    else
+                    {
+                        ultimoAtencion = 1;
+                    }
+
                     //registrar donde se atendera gestante
-                    objAtencion.registrarAtencionGestante(1,UltimoRegisto, int.Parse(lblNombreIpress.Name), this.txtHistoriaCli.Text, "ACTIVO");
+                    objAtencion.registrarAtencionGestante(ultimoAtencion,UltimoRegisto, int.Parse(lblNombreIpress.Name), this.txtHistoriaCli.Text, "ACTIVO");
                 }
                
                 //actualizar correlativo

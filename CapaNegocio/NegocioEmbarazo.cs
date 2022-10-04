@@ -23,6 +23,10 @@ namespace CapaNegocio
              objEmbarazo.RegistrarEmbarazo(objEE);
         }
 
+        public DataTable ultimoEmbarazo()
+        {
+           return objEmbarazo.ultimoEmbarazo();
+        }
         public void EditarEmbarazo(EntidadEmbarazo objEE)
         {
             objEmbarazo.EditarEmbarazo(objEE);
