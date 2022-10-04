@@ -24,9 +24,30 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@num_sup", objESup.num_suplementacion);
             cmd.Parameters.AddWithValue("@fecha_sup", objESup.fecha_suplementacion);
             cmd.Parameters.AddWithValue("@id_embarazo", objESup.id_embarazo);
-           int n= cmd.ExecuteNonQuery();
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                
+                cmd.Dispose();
+                Desconectar();
+            }
+            finally
+            {
+                try
+                {
+                    Desconectar();
+                }
+                catch (Exception)
+                {
+
+                    Console.Write("Error");
+                }
+            }
             
-            Desconectar();
+            
         }
 
         public void EditarSuplementacion(EntidadSuplementacion objESup)

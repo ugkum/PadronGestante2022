@@ -712,9 +712,9 @@ namespace CapaPresentacion
                 {
                     comboBox1.Items.Clear();
                     comboBox1.Enabled = true;
-                    comboBox1.Items.Add("1 Dosis");
-                    comboBox1.Items.Add("2 Dosis");
-                    comboBox1.Items.Add("3 Dosis");
+                    comboBox1.Items.Add("1");
+                    comboBox1.Items.Add("2");
+                    comboBox1.Items.Add("3");
                 }
                 else if (comboBox2.Text == "DPTA")
                 {
@@ -755,10 +755,10 @@ namespace CapaPresentacion
                     
                     misDosisVacuna.Clear();
 
-                    if (cov1 == "") { misDosisVacuna.Add("1 Dosis"); }
-                    if (cov2 == "") { misDosisVacuna.Add("2 Dosis"); }
-                    if (cov3 == "") { misDosisVacuna.Add("3 Dosis"); }
-                    if (cov4 == "") { misDosisVacuna.Add("4 Dosis"); }
+                    if (cov1 == "") { misDosisVacuna.Add("1"); }
+                    if (cov2 == "") { misDosisVacuna.Add("2"); }
+                    if (cov3 == "") { misDosisVacuna.Add("3"); }
+                    if (cov4 == "") { misDosisVacuna.Add("4"); }
 
                     foreach (string item in misDosisVacuna)
                     {
@@ -4888,6 +4888,30 @@ namespace CapaPresentacion
         private void dataListadoExamen_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void tabControl1_MouseDown(object sender, MouseEventArgs e)
+        {
+        }
+
+        private void tabControl1_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+        }
+
+        private void frmEmbarazo_KeyDown(object sender, KeyEventArgs e)
+        {
+          
+            if (e.KeyData == Keys.Escape)
+            {
+              DialogResult opcion=  MessageBox.Show("¿Desea salir de la ventana actual?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (opcion == DialogResult.Yes)
+                {
+                    this.Tag = "";
+                    this.Close();
+                }
+                
+            }
         }
     }
 }

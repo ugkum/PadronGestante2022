@@ -30,20 +30,20 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmEmbarazo));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle53 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle56 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle57 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle58 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle59 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle60 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle61 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle62 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle63 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle64 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle54 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle55 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle65 = new System.Windows.Forms.DataGridViewCellStyle();
-            BunifuAnimatorNS.Animation animation5 = new BunifuAnimatorNS.Animation();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnImprimir = new System.Windows.Forms.Button();
             this.panelSinGesta = new System.Windows.Forms.Panel();
@@ -78,20 +78,6 @@
             this.lblgestante = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.btnEliminarInmu = new System.Windows.Forms.Button();
-            this.btnCancelarInmu = new System.Windows.Forms.Button();
-            this.btnEditarInmu = new System.Windows.Forms.Button();
-            this.btnGuardarInmuni = new System.Windows.Forms.Button();
-            this.btnNuevoInmunizaciones = new System.Windows.Forms.Button();
-            this.DataListadoInmunizacion = new System.Windows.Forms.DataGridView();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.TapaControl = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnVerAtencion = new System.Windows.Forms.Button();
@@ -111,6 +97,42 @@
             this.label41 = new System.Windows.Forms.Label();
             this.label43 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.btnEliminarInmu = new System.Windows.Forms.Button();
+            this.btnCancelarInmu = new System.Windows.Forms.Button();
+            this.btnEditarInmu = new System.Windows.Forms.Button();
+            this.btnGuardarInmuni = new System.Windows.Forms.Button();
+            this.btnNuevoInmunizaciones = new System.Windows.Forms.Button();
+            this.DataListadoInmunizacion = new System.Windows.Forms.DataGridView();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.cmbResultado = new System.Windows.Forms.ComboBox();
+            this.TapaExamenes = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.btnVerExamen = new System.Windows.Forms.Button();
+            this.pbExamen = new System.Windows.Forms.PictureBox();
+            this.bunifuSeparator7 = new Bunifu.Framework.UI.BunifuSeparator();
+            this.lblMensajeExamen = new System.Windows.Forms.Label();
+            this.txtResultadoExamen = new System.Windows.Forms.TextBox();
+            this.btnEliminarExamen = new System.Windows.Forms.Button();
+            this.btnCancelarExamen = new System.Windows.Forms.Button();
+            this.btnEditarExamen = new System.Windows.Forms.Button();
+            this.btnGuardarExamen = new System.Windows.Forms.Button();
+            this.btnNuevoExamen = new System.Windows.Forms.Button();
+            this.dataListadoExamen = new System.Windows.Forms.DataGridView();
+            this.label21 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.dtpFechaExamen = new System.Windows.Forms.DateTimePicker();
+            this.cmbtNroExamen = new System.Windows.Forms.ComboBox();
+            this.cmbTipoExamen = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
@@ -155,28 +177,6 @@
             this.dtpfechaCalcio = new System.Windows.Forms.DateTimePicker();
             this.cmbCalcio = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.cmbResultado = new System.Windows.Forms.ComboBox();
-            this.TapaExamenes = new Bunifu.Framework.UI.BunifuGradientPanel();
-            this.btnVerExamen = new System.Windows.Forms.Button();
-            this.pbExamen = new System.Windows.Forms.PictureBox();
-            this.bunifuSeparator7 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.lblMensajeExamen = new System.Windows.Forms.Label();
-            this.txtResultadoExamen = new System.Windows.Forms.TextBox();
-            this.btnEliminarExamen = new System.Windows.Forms.Button();
-            this.btnCancelarExamen = new System.Windows.Forms.Button();
-            this.btnEditarExamen = new System.Windows.Forms.Button();
-            this.btnGuardarExamen = new System.Windows.Forms.Button();
-            this.btnNuevoExamen = new System.Windows.Forms.Button();
-            this.dataListadoExamen = new System.Windows.Forms.DataGridView();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.dtpFechaExamen = new System.Windows.Forms.DateTimePicker();
-            this.cmbtNroExamen = new System.Windows.Forms.ComboBox();
-            this.cmbTipoExamen = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.TapaEcografia = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.btnVerEcografia = new System.Windows.Forms.Button();
@@ -319,12 +319,16 @@
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataListadoInmunizacion)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.TapaControl.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAtencion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataListadoControles)).BeginInit();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataListadoInmunizacion)).BeginInit();
+            this.tabPage4.SuspendLayout();
+            this.TapaExamenes.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExamen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoExamen)).BeginInit();
             this.tabPage3.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage6.SuspendLayout();
@@ -335,10 +339,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.DataListadoSulfatoFerroso)).BeginInit();
             this.tabPage14.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListadoCALCIO)).BeginInit();
-            this.tabPage4.SuspendLayout();
-            this.TapaExamenes.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExamen)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListadoExamen)).BeginInit();
             this.tabPage5.SuspendLayout();
             this.TapaEcografia.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbEcografia)).BeginInit();
@@ -724,14 +724,14 @@
             this.Edi});
             this.DataListado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.DataListado, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle53.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle53.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle53.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle53.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle53.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle53.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle53.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataListado.DefaultCellStyle = dataGridViewCellStyle53;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListado.DefaultCellStyle = dataGridViewCellStyle1;
             this.DataListado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataListado.GridColor = System.Drawing.Color.White;
             this.DataListado.Location = new System.Drawing.Point(0, 39);
@@ -878,264 +878,8 @@
             this.tabControl1.DrawItem += new System.Windows.Forms.DrawItemEventHandler(this.tabControl1_DrawItem);
             this.tabControl1.SelectedIndexChanged += new System.EventHandler(this.tabControl1_SelectedIndexChanged);
             this.tabControl1.Selected += new System.Windows.Forms.TabControlEventHandler(this.tabControl1_Selected);
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.BackColor = System.Drawing.Color.White;
-            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.tabPage1.Controls.Add(this.btnEliminarInmu);
-            this.tabPage1.Controls.Add(this.btnCancelarInmu);
-            this.tabPage1.Controls.Add(this.btnEditarInmu);
-            this.tabPage1.Controls.Add(this.btnGuardarInmuni);
-            this.tabPage1.Controls.Add(this.btnNuevoInmunizaciones);
-            this.tabPage1.Controls.Add(this.DataListadoInmunizacion);
-            this.tabPage1.Controls.Add(this.comboBox2);
-            this.tabPage1.Controls.Add(this.comboBox1);
-            this.tabPage1.Controls.Add(this.dateTimePicker1);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuTransition1.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage1.ForeColor = System.Drawing.Color.Black;
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(953, 538);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Inmunizaciones";
-            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
-            // 
-            // btnEliminarInmu
-            // 
-            this.btnEliminarInmu.BackColor = System.Drawing.Color.Red;
-            this.btnEliminarInmu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnEliminarInmu, BunifuAnimatorNS.DecorationType.None);
-            this.btnEliminarInmu.Enabled = false;
-            this.btnEliminarInmu.FlatAppearance.BorderSize = 0;
-            this.btnEliminarInmu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarInmu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarInmu.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarInmu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarInmu.Location = new System.Drawing.Point(855, 133);
-            this.btnEliminarInmu.Name = "btnEliminarInmu";
-            this.btnEliminarInmu.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarInmu.TabIndex = 8;
-            this.btnEliminarInmu.Text = "Eliminar";
-            this.btnEliminarInmu.UseVisualStyleBackColor = false;
-            this.btnEliminarInmu.Click += new System.EventHandler(this.btnEliminarInmu_Click);
-            // 
-            // btnCancelarInmu
-            // 
-            this.btnCancelarInmu.BackColor = System.Drawing.Color.Gray;
-            this.btnCancelarInmu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnCancelarInmu, BunifuAnimatorNS.DecorationType.None);
-            this.btnCancelarInmu.Enabled = false;
-            this.btnCancelarInmu.FlatAppearance.BorderSize = 0;
-            this.btnCancelarInmu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarInmu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarInmu.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarInmu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarInmu.Location = new System.Drawing.Point(663, 133);
-            this.btnCancelarInmu.Name = "btnCancelarInmu";
-            this.btnCancelarInmu.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarInmu.TabIndex = 8;
-            this.btnCancelarInmu.Text = "Cancelar";
-            this.btnCancelarInmu.UseVisualStyleBackColor = false;
-            this.btnCancelarInmu.Click += new System.EventHandler(this.btnCancelarInmu_Click);
-            // 
-            // btnEditarInmu
-            // 
-            this.btnEditarInmu.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnEditarInmu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnEditarInmu, BunifuAnimatorNS.DecorationType.None);
-            this.btnEditarInmu.Enabled = false;
-            this.btnEditarInmu.FlatAppearance.BorderSize = 0;
-            this.btnEditarInmu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarInmu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarInmu.ForeColor = System.Drawing.Color.White;
-            this.btnEditarInmu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarInmu.Location = new System.Drawing.Point(759, 133);
-            this.btnEditarInmu.Name = "btnEditarInmu";
-            this.btnEditarInmu.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarInmu.TabIndex = 8;
-            this.btnEditarInmu.Text = "Editar";
-            this.btnEditarInmu.UseVisualStyleBackColor = false;
-            this.btnEditarInmu.Click += new System.EventHandler(this.btnEditarInmu_Click);
-            // 
-            // btnGuardarInmuni
-            // 
-            this.btnGuardarInmuni.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnGuardarInmuni.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnGuardarInmuni, BunifuAnimatorNS.DecorationType.None);
-            this.btnGuardarInmuni.Enabled = false;
-            this.btnGuardarInmuni.FlatAppearance.BorderSize = 0;
-            this.btnGuardarInmuni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarInmuni.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarInmuni.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarInmuni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarInmuni.Location = new System.Drawing.Point(107, 133);
-            this.btnGuardarInmuni.Name = "btnGuardarInmuni";
-            this.btnGuardarInmuni.Size = new System.Drawing.Size(124, 36);
-            this.btnGuardarInmuni.TabIndex = 8;
-            this.btnGuardarInmuni.Text = "Guardar";
-            this.btnGuardarInmuni.UseVisualStyleBackColor = false;
-            this.btnGuardarInmuni.Click += new System.EventHandler(this.btnGuardarInmuni_Click);
-            // 
-            // btnNuevoInmunizaciones
-            // 
-            this.btnNuevoInmunizaciones.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnNuevoInmunizaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnNuevoInmunizaciones.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnNuevoInmunizaciones, BunifuAnimatorNS.DecorationType.None);
-            this.btnNuevoInmunizaciones.FlatAppearance.BorderSize = 0;
-            this.btnNuevoInmunizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoInmunizaciones.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoInmunizaciones.ForeColor = System.Drawing.Color.White;
-            this.btnNuevoInmunizaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevoInmunizaciones.Location = new System.Drawing.Point(11, 133);
-            this.btnNuevoInmunizaciones.Name = "btnNuevoInmunizaciones";
-            this.btnNuevoInmunizaciones.Size = new System.Drawing.Size(90, 36);
-            this.btnNuevoInmunizaciones.TabIndex = 8;
-            this.btnNuevoInmunizaciones.Text = "Nuevo";
-            this.btnNuevoInmunizaciones.UseVisualStyleBackColor = false;
-            this.btnNuevoInmunizaciones.Click += new System.EventHandler(this.btnNuevoInmunizaciones_Click);
-            // 
-            // DataListadoInmunizacion
-            // 
-            this.DataListadoInmunizacion.AllowUserToAddRows = false;
-            this.DataListadoInmunizacion.AllowUserToDeleteRows = false;
-            this.DataListadoInmunizacion.AllowUserToResizeRows = false;
-            this.DataListadoInmunizacion.BackgroundColor = System.Drawing.Color.White;
-            this.DataListadoInmunizacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.DataListadoInmunizacion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.DataListadoInmunizacion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataListadoInmunizacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DataListadoInmunizacion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.DataListadoInmunizacion, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle56.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle56.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle56.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle56.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle56.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle56.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle56.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataListadoInmunizacion.DefaultCellStyle = dataGridViewCellStyle56;
-            this.DataListadoInmunizacion.GridColor = System.Drawing.Color.White;
-            this.DataListadoInmunizacion.Location = new System.Drawing.Point(6, 197);
-            this.DataListadoInmunizacion.MultiSelect = false;
-            this.DataListadoInmunizacion.Name = "DataListadoInmunizacion";
-            this.DataListadoInmunizacion.ReadOnly = true;
-            this.DataListadoInmunizacion.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.DataListadoInmunizacion.RowHeadersVisible = false;
-            this.DataListadoInmunizacion.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DataListadoInmunizacion.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.DataListadoInmunizacion.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataListadoInmunizacion.RowTemplate.Height = 30;
-            this.DataListadoInmunizacion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataListadoInmunizacion.Size = new System.Drawing.Size(939, 333);
-            this.DataListadoInmunizacion.TabIndex = 7;
-            this.DataListadoInmunizacion.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListadoInmunizacion_CellClick);
-            this.DataListadoInmunizacion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListadoInmunizacion_CellContentClick);
-            this.DataListadoInmunizacion.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListadoInmunizacion_CellDoubleClick);
-            this.DataListadoInmunizacion.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataListadoInmunizacion_CellMouseDoubleClick);
-            // 
-            // comboBox2
-            // 
-            this.bunifuTransition1.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Enabled = false;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "DT",
-            "DPTA",
-            "INFLUENZA",
-            "COVID19"});
-            this.comboBox2.Location = new System.Drawing.Point(116, 46);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(365, 21);
-            this.comboBox2.TabIndex = 6;
-            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            this.comboBox2.SelectionChangeCommitted += new System.EventHandler(this.comboBox2_SelectionChangeCommitted);
-            // 
-            // comboBox1
-            // 
-            this.bunifuTransition1.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Enabled = false;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "1 Dosis",
-            "2 Dosis",
-            "3 Dosis"});
-            this.comboBox1.Location = new System.Drawing.Point(116, 73);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
-            // 
-            // dateTimePicker1
-            // 
-            this.bunifuTransition1.SetDecoration(this.dateTimePicker1, BunifuAnimatorNS.DecorationType.None);
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(116, 100);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(115, 22);
-            this.dateTimePicker1.TabIndex = 4;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(8, 107);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 13);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "Fecha Vacunacion:";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(66, 76);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Dosis:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(57, 49);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "Vacuna:";
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
-            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(3, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(945, 25);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "INMUNIZACIONES";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label5.Click += new System.EventHandler(this.label5_Click);
+            this.tabControl1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tabControl1_KeyDown);
+            this.tabControl1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.tabControl1_MouseDown);
             // 
             // tabPage2
             // 
@@ -1241,7 +985,7 @@
             this.tctEdadGesControl.Location = new System.Drawing.Point(538, 38);
             this.tctEdadGesControl.Name = "tctEdadGesControl";
             this.tctEdadGesControl.Size = new System.Drawing.Size(40, 22);
-            this.tctEdadGesControl.TabIndex = 21;
+            this.tctEdadGesControl.TabIndex = 3;
             // 
             // btnEliminarControl
             // 
@@ -1257,7 +1001,7 @@
             this.btnEliminarControl.Location = new System.Drawing.Point(756, 74);
             this.btnEliminarControl.Name = "btnEliminarControl";
             this.btnEliminarControl.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarControl.TabIndex = 16;
+            this.btnEliminarControl.TabIndex = 7;
             this.btnEliminarControl.Text = "Eliminar";
             this.btnEliminarControl.UseVisualStyleBackColor = false;
             this.btnEliminarControl.Click += new System.EventHandler(this.btnEliminarControl_Click);
@@ -1276,7 +1020,7 @@
             this.btnCancelarControl.Location = new System.Drawing.Point(852, 73);
             this.btnCancelarControl.Name = "btnCancelarControl";
             this.btnCancelarControl.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarControl.TabIndex = 17;
+            this.btnCancelarControl.TabIndex = 8;
             this.btnCancelarControl.Text = "Cancelar";
             this.btnCancelarControl.UseVisualStyleBackColor = false;
             this.btnCancelarControl.Click += new System.EventHandler(this.btnCancelarControl_Click);
@@ -1295,7 +1039,7 @@
             this.btnEditarControl.Location = new System.Drawing.Point(660, 75);
             this.btnEditarControl.Name = "btnEditarControl";
             this.btnEditarControl.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarControl.TabIndex = 18;
+            this.btnEditarControl.TabIndex = 6;
             this.btnEditarControl.Text = "Editar";
             this.btnEditarControl.UseVisualStyleBackColor = false;
             this.btnEditarControl.Click += new System.EventHandler(this.btnEditarControl_Click);
@@ -1314,7 +1058,7 @@
             this.btnGuardarControl.Location = new System.Drawing.Point(93, 75);
             this.btnGuardarControl.Name = "btnGuardarControl";
             this.btnGuardarControl.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarControl.TabIndex = 19;
+            this.btnGuardarControl.TabIndex = 5;
             this.btnGuardarControl.Text = "Guardar";
             this.btnGuardarControl.UseVisualStyleBackColor = false;
             this.btnGuardarControl.Click += new System.EventHandler(this.btnGuardarControl_Click);
@@ -1333,7 +1077,7 @@
             this.btnNuevoControl.Location = new System.Drawing.Point(7, 75);
             this.btnNuevoControl.Name = "btnNuevoControl";
             this.btnNuevoControl.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoControl.TabIndex = 20;
+            this.btnNuevoControl.TabIndex = 4;
             this.btnNuevoControl.Text = "Nuevo";
             this.btnNuevoControl.UseVisualStyleBackColor = false;
             this.btnNuevoControl.Click += new System.EventHandler(this.btnNuevoControl_Click);
@@ -1350,14 +1094,14 @@
             this.DataListadoControles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataListadoControles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.DataListadoControles, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle57.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle57.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle57.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle57.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle57.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle57.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle57.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataListadoControles.DefaultCellStyle = dataGridViewCellStyle57;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListadoControles.DefaultCellStyle = dataGridViewCellStyle2;
             this.DataListadoControles.GridColor = System.Drawing.Color.White;
             this.DataListadoControles.Location = new System.Drawing.Point(7, 131);
             this.DataListadoControles.MultiSelect = false;
@@ -1384,7 +1128,7 @@
             this.cmbNumeroControl.Location = new System.Drawing.Point(105, 37);
             this.cmbNumeroControl.Name = "cmbNumeroControl";
             this.cmbNumeroControl.Size = new System.Drawing.Size(98, 21);
-            this.cmbNumeroControl.TabIndex = 14;
+            this.cmbNumeroControl.TabIndex = 1;
             this.cmbNumeroControl.SelectedIndexChanged += new System.EventHandler(this.cmbNumeroControl_SelectedIndexChanged);
             // 
             // dtpFechaControl
@@ -1395,7 +1139,7 @@
             this.dtpFechaControl.Location = new System.Drawing.Point(307, 36);
             this.dtpFechaControl.Name = "dtpFechaControl";
             this.dtpFechaControl.Size = new System.Drawing.Size(115, 22);
-            this.dtpFechaControl.TabIndex = 12;
+            this.dtpFechaControl.TabIndex = 2;
             // 
             // label39
             // 
@@ -1446,6 +1190,627 @@
             this.label9.TabIndex = 1;
             this.label9.Text = "SEGUIMIENTO DE ATENCIONES PRENATALES";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.Color.White;
+            this.tabPage1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tabPage1.Controls.Add(this.btnEliminarInmu);
+            this.tabPage1.Controls.Add(this.btnCancelarInmu);
+            this.tabPage1.Controls.Add(this.btnEditarInmu);
+            this.tabPage1.Controls.Add(this.btnGuardarInmuni);
+            this.tabPage1.Controls.Add(this.btnNuevoInmunizaciones);
+            this.tabPage1.Controls.Add(this.DataListadoInmunizacion);
+            this.tabPage1.Controls.Add(this.comboBox2);
+            this.tabPage1.Controls.Add(this.comboBox1);
+            this.tabPage1.Controls.Add(this.dateTimePicker1);
+            this.tabPage1.Controls.Add(this.label8);
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.bunifuTransition1.SetDecoration(this.tabPage1, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage1.ForeColor = System.Drawing.Color.Black;
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(953, 538);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Inmunizaciones";
+            this.tabPage1.Click += new System.EventHandler(this.tabPage1_Click);
+            // 
+            // btnEliminarInmu
+            // 
+            this.btnEliminarInmu.BackColor = System.Drawing.Color.Red;
+            this.btnEliminarInmu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnEliminarInmu, BunifuAnimatorNS.DecorationType.None);
+            this.btnEliminarInmu.Enabled = false;
+            this.btnEliminarInmu.FlatAppearance.BorderSize = 0;
+            this.btnEliminarInmu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarInmu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarInmu.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarInmu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarInmu.Location = new System.Drawing.Point(855, 133);
+            this.btnEliminarInmu.Name = "btnEliminarInmu";
+            this.btnEliminarInmu.Size = new System.Drawing.Size(90, 36);
+            this.btnEliminarInmu.TabIndex = 8;
+            this.btnEliminarInmu.Text = "Eliminar";
+            this.btnEliminarInmu.UseVisualStyleBackColor = false;
+            this.btnEliminarInmu.Click += new System.EventHandler(this.btnEliminarInmu_Click);
+            // 
+            // btnCancelarInmu
+            // 
+            this.btnCancelarInmu.BackColor = System.Drawing.Color.Gray;
+            this.btnCancelarInmu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnCancelarInmu, BunifuAnimatorNS.DecorationType.None);
+            this.btnCancelarInmu.Enabled = false;
+            this.btnCancelarInmu.FlatAppearance.BorderSize = 0;
+            this.btnCancelarInmu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarInmu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarInmu.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarInmu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarInmu.Location = new System.Drawing.Point(663, 133);
+            this.btnCancelarInmu.Name = "btnCancelarInmu";
+            this.btnCancelarInmu.Size = new System.Drawing.Size(90, 36);
+            this.btnCancelarInmu.TabIndex = 6;
+            this.btnCancelarInmu.Text = "Cancelar";
+            this.btnCancelarInmu.UseVisualStyleBackColor = false;
+            this.btnCancelarInmu.Click += new System.EventHandler(this.btnCancelarInmu_Click);
+            // 
+            // btnEditarInmu
+            // 
+            this.btnEditarInmu.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnEditarInmu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnEditarInmu, BunifuAnimatorNS.DecorationType.None);
+            this.btnEditarInmu.Enabled = false;
+            this.btnEditarInmu.FlatAppearance.BorderSize = 0;
+            this.btnEditarInmu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarInmu.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarInmu.ForeColor = System.Drawing.Color.White;
+            this.btnEditarInmu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarInmu.Location = new System.Drawing.Point(759, 133);
+            this.btnEditarInmu.Name = "btnEditarInmu";
+            this.btnEditarInmu.Size = new System.Drawing.Size(90, 36);
+            this.btnEditarInmu.TabIndex = 7;
+            this.btnEditarInmu.Text = "Editar";
+            this.btnEditarInmu.UseVisualStyleBackColor = false;
+            this.btnEditarInmu.Click += new System.EventHandler(this.btnEditarInmu_Click);
+            // 
+            // btnGuardarInmuni
+            // 
+            this.btnGuardarInmuni.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnGuardarInmuni.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnGuardarInmuni, BunifuAnimatorNS.DecorationType.None);
+            this.btnGuardarInmuni.Enabled = false;
+            this.btnGuardarInmuni.FlatAppearance.BorderSize = 0;
+            this.btnGuardarInmuni.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarInmuni.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarInmuni.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarInmuni.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardarInmuni.Location = new System.Drawing.Point(107, 133);
+            this.btnGuardarInmuni.Name = "btnGuardarInmuni";
+            this.btnGuardarInmuni.Size = new System.Drawing.Size(124, 36);
+            this.btnGuardarInmuni.TabIndex = 5;
+            this.btnGuardarInmuni.Text = "Guardar";
+            this.btnGuardarInmuni.UseVisualStyleBackColor = false;
+            this.btnGuardarInmuni.Click += new System.EventHandler(this.btnGuardarInmuni_Click);
+            // 
+            // btnNuevoInmunizaciones
+            // 
+            this.btnNuevoInmunizaciones.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnNuevoInmunizaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNuevoInmunizaciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnNuevoInmunizaciones, BunifuAnimatorNS.DecorationType.None);
+            this.btnNuevoInmunizaciones.FlatAppearance.BorderSize = 0;
+            this.btnNuevoInmunizaciones.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoInmunizaciones.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoInmunizaciones.ForeColor = System.Drawing.Color.White;
+            this.btnNuevoInmunizaciones.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoInmunizaciones.Location = new System.Drawing.Point(11, 133);
+            this.btnNuevoInmunizaciones.Name = "btnNuevoInmunizaciones";
+            this.btnNuevoInmunizaciones.Size = new System.Drawing.Size(90, 36);
+            this.btnNuevoInmunizaciones.TabIndex = 4;
+            this.btnNuevoInmunizaciones.Text = "Nuevo";
+            this.btnNuevoInmunizaciones.UseVisualStyleBackColor = false;
+            this.btnNuevoInmunizaciones.Click += new System.EventHandler(this.btnNuevoInmunizaciones_Click);
+            // 
+            // DataListadoInmunizacion
+            // 
+            this.DataListadoInmunizacion.AllowUserToAddRows = false;
+            this.DataListadoInmunizacion.AllowUserToDeleteRows = false;
+            this.DataListadoInmunizacion.AllowUserToResizeRows = false;
+            this.DataListadoInmunizacion.BackgroundColor = System.Drawing.Color.White;
+            this.DataListadoInmunizacion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.DataListadoInmunizacion.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.DataListadoInmunizacion.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataListadoInmunizacion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataListadoInmunizacion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.DataListadoInmunizacion, BunifuAnimatorNS.DecorationType.None);
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListadoInmunizacion.DefaultCellStyle = dataGridViewCellStyle3;
+            this.DataListadoInmunizacion.GridColor = System.Drawing.Color.White;
+            this.DataListadoInmunizacion.Location = new System.Drawing.Point(6, 197);
+            this.DataListadoInmunizacion.MultiSelect = false;
+            this.DataListadoInmunizacion.Name = "DataListadoInmunizacion";
+            this.DataListadoInmunizacion.ReadOnly = true;
+            this.DataListadoInmunizacion.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.DataListadoInmunizacion.RowHeadersVisible = false;
+            this.DataListadoInmunizacion.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DataListadoInmunizacion.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.DataListadoInmunizacion.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataListadoInmunizacion.RowTemplate.Height = 30;
+            this.DataListadoInmunizacion.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.DataListadoInmunizacion.Size = new System.Drawing.Size(939, 333);
+            this.DataListadoInmunizacion.TabIndex = 7;
+            this.DataListadoInmunizacion.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListadoInmunizacion_CellClick);
+            this.DataListadoInmunizacion.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListadoInmunizacion_CellContentClick);
+            this.DataListadoInmunizacion.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListadoInmunizacion_CellDoubleClick);
+            this.DataListadoInmunizacion.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DataListadoInmunizacion_CellMouseDoubleClick);
+            // 
+            // comboBox2
+            // 
+            this.bunifuTransition1.SetDecoration(this.comboBox2, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox2.Enabled = false;
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "DT",
+            "DPTA",
+            "INFLUENZA",
+            "COVID19"});
+            this.comboBox2.Location = new System.Drawing.Point(116, 46);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(365, 21);
+            this.comboBox2.TabIndex = 1;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            this.comboBox2.SelectionChangeCommitted += new System.EventHandler(this.comboBox2_SelectionChangeCommitted);
+            // 
+            // comboBox1
+            // 
+            this.bunifuTransition1.SetDecoration(this.comboBox1, BunifuAnimatorNS.DecorationType.None);
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Enabled = false;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3"});
+            this.comboBox1.Location = new System.Drawing.Point(116, 73);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.comboBox1.SelectionChangeCommitted += new System.EventHandler(this.comboBox1_SelectionChangeCommitted);
+            // 
+            // dateTimePicker1
+            // 
+            this.bunifuTransition1.SetDecoration(this.dateTimePicker1, BunifuAnimatorNS.DecorationType.None);
+            this.dateTimePicker1.Enabled = false;
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(116, 100);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(115, 22);
+            this.dateTimePicker1.TabIndex = 3;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label8, BunifuAnimatorNS.DecorationType.None);
+            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(8, 107);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(98, 13);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "Fecha Vacunacion:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label7, BunifuAnimatorNS.DecorationType.None);
+            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(66, 76);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(38, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Dosis:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label6, BunifuAnimatorNS.DecorationType.None);
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(57, 49);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Vacuna:";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuTransition1.SetDecoration(this.label5, BunifuAnimatorNS.DecorationType.None);
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(3, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(945, 25);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "INMUNIZACIONES";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.cmbResultado);
+            this.tabPage4.Controls.Add(this.TapaExamenes);
+            this.tabPage4.Controls.Add(this.txtResultadoExamen);
+            this.tabPage4.Controls.Add(this.btnEliminarExamen);
+            this.tabPage4.Controls.Add(this.btnCancelarExamen);
+            this.tabPage4.Controls.Add(this.btnEditarExamen);
+            this.tabPage4.Controls.Add(this.btnGuardarExamen);
+            this.tabPage4.Controls.Add(this.btnNuevoExamen);
+            this.tabPage4.Controls.Add(this.dataListadoExamen);
+            this.tabPage4.Controls.Add(this.label21);
+            this.tabPage4.Controls.Add(this.label15);
+            this.tabPage4.Controls.Add(this.label14);
+            this.tabPage4.Controls.Add(this.label13);
+            this.tabPage4.Controls.Add(this.dtpFechaExamen);
+            this.tabPage4.Controls.Add(this.cmbtNroExamen);
+            this.tabPage4.Controls.Add(this.cmbTipoExamen);
+            this.tabPage4.Controls.Add(this.label11);
+            this.bunifuTransition1.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(953, 538);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "Examenes";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
+            // 
+            // cmbResultado
+            // 
+            this.bunifuTransition1.SetDecoration(this.cmbResultado, BunifuAnimatorNS.DecorationType.None);
+            this.cmbResultado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbResultado.Enabled = false;
+            this.cmbResultado.FormattingEnabled = true;
+            this.cmbResultado.Items.AddRange(new object[] {
+            "REACTIVO",
+            "NO REACTIVO"});
+            this.cmbResultado.Location = new System.Drawing.Point(514, 56);
+            this.cmbResultado.Name = "cmbResultado";
+            this.cmbResultado.Size = new System.Drawing.Size(100, 21);
+            this.cmbResultado.TabIndex = 4;
+            // 
+            // TapaExamenes
+            // 
+            this.TapaExamenes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TapaExamenes.BackgroundImage")));
+            this.TapaExamenes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.TapaExamenes.Controls.Add(this.btnVerExamen);
+            this.TapaExamenes.Controls.Add(this.pbExamen);
+            this.TapaExamenes.Controls.Add(this.bunifuSeparator7);
+            this.TapaExamenes.Controls.Add(this.lblMensajeExamen);
+            this.bunifuTransition1.SetDecoration(this.TapaExamenes, BunifuAnimatorNS.DecorationType.None);
+            this.TapaExamenes.GradientBottomLeft = System.Drawing.Color.White;
+            this.TapaExamenes.GradientBottomRight = System.Drawing.Color.White;
+            this.TapaExamenes.GradientTopLeft = System.Drawing.Color.White;
+            this.TapaExamenes.GradientTopRight = System.Drawing.Color.White;
+            this.TapaExamenes.Location = new System.Drawing.Point(0, 216);
+            this.TapaExamenes.Name = "TapaExamenes";
+            this.TapaExamenes.Quality = 10;
+            this.TapaExamenes.Size = new System.Drawing.Size(953, 322);
+            this.TapaExamenes.TabIndex = 31;
+            this.TapaExamenes.Visible = false;
+            // 
+            // btnVerExamen
+            // 
+            this.btnVerExamen.BackColor = System.Drawing.Color.SeaGreen;
+            this.bunifuTransition1.SetDecoration(this.btnVerExamen, BunifuAnimatorNS.DecorationType.None);
+            this.btnVerExamen.FlatAppearance.BorderSize = 0;
+            this.btnVerExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVerExamen.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVerExamen.ForeColor = System.Drawing.Color.White;
+            this.btnVerExamen.Location = new System.Drawing.Point(400, 336);
+            this.btnVerExamen.Name = "btnVerExamen";
+            this.btnVerExamen.Size = new System.Drawing.Size(143, 34);
+            this.btnVerExamen.TabIndex = 9;
+            this.btnVerExamen.Text = "Ver Registro";
+            this.btnVerExamen.UseVisualStyleBackColor = false;
+            // 
+            // pbExamen
+            // 
+            this.bunifuTransition1.SetDecoration(this.pbExamen, BunifuAnimatorNS.DecorationType.None);
+            this.pbExamen.Image = ((System.Drawing.Image)(resources.GetObject("pbExamen.Image")));
+            this.pbExamen.Location = new System.Drawing.Point(423, 183);
+            this.pbExamen.Name = "pbExamen";
+            this.pbExamen.Size = new System.Drawing.Size(106, 108);
+            this.pbExamen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbExamen.TabIndex = 5;
+            this.pbExamen.TabStop = false;
+            // 
+            // bunifuSeparator7
+            // 
+            this.bunifuSeparator7.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuTransition1.SetDecoration(this.bunifuSeparator7, BunifuAnimatorNS.DecorationType.None);
+            this.bunifuSeparator7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.bunifuSeparator7.LineThickness = 1;
+            this.bunifuSeparator7.Location = new System.Drawing.Point(157, 329);
+            this.bunifuSeparator7.Name = "bunifuSeparator7";
+            this.bunifuSeparator7.Size = new System.Drawing.Size(639, 1);
+            this.bunifuSeparator7.TabIndex = 4;
+            this.bunifuSeparator7.Transparency = 255;
+            this.bunifuSeparator7.Vertical = false;
+            // 
+            // lblMensajeExamen
+            // 
+            this.lblMensajeExamen.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.lblMensajeExamen, BunifuAnimatorNS.DecorationType.None);
+            this.lblMensajeExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensajeExamen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.lblMensajeExamen.Location = new System.Drawing.Point(343, 301);
+            this.lblMensajeExamen.Name = "lblMensajeExamen";
+            this.lblMensajeExamen.Size = new System.Drawing.Size(267, 21);
+            this.lblMensajeExamen.TabIndex = 3;
+            this.lblMensajeExamen.Text = "Selecione un Embarazo para Iniciar!";
+            // 
+            // txtResultadoExamen
+            // 
+            this.bunifuTransition1.SetDecoration(this.txtResultadoExamen, BunifuAnimatorNS.DecorationType.None);
+            this.txtResultadoExamen.Enabled = false;
+            this.txtResultadoExamen.Location = new System.Drawing.Point(514, 56);
+            this.txtResultadoExamen.Name = "txtResultadoExamen";
+            this.txtResultadoExamen.Size = new System.Drawing.Size(100, 22);
+            this.txtResultadoExamen.TabIndex = 4;
+            // 
+            // btnEliminarExamen
+            // 
+            this.btnEliminarExamen.BackColor = System.Drawing.Color.Red;
+            this.btnEliminarExamen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnEliminarExamen, BunifuAnimatorNS.DecorationType.None);
+            this.btnEliminarExamen.Enabled = false;
+            this.btnEliminarExamen.FlatAppearance.BorderSize = 0;
+            this.btnEliminarExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminarExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminarExamen.ForeColor = System.Drawing.Color.White;
+            this.btnEliminarExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminarExamen.Location = new System.Drawing.Point(761, 99);
+            this.btnEliminarExamen.Name = "btnEliminarExamen";
+            this.btnEliminarExamen.Size = new System.Drawing.Size(90, 36);
+            this.btnEliminarExamen.TabIndex = 8;
+            this.btnEliminarExamen.Text = "Eliminar";
+            this.btnEliminarExamen.UseVisualStyleBackColor = false;
+            this.btnEliminarExamen.Click += new System.EventHandler(this.btnEliminarExamen_Click);
+            // 
+            // btnCancelarExamen
+            // 
+            this.btnCancelarExamen.BackColor = System.Drawing.Color.Gray;
+            this.btnCancelarExamen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnCancelarExamen, BunifuAnimatorNS.DecorationType.None);
+            this.btnCancelarExamen.Enabled = false;
+            this.btnCancelarExamen.FlatAppearance.BorderSize = 0;
+            this.btnCancelarExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelarExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelarExamen.ForeColor = System.Drawing.Color.White;
+            this.btnCancelarExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelarExamen.Location = new System.Drawing.Point(857, 98);
+            this.btnCancelarExamen.Name = "btnCancelarExamen";
+            this.btnCancelarExamen.Size = new System.Drawing.Size(90, 36);
+            this.btnCancelarExamen.TabIndex = 9;
+            this.btnCancelarExamen.Text = "Cancelar";
+            this.btnCancelarExamen.UseVisualStyleBackColor = false;
+            this.btnCancelarExamen.Click += new System.EventHandler(this.btnCancelarExamen_Click);
+            // 
+            // btnEditarExamen
+            // 
+            this.btnEditarExamen.BackColor = System.Drawing.Color.Orange;
+            this.btnEditarExamen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnEditarExamen, BunifuAnimatorNS.DecorationType.None);
+            this.btnEditarExamen.Enabled = false;
+            this.btnEditarExamen.FlatAppearance.BorderSize = 0;
+            this.btnEditarExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditarExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditarExamen.ForeColor = System.Drawing.Color.White;
+            this.btnEditarExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditarExamen.Location = new System.Drawing.Point(665, 100);
+            this.btnEditarExamen.Name = "btnEditarExamen";
+            this.btnEditarExamen.Size = new System.Drawing.Size(90, 36);
+            this.btnEditarExamen.TabIndex = 7;
+            this.btnEditarExamen.Text = "Editar";
+            this.btnEditarExamen.UseVisualStyleBackColor = false;
+            this.btnEditarExamen.Click += new System.EventHandler(this.btnEditarExamen_Click);
+            // 
+            // btnGuardarExamen
+            // 
+            this.btnGuardarExamen.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnGuardarExamen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnGuardarExamen, BunifuAnimatorNS.DecorationType.None);
+            this.btnGuardarExamen.Enabled = false;
+            this.btnGuardarExamen.FlatAppearance.BorderSize = 0;
+            this.btnGuardarExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuardarExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardarExamen.ForeColor = System.Drawing.Color.White;
+            this.btnGuardarExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardarExamen.Location = new System.Drawing.Point(108, 95);
+            this.btnGuardarExamen.Name = "btnGuardarExamen";
+            this.btnGuardarExamen.Size = new System.Drawing.Size(87, 36);
+            this.btnGuardarExamen.TabIndex = 6;
+            this.btnGuardarExamen.Text = "Guardar";
+            this.btnGuardarExamen.UseVisualStyleBackColor = false;
+            this.btnGuardarExamen.Click += new System.EventHandler(this.btnGuardarExamen_Click);
+            // 
+            // btnNuevoExamen
+            // 
+            this.btnNuevoExamen.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.btnNuevoExamen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btnNuevoExamen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.btnNuevoExamen, BunifuAnimatorNS.DecorationType.None);
+            this.btnNuevoExamen.FlatAppearance.BorderSize = 0;
+            this.btnNuevoExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevoExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevoExamen.ForeColor = System.Drawing.Color.White;
+            this.btnNuevoExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevoExamen.Location = new System.Drawing.Point(22, 94);
+            this.btnNuevoExamen.Name = "btnNuevoExamen";
+            this.btnNuevoExamen.Size = new System.Drawing.Size(80, 36);
+            this.btnNuevoExamen.TabIndex = 5;
+            this.btnNuevoExamen.Text = "Nuevo";
+            this.btnNuevoExamen.UseVisualStyleBackColor = false;
+            this.btnNuevoExamen.Click += new System.EventHandler(this.btnNuevoExamen_Click);
+            // 
+            // dataListadoExamen
+            // 
+            this.dataListadoExamen.AllowUserToAddRows = false;
+            this.dataListadoExamen.AllowUserToDeleteRows = false;
+            this.dataListadoExamen.AllowUserToResizeRows = false;
+            this.dataListadoExamen.BackgroundColor = System.Drawing.Color.White;
+            this.dataListadoExamen.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataListadoExamen.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dataListadoExamen.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataListadoExamen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataListadoExamen.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuTransition1.SetDecoration(this.dataListadoExamen, BunifuAnimatorNS.DecorationType.None);
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListadoExamen.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dataListadoExamen.GridColor = System.Drawing.Color.White;
+            this.dataListadoExamen.Location = new System.Drawing.Point(22, 151);
+            this.dataListadoExamen.MultiSelect = false;
+            this.dataListadoExamen.Name = "dataListadoExamen";
+            this.dataListadoExamen.ReadOnly = true;
+            this.dataListadoExamen.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataListadoExamen.RowHeadersVisible = false;
+            this.dataListadoExamen.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataListadoExamen.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.dataListadoExamen.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.dataListadoExamen.RowTemplate.Height = 35;
+            this.dataListadoExamen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataListadoExamen.Size = new System.Drawing.Size(925, 375);
+            this.dataListadoExamen.TabIndex = 19;
+            this.dataListadoExamen.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoExamen_CellClick);
+            this.dataListadoExamen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoExamen_CellContentClick);
+            this.dataListadoExamen.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataListadoExamen_CellMouseDoubleClick);
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
+            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.ForeColor = System.Drawing.Color.Black;
+            this.label21.Location = new System.Drawing.Point(511, 39);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(61, 13);
+            this.label21.TabIndex = 7;
+            this.label21.Text = "Resultado:";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
+            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(397, 41);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(82, 13);
+            this.label15.TabIndex = 7;
+            this.label15.Text = "Fecha Examen:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label14, BunifuAnimatorNS.DecorationType.None);
+            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(270, 41);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(72, 13);
+            this.label14.TabIndex = 7;
+            this.label14.Text = "Nro Examen:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
+            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(21, 39);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(92, 13);
+            this.label13.TabIndex = 7;
+            this.label13.Text = "Tipo de Examen:";
+            this.label13.Click += new System.EventHandler(this.label13_Click);
+            // 
+            // dtpFechaExamen
+            // 
+            this.bunifuTransition1.SetDecoration(this.dtpFechaExamen, BunifuAnimatorNS.DecorationType.None);
+            this.dtpFechaExamen.Enabled = false;
+            this.dtpFechaExamen.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaExamen.Location = new System.Drawing.Point(400, 56);
+            this.dtpFechaExamen.Name = "dtpFechaExamen";
+            this.dtpFechaExamen.Size = new System.Drawing.Size(106, 22);
+            this.dtpFechaExamen.TabIndex = 3;
+            // 
+            // cmbtNroExamen
+            // 
+            this.bunifuTransition1.SetDecoration(this.cmbtNroExamen, BunifuAnimatorNS.DecorationType.None);
+            this.cmbtNroExamen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbtNroExamen.Enabled = false;
+            this.cmbtNroExamen.FormattingEnabled = true;
+            this.cmbtNroExamen.Items.AddRange(new object[] {
+            "1",
+            "2"});
+            this.cmbtNroExamen.Location = new System.Drawing.Point(273, 57);
+            this.cmbtNroExamen.Name = "cmbtNroExamen";
+            this.cmbtNroExamen.Size = new System.Drawing.Size(121, 21);
+            this.cmbtNroExamen.TabIndex = 2;
+            // 
+            // cmbTipoExamen
+            // 
+            this.bunifuTransition1.SetDecoration(this.cmbTipoExamen, BunifuAnimatorNS.DecorationType.None);
+            this.cmbTipoExamen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbTipoExamen.Enabled = false;
+            this.cmbTipoExamen.FormattingEnabled = true;
+            this.cmbTipoExamen.Items.AddRange(new object[] {
+            "SIFILIS",
+            "VIH",
+            "ORINA",
+            "HEPATITIS",
+            "HEMOGLOBINA",
+            "GLUCOSA(mg/dl)",
+            "PROTEINA"});
+            this.cmbTipoExamen.Location = new System.Drawing.Point(22, 57);
+            this.cmbTipoExamen.Name = "cmbTipoExamen";
+            this.cmbTipoExamen.Size = new System.Drawing.Size(245, 21);
+            this.cmbTipoExamen.TabIndex = 1;
+            this.cmbTipoExamen.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
+            this.cmbTipoExamen.SelectionChangeCommitted += new System.EventHandler(this.cmbTipoExamen_SelectionChangeCommitted);
+            // 
+            // label11
+            // 
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.bunifuTransition1.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
+            this.label11.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(0, 0);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(953, 25);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "EXAMENES";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // tabPage3
             // 
@@ -1582,7 +1947,7 @@
             this.btnEliminarAcidoFolico.Location = new System.Drawing.Point(723, 147);
             this.btnEliminarAcidoFolico.Name = "btnEliminarAcidoFolico";
             this.btnEliminarAcidoFolico.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarAcidoFolico.TabIndex = 21;
+            this.btnEliminarAcidoFolico.TabIndex = 6;
             this.btnEliminarAcidoFolico.Text = "Eliminar";
             this.btnEliminarAcidoFolico.UseVisualStyleBackColor = false;
             this.btnEliminarAcidoFolico.Click += new System.EventHandler(this.btnEliminarAcidoFolico_Click);
@@ -1601,7 +1966,7 @@
             this.btnCancelarAcidoFolico.Location = new System.Drawing.Point(819, 146);
             this.btnCancelarAcidoFolico.Name = "btnCancelarAcidoFolico";
             this.btnCancelarAcidoFolico.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarAcidoFolico.TabIndex = 22;
+            this.btnCancelarAcidoFolico.TabIndex = 7;
             this.btnCancelarAcidoFolico.Text = "Cancelar";
             this.btnCancelarAcidoFolico.UseVisualStyleBackColor = false;
             this.btnCancelarAcidoFolico.Click += new System.EventHandler(this.btnCancelarAcidoFolico_Click);
@@ -1620,7 +1985,7 @@
             this.btnEditarAcidoFolico.Location = new System.Drawing.Point(627, 148);
             this.btnEditarAcidoFolico.Name = "btnEditarAcidoFolico";
             this.btnEditarAcidoFolico.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarAcidoFolico.TabIndex = 23;
+            this.btnEditarAcidoFolico.TabIndex = 5;
             this.btnEditarAcidoFolico.Text = "Editar";
             this.btnEditarAcidoFolico.UseVisualStyleBackColor = false;
             this.btnEditarAcidoFolico.Click += new System.EventHandler(this.btnEditarAcidoFolico_Click);
@@ -1639,7 +2004,7 @@
             this.btnGuardarAcidoFolico.Location = new System.Drawing.Point(91, 148);
             this.btnGuardarAcidoFolico.Name = "btnGuardarAcidoFolico";
             this.btnGuardarAcidoFolico.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarAcidoFolico.TabIndex = 24;
+            this.btnGuardarAcidoFolico.TabIndex = 4;
             this.btnGuardarAcidoFolico.Text = "Guardar";
             this.btnGuardarAcidoFolico.UseVisualStyleBackColor = false;
             this.btnGuardarAcidoFolico.Click += new System.EventHandler(this.btnGuardarAcidoFolico_Click);
@@ -1658,7 +2023,7 @@
             this.btnNuevoAcidoFolico.Location = new System.Drawing.Point(5, 147);
             this.btnNuevoAcidoFolico.Name = "btnNuevoAcidoFolico";
             this.btnNuevoAcidoFolico.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoAcidoFolico.TabIndex = 25;
+            this.btnNuevoAcidoFolico.TabIndex = 3;
             this.btnNuevoAcidoFolico.Text = "Nuevo";
             this.btnNuevoAcidoFolico.UseVisualStyleBackColor = false;
             this.btnNuevoAcidoFolico.Click += new System.EventHandler(this.btnNuevoAcidoFolico_Click);
@@ -1675,14 +2040,14 @@
             this.DataListadoAcidoFolico.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataListadoAcidoFolico.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.DataListadoAcidoFolico, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle58.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle58.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle58.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle58.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle58.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle58.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle58.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataListadoAcidoFolico.DefaultCellStyle = dataGridViewCellStyle58;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListadoAcidoFolico.DefaultCellStyle = dataGridViewCellStyle5;
             this.DataListadoAcidoFolico.GridColor = System.Drawing.Color.White;
             this.DataListadoAcidoFolico.Location = new System.Drawing.Point(10, 205);
             this.DataListadoAcidoFolico.MultiSelect = false;
@@ -1799,14 +2164,14 @@
             this.DataListadoSulfatoFerroso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataListadoSulfatoFerroso.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.DataListadoSulfatoFerroso, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle59.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle59.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle59.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle59.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle59.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle59.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle59.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataListadoSulfatoFerroso.DefaultCellStyle = dataGridViewCellStyle59;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListadoSulfatoFerroso.DefaultCellStyle = dataGridViewCellStyle6;
             this.DataListadoSulfatoFerroso.GridColor = System.Drawing.Color.White;
             this.DataListadoSulfatoFerroso.Location = new System.Drawing.Point(10, 202);
             this.DataListadoSulfatoFerroso.MultiSelect = false;
@@ -1839,7 +2204,7 @@
             this.btnEliminarSF.Location = new System.Drawing.Point(722, 139);
             this.btnEliminarSF.Name = "btnEliminarSF";
             this.btnEliminarSF.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarSF.TabIndex = 26;
+            this.btnEliminarSF.TabIndex = 6;
             this.btnEliminarSF.Text = "Eliminar";
             this.btnEliminarSF.UseVisualStyleBackColor = false;
             this.btnEliminarSF.Click += new System.EventHandler(this.btnEliminarSF_Click);
@@ -1858,7 +2223,7 @@
             this.btnCancelarSF.Location = new System.Drawing.Point(818, 138);
             this.btnCancelarSF.Name = "btnCancelarSF";
             this.btnCancelarSF.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarSF.TabIndex = 27;
+            this.btnCancelarSF.TabIndex = 7;
             this.btnCancelarSF.Text = "Cancelar";
             this.btnCancelarSF.UseVisualStyleBackColor = false;
             this.btnCancelarSF.Click += new System.EventHandler(this.btnCancelarSF_Click);
@@ -1877,7 +2242,7 @@
             this.btnEditarSf.Location = new System.Drawing.Point(626, 140);
             this.btnEditarSf.Name = "btnEditarSf";
             this.btnEditarSf.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarSf.TabIndex = 28;
+            this.btnEditarSf.TabIndex = 5;
             this.btnEditarSf.Text = "Editar";
             this.btnEditarSf.UseVisualStyleBackColor = false;
             this.btnEditarSf.Click += new System.EventHandler(this.btnEditarSf_Click);
@@ -1896,7 +2261,7 @@
             this.btnGuardarSF.Location = new System.Drawing.Point(96, 141);
             this.btnGuardarSF.Name = "btnGuardarSF";
             this.btnGuardarSF.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarSF.TabIndex = 29;
+            this.btnGuardarSF.TabIndex = 4;
             this.btnGuardarSF.Text = "Guardar";
             this.btnGuardarSF.UseVisualStyleBackColor = false;
             this.btnGuardarSF.Click += new System.EventHandler(this.btnGuardarSF_Click);
@@ -1915,7 +2280,7 @@
             this.btnNuevoSF.Location = new System.Drawing.Point(10, 140);
             this.btnNuevoSF.Name = "btnNuevoSF";
             this.btnNuevoSF.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoSF.TabIndex = 30;
+            this.btnNuevoSF.TabIndex = 3;
             this.btnNuevoSF.Text = "Nuevo";
             this.btnNuevoSF.UseVisualStyleBackColor = false;
             this.btnNuevoSF.Click += new System.EventHandler(this.button14_Click);
@@ -1952,7 +2317,7 @@
             this.dtpFechaSuplementacion.Location = new System.Drawing.Point(10, 103);
             this.dtpFechaSuplementacion.Name = "dtpFechaSuplementacion";
             this.dtpFechaSuplementacion.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechaSuplementacion.TabIndex = 19;
+            this.dtpFechaSuplementacion.TabIndex = 2;
             // 
             // cmbSuplementacion
             // 
@@ -1970,7 +2335,7 @@
             this.cmbSuplementacion.Location = new System.Drawing.Point(10, 57);
             this.cmbSuplementacion.Name = "cmbSuplementacion";
             this.cmbSuplementacion.Size = new System.Drawing.Size(200, 21);
-            this.cmbSuplementacion.TabIndex = 18;
+            this.cmbSuplementacion.TabIndex = 1;
             // 
             // label45
             // 
@@ -2021,7 +2386,7 @@
             this.btnEliminarCalcio.Location = new System.Drawing.Point(724, 131);
             this.btnEliminarCalcio.Name = "btnEliminarCalcio";
             this.btnEliminarCalcio.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarCalcio.TabIndex = 33;
+            this.btnEliminarCalcio.TabIndex = 6;
             this.btnEliminarCalcio.Text = "Eliminar";
             this.btnEliminarCalcio.UseVisualStyleBackColor = false;
             this.btnEliminarCalcio.Click += new System.EventHandler(this.btnEliminarCalcio_Click);
@@ -2040,7 +2405,7 @@
             this.btnCancelarCalcio.Location = new System.Drawing.Point(820, 130);
             this.btnCancelarCalcio.Name = "btnCancelarCalcio";
             this.btnCancelarCalcio.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarCalcio.TabIndex = 34;
+            this.btnCancelarCalcio.TabIndex = 7;
             this.btnCancelarCalcio.Text = "Cancelar";
             this.btnCancelarCalcio.UseVisualStyleBackColor = false;
             this.btnCancelarCalcio.Click += new System.EventHandler(this.btnCancelarCalcio_Click);
@@ -2059,7 +2424,7 @@
             this.btnEditarCalcio.Location = new System.Drawing.Point(628, 132);
             this.btnEditarCalcio.Name = "btnEditarCalcio";
             this.btnEditarCalcio.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarCalcio.TabIndex = 35;
+            this.btnEditarCalcio.TabIndex = 5;
             this.btnEditarCalcio.Text = "Editar";
             this.btnEditarCalcio.UseVisualStyleBackColor = false;
             this.btnEditarCalcio.Click += new System.EventHandler(this.btnEditarCalcio_Click);
@@ -2078,7 +2443,7 @@
             this.btnGuardarCalcio.Location = new System.Drawing.Point(98, 133);
             this.btnGuardarCalcio.Name = "btnGuardarCalcio";
             this.btnGuardarCalcio.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarCalcio.TabIndex = 36;
+            this.btnGuardarCalcio.TabIndex = 4;
             this.btnGuardarCalcio.Text = "Guardar";
             this.btnGuardarCalcio.UseVisualStyleBackColor = false;
             this.btnGuardarCalcio.Click += new System.EventHandler(this.btnGuardarCalcio_Click);
@@ -2097,7 +2462,7 @@
             this.btnNuevoCalcio.Location = new System.Drawing.Point(12, 132);
             this.btnNuevoCalcio.Name = "btnNuevoCalcio";
             this.btnNuevoCalcio.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoCalcio.TabIndex = 37;
+            this.btnNuevoCalcio.TabIndex = 3;
             this.btnNuevoCalcio.Text = "Nuevo";
             this.btnNuevoCalcio.UseVisualStyleBackColor = false;
             this.btnNuevoCalcio.Click += new System.EventHandler(this.btnNuevoCalcio_Click);
@@ -2114,14 +2479,14 @@
             this.dataListadoCALCIO.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListadoCALCIO.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.dataListadoCALCIO, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle60.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle60.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle60.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle60.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle60.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle60.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle60.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListadoCALCIO.DefaultCellStyle = dataGridViewCellStyle60;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListadoCALCIO.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataListadoCALCIO.GridColor = System.Drawing.Color.White;
             this.dataListadoCALCIO.Location = new System.Drawing.Point(7, 185);
             this.dataListadoCALCIO.MultiSelect = false;
@@ -2218,369 +2583,6 @@
             this.label10.Text = "SUPLEMENTACIÓN";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.cmbResultado);
-            this.tabPage4.Controls.Add(this.TapaExamenes);
-            this.tabPage4.Controls.Add(this.txtResultadoExamen);
-            this.tabPage4.Controls.Add(this.btnEliminarExamen);
-            this.tabPage4.Controls.Add(this.btnCancelarExamen);
-            this.tabPage4.Controls.Add(this.btnEditarExamen);
-            this.tabPage4.Controls.Add(this.btnGuardarExamen);
-            this.tabPage4.Controls.Add(this.btnNuevoExamen);
-            this.tabPage4.Controls.Add(this.dataListadoExamen);
-            this.tabPage4.Controls.Add(this.label21);
-            this.tabPage4.Controls.Add(this.label15);
-            this.tabPage4.Controls.Add(this.label14);
-            this.tabPage4.Controls.Add(this.label13);
-            this.tabPage4.Controls.Add(this.dtpFechaExamen);
-            this.tabPage4.Controls.Add(this.cmbtNroExamen);
-            this.tabPage4.Controls.Add(this.cmbTipoExamen);
-            this.tabPage4.Controls.Add(this.label11);
-            this.bunifuTransition1.SetDecoration(this.tabPage4, BunifuAnimatorNS.DecorationType.None);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(953, 538);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "Examenes";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            this.tabPage4.Click += new System.EventHandler(this.tabPage4_Click);
-            // 
-            // cmbResultado
-            // 
-            this.bunifuTransition1.SetDecoration(this.cmbResultado, BunifuAnimatorNS.DecorationType.None);
-            this.cmbResultado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbResultado.Enabled = false;
-            this.cmbResultado.FormattingEnabled = true;
-            this.cmbResultado.Items.AddRange(new object[] {
-            "REACTIVO",
-            "NO REACTIVO"});
-            this.cmbResultado.Location = new System.Drawing.Point(514, 56);
-            this.cmbResultado.Name = "cmbResultado";
-            this.cmbResultado.Size = new System.Drawing.Size(100, 21);
-            this.cmbResultado.TabIndex = 32;
-            // 
-            // TapaExamenes
-            // 
-            this.TapaExamenes.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("TapaExamenes.BackgroundImage")));
-            this.TapaExamenes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.TapaExamenes.Controls.Add(this.btnVerExamen);
-            this.TapaExamenes.Controls.Add(this.pbExamen);
-            this.TapaExamenes.Controls.Add(this.bunifuSeparator7);
-            this.TapaExamenes.Controls.Add(this.lblMensajeExamen);
-            this.bunifuTransition1.SetDecoration(this.TapaExamenes, BunifuAnimatorNS.DecorationType.None);
-            this.TapaExamenes.GradientBottomLeft = System.Drawing.Color.White;
-            this.TapaExamenes.GradientBottomRight = System.Drawing.Color.White;
-            this.TapaExamenes.GradientTopLeft = System.Drawing.Color.White;
-            this.TapaExamenes.GradientTopRight = System.Drawing.Color.White;
-            this.TapaExamenes.Location = new System.Drawing.Point(0, 216);
-            this.TapaExamenes.Name = "TapaExamenes";
-            this.TapaExamenes.Quality = 10;
-            this.TapaExamenes.Size = new System.Drawing.Size(953, 322);
-            this.TapaExamenes.TabIndex = 31;
-            this.TapaExamenes.Visible = false;
-            // 
-            // btnVerExamen
-            // 
-            this.btnVerExamen.BackColor = System.Drawing.Color.SeaGreen;
-            this.bunifuTransition1.SetDecoration(this.btnVerExamen, BunifuAnimatorNS.DecorationType.None);
-            this.btnVerExamen.FlatAppearance.BorderSize = 0;
-            this.btnVerExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnVerExamen.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVerExamen.ForeColor = System.Drawing.Color.White;
-            this.btnVerExamen.Location = new System.Drawing.Point(400, 336);
-            this.btnVerExamen.Name = "btnVerExamen";
-            this.btnVerExamen.Size = new System.Drawing.Size(143, 34);
-            this.btnVerExamen.TabIndex = 9;
-            this.btnVerExamen.Text = "Ver Registro";
-            this.btnVerExamen.UseVisualStyleBackColor = false;
-            // 
-            // pbExamen
-            // 
-            this.bunifuTransition1.SetDecoration(this.pbExamen, BunifuAnimatorNS.DecorationType.None);
-            this.pbExamen.Image = ((System.Drawing.Image)(resources.GetObject("pbExamen.Image")));
-            this.pbExamen.Location = new System.Drawing.Point(423, 183);
-            this.pbExamen.Name = "pbExamen";
-            this.pbExamen.Size = new System.Drawing.Size(106, 108);
-            this.pbExamen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbExamen.TabIndex = 5;
-            this.pbExamen.TabStop = false;
-            // 
-            // bunifuSeparator7
-            // 
-            this.bunifuSeparator7.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuTransition1.SetDecoration(this.bunifuSeparator7, BunifuAnimatorNS.DecorationType.None);
-            this.bunifuSeparator7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
-            this.bunifuSeparator7.LineThickness = 1;
-            this.bunifuSeparator7.Location = new System.Drawing.Point(157, 329);
-            this.bunifuSeparator7.Name = "bunifuSeparator7";
-            this.bunifuSeparator7.Size = new System.Drawing.Size(639, 1);
-            this.bunifuSeparator7.TabIndex = 4;
-            this.bunifuSeparator7.Transparency = 255;
-            this.bunifuSeparator7.Vertical = false;
-            // 
-            // lblMensajeExamen
-            // 
-            this.lblMensajeExamen.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.lblMensajeExamen, BunifuAnimatorNS.DecorationType.None);
-            this.lblMensajeExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensajeExamen.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblMensajeExamen.Location = new System.Drawing.Point(343, 301);
-            this.lblMensajeExamen.Name = "lblMensajeExamen";
-            this.lblMensajeExamen.Size = new System.Drawing.Size(267, 21);
-            this.lblMensajeExamen.TabIndex = 3;
-            this.lblMensajeExamen.Text = "Selecione un Embarazo para Iniciar!";
-            // 
-            // txtResultadoExamen
-            // 
-            this.bunifuTransition1.SetDecoration(this.txtResultadoExamen, BunifuAnimatorNS.DecorationType.None);
-            this.txtResultadoExamen.Enabled = false;
-            this.txtResultadoExamen.Location = new System.Drawing.Point(514, 56);
-            this.txtResultadoExamen.Name = "txtResultadoExamen";
-            this.txtResultadoExamen.Size = new System.Drawing.Size(100, 22);
-            this.txtResultadoExamen.TabIndex = 4;
-            // 
-            // btnEliminarExamen
-            // 
-            this.btnEliminarExamen.BackColor = System.Drawing.Color.Red;
-            this.btnEliminarExamen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnEliminarExamen, BunifuAnimatorNS.DecorationType.None);
-            this.btnEliminarExamen.Enabled = false;
-            this.btnEliminarExamen.FlatAppearance.BorderSize = 0;
-            this.btnEliminarExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminarExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarExamen.ForeColor = System.Drawing.Color.White;
-            this.btnEliminarExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarExamen.Location = new System.Drawing.Point(761, 99);
-            this.btnEliminarExamen.Name = "btnEliminarExamen";
-            this.btnEliminarExamen.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarExamen.TabIndex = 26;
-            this.btnEliminarExamen.Text = "Eliminar";
-            this.btnEliminarExamen.UseVisualStyleBackColor = false;
-            this.btnEliminarExamen.Click += new System.EventHandler(this.btnEliminarExamen_Click);
-            // 
-            // btnCancelarExamen
-            // 
-            this.btnCancelarExamen.BackColor = System.Drawing.Color.Gray;
-            this.btnCancelarExamen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnCancelarExamen, BunifuAnimatorNS.DecorationType.None);
-            this.btnCancelarExamen.Enabled = false;
-            this.btnCancelarExamen.FlatAppearance.BorderSize = 0;
-            this.btnCancelarExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelarExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelarExamen.ForeColor = System.Drawing.Color.White;
-            this.btnCancelarExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelarExamen.Location = new System.Drawing.Point(857, 98);
-            this.btnCancelarExamen.Name = "btnCancelarExamen";
-            this.btnCancelarExamen.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarExamen.TabIndex = 27;
-            this.btnCancelarExamen.Text = "Cancelar";
-            this.btnCancelarExamen.UseVisualStyleBackColor = false;
-            this.btnCancelarExamen.Click += new System.EventHandler(this.btnCancelarExamen_Click);
-            // 
-            // btnEditarExamen
-            // 
-            this.btnEditarExamen.BackColor = System.Drawing.Color.Orange;
-            this.btnEditarExamen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnEditarExamen, BunifuAnimatorNS.DecorationType.None);
-            this.btnEditarExamen.Enabled = false;
-            this.btnEditarExamen.FlatAppearance.BorderSize = 0;
-            this.btnEditarExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditarExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditarExamen.ForeColor = System.Drawing.Color.White;
-            this.btnEditarExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEditarExamen.Location = new System.Drawing.Point(665, 100);
-            this.btnEditarExamen.Name = "btnEditarExamen";
-            this.btnEditarExamen.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarExamen.TabIndex = 28;
-            this.btnEditarExamen.Text = "Editar";
-            this.btnEditarExamen.UseVisualStyleBackColor = false;
-            this.btnEditarExamen.Click += new System.EventHandler(this.btnEditarExamen_Click);
-            // 
-            // btnGuardarExamen
-            // 
-            this.btnGuardarExamen.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnGuardarExamen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnGuardarExamen, BunifuAnimatorNS.DecorationType.None);
-            this.btnGuardarExamen.Enabled = false;
-            this.btnGuardarExamen.FlatAppearance.BorderSize = 0;
-            this.btnGuardarExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardarExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnGuardarExamen.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnGuardarExamen.Location = new System.Drawing.Point(108, 95);
-            this.btnGuardarExamen.Name = "btnGuardarExamen";
-            this.btnGuardarExamen.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarExamen.TabIndex = 29;
-            this.btnGuardarExamen.Text = "Guardar";
-            this.btnGuardarExamen.UseVisualStyleBackColor = false;
-            this.btnGuardarExamen.Click += new System.EventHandler(this.btnGuardarExamen_Click);
-            // 
-            // btnNuevoExamen
-            // 
-            this.btnNuevoExamen.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.btnNuevoExamen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btnNuevoExamen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.btnNuevoExamen, BunifuAnimatorNS.DecorationType.None);
-            this.btnNuevoExamen.FlatAppearance.BorderSize = 0;
-            this.btnNuevoExamen.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevoExamen.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevoExamen.ForeColor = System.Drawing.Color.White;
-            this.btnNuevoExamen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevoExamen.Location = new System.Drawing.Point(22, 94);
-            this.btnNuevoExamen.Name = "btnNuevoExamen";
-            this.btnNuevoExamen.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoExamen.TabIndex = 30;
-            this.btnNuevoExamen.Text = "Nuevo";
-            this.btnNuevoExamen.UseVisualStyleBackColor = false;
-            this.btnNuevoExamen.Click += new System.EventHandler(this.btnNuevoExamen_Click);
-            // 
-            // dataListadoExamen
-            // 
-            this.dataListadoExamen.AllowUserToAddRows = false;
-            this.dataListadoExamen.AllowUserToDeleteRows = false;
-            this.dataListadoExamen.AllowUserToResizeRows = false;
-            this.dataListadoExamen.BackgroundColor = System.Drawing.Color.White;
-            this.dataListadoExamen.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dataListadoExamen.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dataListadoExamen.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataListadoExamen.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataListadoExamen.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuTransition1.SetDecoration(this.dataListadoExamen, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle61.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle61.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle61.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle61.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle61.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle61.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle61.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListadoExamen.DefaultCellStyle = dataGridViewCellStyle61;
-            this.dataListadoExamen.GridColor = System.Drawing.Color.White;
-            this.dataListadoExamen.Location = new System.Drawing.Point(22, 151);
-            this.dataListadoExamen.MultiSelect = false;
-            this.dataListadoExamen.Name = "dataListadoExamen";
-            this.dataListadoExamen.ReadOnly = true;
-            this.dataListadoExamen.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dataListadoExamen.RowHeadersVisible = false;
-            this.dataListadoExamen.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataListadoExamen.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dataListadoExamen.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.dataListadoExamen.RowTemplate.Height = 35;
-            this.dataListadoExamen.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataListadoExamen.Size = new System.Drawing.Size(925, 375);
-            this.dataListadoExamen.TabIndex = 19;
-            this.dataListadoExamen.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoExamen_CellClick);
-            this.dataListadoExamen.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataListadoExamen_CellContentClick);
-            this.dataListadoExamen.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataListadoExamen_CellMouseDoubleClick);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label21, BunifuAnimatorNS.DecorationType.None);
-            this.label21.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(511, 39);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(61, 13);
-            this.label21.TabIndex = 7;
-            this.label21.Text = "Resultado:";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label15, BunifuAnimatorNS.DecorationType.None);
-            this.label15.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(397, 41);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(82, 13);
-            this.label15.TabIndex = 7;
-            this.label15.Text = "Fecha Examen:";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label14, BunifuAnimatorNS.DecorationType.None);
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(270, 41);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(72, 13);
-            this.label14.TabIndex = 7;
-            this.label14.Text = "Nro Examen:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label13, BunifuAnimatorNS.DecorationType.None);
-            this.label13.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(21, 39);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(92, 13);
-            this.label13.TabIndex = 7;
-            this.label13.Text = "Tipo de Examen:";
-            this.label13.Click += new System.EventHandler(this.label13_Click);
-            // 
-            // dtpFechaExamen
-            // 
-            this.bunifuTransition1.SetDecoration(this.dtpFechaExamen, BunifuAnimatorNS.DecorationType.None);
-            this.dtpFechaExamen.Enabled = false;
-            this.dtpFechaExamen.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFechaExamen.Location = new System.Drawing.Point(400, 56);
-            this.dtpFechaExamen.Name = "dtpFechaExamen";
-            this.dtpFechaExamen.Size = new System.Drawing.Size(106, 22);
-            this.dtpFechaExamen.TabIndex = 3;
-            // 
-            // cmbtNroExamen
-            // 
-            this.bunifuTransition1.SetDecoration(this.cmbtNroExamen, BunifuAnimatorNS.DecorationType.None);
-            this.cmbtNroExamen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbtNroExamen.Enabled = false;
-            this.cmbtNroExamen.FormattingEnabled = true;
-            this.cmbtNroExamen.Items.AddRange(new object[] {
-            "1",
-            "2"});
-            this.cmbtNroExamen.Location = new System.Drawing.Point(273, 57);
-            this.cmbtNroExamen.Name = "cmbtNroExamen";
-            this.cmbtNroExamen.Size = new System.Drawing.Size(121, 21);
-            this.cmbtNroExamen.TabIndex = 2;
-            // 
-            // cmbTipoExamen
-            // 
-            this.bunifuTransition1.SetDecoration(this.cmbTipoExamen, BunifuAnimatorNS.DecorationType.None);
-            this.cmbTipoExamen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTipoExamen.Enabled = false;
-            this.cmbTipoExamen.FormattingEnabled = true;
-            this.cmbTipoExamen.Items.AddRange(new object[] {
-            "SIFILIS",
-            "VIH",
-            "ORINA",
-            "HEPATITIS",
-            "HEMOGLOBINA",
-            "GLUCOSA(mg/dl)",
-            "PROTEINA"});
-            this.cmbTipoExamen.Location = new System.Drawing.Point(22, 57);
-            this.cmbTipoExamen.Name = "cmbTipoExamen";
-            this.cmbTipoExamen.Size = new System.Drawing.Size(245, 21);
-            this.cmbTipoExamen.TabIndex = 1;
-            this.cmbTipoExamen.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
-            this.cmbTipoExamen.SelectionChangeCommitted += new System.EventHandler(this.cmbTipoExamen_SelectionChangeCommitted);
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bunifuTransition1.SetDecoration(this.label11, BunifuAnimatorNS.DecorationType.None);
-            this.label11.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label11.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(0, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(953, 25);
-            this.label11.TabIndex = 3;
-            this.label11.Text = "EXAMENES";
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
             // tabPage5
             // 
             this.tabPage5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -2617,15 +2619,14 @@
             this.TapaEcografia.Controls.Add(this.bunifuSeparator8);
             this.TapaEcografia.Controls.Add(this.lblMensajeEcografia);
             this.bunifuTransition1.SetDecoration(this.TapaEcografia, BunifuAnimatorNS.DecorationType.None);
-            this.TapaEcografia.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TapaEcografia.GradientBottomLeft = System.Drawing.Color.White;
             this.TapaEcografia.GradientBottomRight = System.Drawing.Color.White;
             this.TapaEcografia.GradientTopLeft = System.Drawing.Color.White;
             this.TapaEcografia.GradientTopRight = System.Drawing.Color.White;
-            this.TapaEcografia.Location = new System.Drawing.Point(0, 25);
+            this.TapaEcografia.Location = new System.Drawing.Point(0, 230);
             this.TapaEcografia.Name = "TapaEcografia";
             this.TapaEcografia.Quality = 10;
-            this.TapaEcografia.Size = new System.Drawing.Size(951, 511);
+            this.TapaEcografia.Size = new System.Drawing.Size(944, 306);
             this.TapaEcografia.TabIndex = 37;
             this.TapaEcografia.Visible = false;
             // 
@@ -2694,7 +2695,7 @@
             this.btnCancelarEcografia.Location = new System.Drawing.Point(854, 166);
             this.btnCancelarEcografia.Name = "btnCancelarEcografia";
             this.btnCancelarEcografia.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarEcografia.TabIndex = 32;
+            this.btnCancelarEcografia.TabIndex = 8;
             this.btnCancelarEcografia.Text = "Cancelar";
             this.btnCancelarEcografia.UseVisualStyleBackColor = false;
             this.btnCancelarEcografia.Click += new System.EventHandler(this.btnCancelarEcografia_Click);
@@ -2711,14 +2712,14 @@
             this.dataListadoEcografia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListadoEcografia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.dataListadoEcografia, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle62.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle62.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle62.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle62.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
-            dataGridViewCellStyle62.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle62.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle62.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListadoEcografia.DefaultCellStyle = dataGridViewCellStyle62;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListadoEcografia.DefaultCellStyle = dataGridViewCellStyle8;
             this.dataListadoEcografia.GridColor = System.Drawing.Color.White;
             this.dataListadoEcografia.Location = new System.Drawing.Point(10, 234);
             this.dataListadoEcografia.MultiSelect = false;
@@ -2750,7 +2751,7 @@
             this.btnEliminarEacografia.Location = new System.Drawing.Point(758, 167);
             this.btnEliminarEacografia.Name = "btnEliminarEacografia";
             this.btnEliminarEacografia.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarEacografia.TabIndex = 31;
+            this.btnEliminarEacografia.TabIndex = 7;
             this.btnEliminarEacografia.Text = "Eliminar";
             this.btnEliminarEacografia.UseVisualStyleBackColor = false;
             this.btnEliminarEacografia.Click += new System.EventHandler(this.btnEliminarEacografia_Click);
@@ -2769,7 +2770,7 @@
             this.btnEditarEcografia.Location = new System.Drawing.Point(662, 168);
             this.btnEditarEcografia.Name = "btnEditarEcografia";
             this.btnEditarEcografia.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarEcografia.TabIndex = 33;
+            this.btnEditarEcografia.TabIndex = 6;
             this.btnEditarEcografia.Text = "Editar";
             this.btnEditarEcografia.UseVisualStyleBackColor = false;
             this.btnEditarEcografia.Click += new System.EventHandler(this.btnEditarEcografia_Click);
@@ -2788,7 +2789,7 @@
             this.btnGuardarEcografia.Location = new System.Drawing.Point(96, 168);
             this.btnGuardarEcografia.Name = "btnGuardarEcografia";
             this.btnGuardarEcografia.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarEcografia.TabIndex = 34;
+            this.btnGuardarEcografia.TabIndex = 5;
             this.btnGuardarEcografia.Text = "Guardar";
             this.btnGuardarEcografia.UseVisualStyleBackColor = false;
             this.btnGuardarEcografia.Click += new System.EventHandler(this.btnGuardarEcografia_Click);
@@ -2807,7 +2808,7 @@
             this.btnNuevoEcografia.Location = new System.Drawing.Point(10, 167);
             this.btnNuevoEcografia.Name = "btnNuevoEcografia";
             this.btnNuevoEcografia.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoEcografia.TabIndex = 35;
+            this.btnNuevoEcografia.TabIndex = 4;
             this.btnNuevoEcografia.Text = "Nuevo";
             this.btnNuevoEcografia.UseVisualStyleBackColor = false;
             this.btnNuevoEcografia.Click += new System.EventHandler(this.btnNuevoEcografia_Click);
@@ -2852,7 +2853,7 @@
             this.txtEdadGestEcografia.Location = new System.Drawing.Point(10, 128);
             this.txtEdadGestEcografia.Name = "txtEdadGestEcografia";
             this.txtEdadGestEcografia.Size = new System.Drawing.Size(54, 22);
-            this.txtEdadGestEcografia.TabIndex = 7;
+            this.txtEdadGestEcografia.TabIndex = 3;
             // 
             // dtpFechaEcografia
             // 
@@ -2862,7 +2863,7 @@
             this.dtpFechaEcografia.Location = new System.Drawing.Point(10, 87);
             this.dtpFechaEcografia.Name = "dtpFechaEcografia";
             this.dtpFechaEcografia.Size = new System.Drawing.Size(121, 22);
-            this.dtpFechaEcografia.TabIndex = 6;
+            this.dtpFechaEcografia.TabIndex = 2;
             // 
             // cmbEcografiaNro
             // 
@@ -2872,7 +2873,7 @@
             this.cmbEcografiaNro.Location = new System.Drawing.Point(10, 47);
             this.cmbEcografiaNro.Name = "cmbEcografiaNro";
             this.cmbEcografiaNro.Size = new System.Drawing.Size(121, 21);
-            this.cmbEcografiaNro.TabIndex = 5;
+            this.cmbEcografiaNro.TabIndex = 1;
             // 
             // label12
             // 
@@ -2923,7 +2924,7 @@
             this.txtResultado.Location = new System.Drawing.Point(394, 117);
             this.txtResultado.Name = "txtResultado";
             this.txtResultado.Size = new System.Drawing.Size(171, 22);
-            this.txtResultado.TabIndex = 43;
+            this.txtResultado.TabIndex = 4;
             // 
             // TapaActividades
             // 
@@ -2938,10 +2939,10 @@
             this.TapaActividades.GradientBottomRight = System.Drawing.Color.White;
             this.TapaActividades.GradientTopLeft = System.Drawing.Color.White;
             this.TapaActividades.GradientTopRight = System.Drawing.Color.White;
-            this.TapaActividades.Location = new System.Drawing.Point(3, 31);
+            this.TapaActividades.Location = new System.Drawing.Point(3, 250);
             this.TapaActividades.Name = "TapaActividades";
             this.TapaActividades.Quality = 10;
-            this.TapaActividades.Size = new System.Drawing.Size(945, 502);
+            this.TapaActividades.Size = new System.Drawing.Size(927, 283);
             this.TapaActividades.TabIndex = 42;
             this.TapaActividades.Visible = false;
             // 
@@ -3008,14 +3009,14 @@
             this.dataListadoActividadRealizada.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListadoActividadRealizada.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.dataListadoActividadRealizada, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle63.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle63.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle63.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle63.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
-            dataGridViewCellStyle63.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle63.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle63.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListadoActividadRealizada.DefaultCellStyle = dataGridViewCellStyle63;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListadoActividadRealizada.DefaultCellStyle = dataGridViewCellStyle9;
             this.dataListadoActividadRealizada.GridColor = System.Drawing.Color.White;
             this.dataListadoActividadRealizada.Location = new System.Drawing.Point(9, 215);
             this.dataListadoActividadRealizada.MultiSelect = false;
@@ -3047,7 +3048,7 @@
             this.btnCancelarActividad.Location = new System.Drawing.Point(851, 165);
             this.btnCancelarActividad.Name = "btnCancelarActividad";
             this.btnCancelarActividad.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarActividad.TabIndex = 37;
+            this.btnCancelarActividad.TabIndex = 9;
             this.btnCancelarActividad.Text = "Cancelar";
             this.btnCancelarActividad.UseVisualStyleBackColor = false;
             this.btnCancelarActividad.Click += new System.EventHandler(this.btnCancelarActividad_Click);
@@ -3066,7 +3067,7 @@
             this.btnEliminarActividad.Location = new System.Drawing.Point(755, 166);
             this.btnEliminarActividad.Name = "btnEliminarActividad";
             this.btnEliminarActividad.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarActividad.TabIndex = 36;
+            this.btnEliminarActividad.TabIndex = 8;
             this.btnEliminarActividad.Text = "Eliminar";
             this.btnEliminarActividad.UseVisualStyleBackColor = false;
             this.btnEliminarActividad.Click += new System.EventHandler(this.btnEliminarActividad_Click);
@@ -3085,7 +3086,7 @@
             this.btnEditarActividad.Location = new System.Drawing.Point(659, 166);
             this.btnEditarActividad.Name = "btnEditarActividad";
             this.btnEditarActividad.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarActividad.TabIndex = 38;
+            this.btnEditarActividad.TabIndex = 7;
             this.btnEditarActividad.Text = "Editar";
             this.btnEditarActividad.UseVisualStyleBackColor = false;
             this.btnEditarActividad.Click += new System.EventHandler(this.btnEditarActividad_Click);
@@ -3104,7 +3105,7 @@
             this.btnGuardarActividad.Location = new System.Drawing.Point(102, 165);
             this.btnGuardarActividad.Name = "btnGuardarActividad";
             this.btnGuardarActividad.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarActividad.TabIndex = 39;
+            this.btnGuardarActividad.TabIndex = 6;
             this.btnGuardarActividad.Text = "Guardar";
             this.btnGuardarActividad.UseVisualStyleBackColor = false;
             this.btnGuardarActividad.Click += new System.EventHandler(this.btnGuardarActividad_Click);
@@ -3123,7 +3124,7 @@
             this.btnNuevoActividad.Location = new System.Drawing.Point(16, 164);
             this.btnNuevoActividad.Name = "btnNuevoActividad";
             this.btnNuevoActividad.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoActividad.TabIndex = 40;
+            this.btnNuevoActividad.TabIndex = 5;
             this.btnNuevoActividad.Text = "Nuevo";
             this.btnNuevoActividad.UseVisualStyleBackColor = false;
             this.btnNuevoActividad.Click += new System.EventHandler(this.btnNuevoActividad_Click);
@@ -3150,7 +3151,7 @@
             this.dtpFechaAtencionActividad.Location = new System.Drawing.Point(20, 117);
             this.dtpFechaAtencionActividad.Name = "dtpFechaAtencionActividad";
             this.dtpFechaAtencionActividad.Size = new System.Drawing.Size(368, 22);
-            this.dtpFechaAtencionActividad.TabIndex = 2;
+            this.dtpFechaAtencionActividad.TabIndex = 3;
             // 
             // cmbNroAtencion
             // 
@@ -3165,7 +3166,7 @@
             this.cmbNroAtencion.Location = new System.Drawing.Point(394, 62);
             this.cmbNroAtencion.Name = "cmbNroAtencion";
             this.cmbNroAtencion.Size = new System.Drawing.Size(171, 21);
-            this.cmbNroAtencion.TabIndex = 1;
+            this.cmbNroAtencion.TabIndex = 2;
             // 
             // label33
             // 
@@ -3386,7 +3387,7 @@
             this.btnEliminarCulEmb.Location = new System.Drawing.Point(751, 238);
             this.btnEliminarCulEmb.Name = "btnEliminarCulEmb";
             this.btnEliminarCulEmb.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarCulEmb.TabIndex = 39;
+            this.btnEliminarCulEmb.TabIndex = 11;
             this.btnEliminarCulEmb.Text = "Eliminar";
             this.btnEliminarCulEmb.UseVisualStyleBackColor = false;
             this.btnEliminarCulEmb.Click += new System.EventHandler(this.btnEliminarCulEmb_Click);
@@ -3405,7 +3406,7 @@
             this.btnCancelarCulEmba.Location = new System.Drawing.Point(847, 237);
             this.btnCancelarCulEmba.Name = "btnCancelarCulEmba";
             this.btnCancelarCulEmba.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarCulEmba.TabIndex = 40;
+            this.btnCancelarCulEmba.TabIndex = 12;
             this.btnCancelarCulEmba.Text = "Cancelar";
             this.btnCancelarCulEmba.UseVisualStyleBackColor = false;
             this.btnCancelarCulEmba.Click += new System.EventHandler(this.btnCancelarCulEmba_Click);
@@ -3424,7 +3425,7 @@
             this.btnEditarCulEmb.Location = new System.Drawing.Point(655, 239);
             this.btnEditarCulEmb.Name = "btnEditarCulEmb";
             this.btnEditarCulEmb.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarCulEmb.TabIndex = 41;
+            this.btnEditarCulEmb.TabIndex = 10;
             this.btnEditarCulEmb.Text = "Editar";
             this.btnEditarCulEmb.UseVisualStyleBackColor = false;
             this.btnEditarCulEmb.Click += new System.EventHandler(this.btnEditarCulEmb_Click);
@@ -3443,7 +3444,7 @@
             this.btnGuardarCulEmb.Location = new System.Drawing.Point(96, 238);
             this.btnGuardarCulEmb.Name = "btnGuardarCulEmb";
             this.btnGuardarCulEmb.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarCulEmb.TabIndex = 42;
+            this.btnGuardarCulEmb.TabIndex = 9;
             this.btnGuardarCulEmb.Text = "Guardar";
             this.btnGuardarCulEmb.UseVisualStyleBackColor = false;
             this.btnGuardarCulEmb.Click += new System.EventHandler(this.btnGuardarCulEmb_Click);
@@ -3462,7 +3463,7 @@
             this.btnNuevoCulEmb.Location = new System.Drawing.Point(10, 237);
             this.btnNuevoCulEmb.Name = "btnNuevoCulEmb";
             this.btnNuevoCulEmb.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoCulEmb.TabIndex = 43;
+            this.btnNuevoCulEmb.TabIndex = 8;
             this.btnNuevoCulEmb.Text = "Nuevo";
             this.btnNuevoCulEmb.UseVisualStyleBackColor = false;
             this.btnNuevoCulEmb.Click += new System.EventHandler(this.btnNuevoCulEmb_Click);
@@ -3479,14 +3480,14 @@
             this.dataListadoCulminaGestante.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListadoCulminaGestante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.dataListadoCulminaGestante, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle64.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle64.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle64.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle64.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
-            dataGridViewCellStyle64.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle64.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle64.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListadoCulminaGestante.DefaultCellStyle = dataGridViewCellStyle64;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListadoCulminaGestante.DefaultCellStyle = dataGridViewCellStyle10;
             this.dataListadoCulminaGestante.GridColor = System.Drawing.Color.White;
             this.dataListadoCulminaGestante.Location = new System.Drawing.Point(9, 295);
             this.dataListadoCulminaGestante.MultiSelect = false;
@@ -3512,7 +3513,7 @@
             this.dtpFechaAbortoParto.Location = new System.Drawing.Point(617, 102);
             this.dtpFechaAbortoParto.Name = "dtpFechaAbortoParto";
             this.dtpFechaAbortoParto.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechaAbortoParto.TabIndex = 1;
+            this.dtpFechaAbortoParto.TabIndex = 4;
             // 
             // label27
             // 
@@ -3546,7 +3547,7 @@
             this.dtpFechaCertificado.Location = new System.Drawing.Point(384, 37);
             this.dtpFechaCertificado.Name = "dtpFechaCertificado";
             this.dtpFechaCertificado.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechaCertificado.TabIndex = 1;
+            this.dtpFechaCertificado.TabIndex = 7;
             // 
             // label26
             // 
@@ -3571,7 +3572,7 @@
             this.cmbTipoCertificado.Location = new System.Drawing.Point(12, 37);
             this.cmbTipoCertificado.Name = "cmbTipoCertificado";
             this.cmbTipoCertificado.Size = new System.Drawing.Size(363, 21);
-            this.cmbTipoCertificado.TabIndex = 0;
+            this.cmbTipoCertificado.TabIndex = 6;
             // 
             // label25
             // 
@@ -3591,7 +3592,7 @@
             this.cbCertificadp.Location = new System.Drawing.Point(10, 133);
             this.cbCertificadp.Name = "cbCertificadp";
             this.cbCertificadp.Size = new System.Drawing.Size(146, 17);
-            this.cbCertificadp.TabIndex = 3;
+            this.cbCertificadp.TabIndex = 5;
             this.cbCertificadp.Text = "Certificado Nacido Vivo";
             this.cbCertificadp.UseVisualStyleBackColor = true;
             this.cbCertificadp.CheckedChanged += new System.EventHandler(this.cbCertificadp_CheckedChanged);
@@ -3605,7 +3606,7 @@
             this.txtLugar.Location = new System.Drawing.Point(6, 102);
             this.txtLugar.Name = "txtLugar";
             this.txtLugar.Size = new System.Drawing.Size(605, 22);
-            this.txtLugar.TabIndex = 2;
+            this.txtLugar.TabIndex = 3;
             this.txtLugar.TextChanged += new System.EventHandler(this.txtLugar_TextChanged);
             // 
             // cmbVia
@@ -3621,7 +3622,7 @@
             this.cmbVia.Location = new System.Drawing.Point(391, 56);
             this.cmbVia.Name = "cmbVia";
             this.cmbVia.Size = new System.Drawing.Size(426, 21);
-            this.cmbVia.TabIndex = 1;
+            this.cmbVia.TabIndex = 2;
             // 
             // label24
             // 
@@ -3779,14 +3780,14 @@
             this.DataListadoPuerpera.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataListadoPuerpera.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.DataListadoPuerpera, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle54.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle54.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle54.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
-            dataGridViewCellStyle54.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle54.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle54.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataListadoPuerpera.DefaultCellStyle = dataGridViewCellStyle54;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListadoPuerpera.DefaultCellStyle = dataGridViewCellStyle11;
             this.DataListadoPuerpera.GridColor = System.Drawing.Color.White;
             this.DataListadoPuerpera.Location = new System.Drawing.Point(6, 153);
             this.DataListadoPuerpera.MultiSelect = false;
@@ -3818,7 +3819,7 @@
             this.btnEliminarPuerpera.Location = new System.Drawing.Point(749, 95);
             this.btnEliminarPuerpera.Name = "btnEliminarPuerpera";
             this.btnEliminarPuerpera.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarPuerpera.TabIndex = 44;
+            this.btnEliminarPuerpera.TabIndex = 8;
             this.btnEliminarPuerpera.Text = "Eliminar";
             this.btnEliminarPuerpera.UseVisualStyleBackColor = false;
             this.btnEliminarPuerpera.Click += new System.EventHandler(this.btnEliminarPuerpera_Click);
@@ -3837,7 +3838,7 @@
             this.btnCancelarPuerpera.Location = new System.Drawing.Point(845, 94);
             this.btnCancelarPuerpera.Name = "btnCancelarPuerpera";
             this.btnCancelarPuerpera.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarPuerpera.TabIndex = 45;
+            this.btnCancelarPuerpera.TabIndex = 9;
             this.btnCancelarPuerpera.Text = "Cancelar";
             this.btnCancelarPuerpera.UseVisualStyleBackColor = false;
             this.btnCancelarPuerpera.Click += new System.EventHandler(this.btnCancelarPuerpera_Click);
@@ -3856,7 +3857,7 @@
             this.btnEditarPuerpera.Location = new System.Drawing.Point(653, 96);
             this.btnEditarPuerpera.Name = "btnEditarPuerpera";
             this.btnEditarPuerpera.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarPuerpera.TabIndex = 46;
+            this.btnEditarPuerpera.TabIndex = 7;
             this.btnEditarPuerpera.Text = "Editar";
             this.btnEditarPuerpera.UseVisualStyleBackColor = false;
             this.btnEditarPuerpera.Click += new System.EventHandler(this.btnEditarPuerpera_Click);
@@ -3875,7 +3876,7 @@
             this.btnGuardarPuerpera.Location = new System.Drawing.Point(108, 94);
             this.btnGuardarPuerpera.Name = "btnGuardarPuerpera";
             this.btnGuardarPuerpera.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarPuerpera.TabIndex = 47;
+            this.btnGuardarPuerpera.TabIndex = 6;
             this.btnGuardarPuerpera.Text = "Guardar";
             this.btnGuardarPuerpera.UseVisualStyleBackColor = false;
             this.btnGuardarPuerpera.Click += new System.EventHandler(this.btnGuardarPuerpera_Click);
@@ -3894,7 +3895,7 @@
             this.btnnNuevoPuerpera.Location = new System.Drawing.Point(22, 93);
             this.btnnNuevoPuerpera.Name = "btnnNuevoPuerpera";
             this.btnnNuevoPuerpera.Size = new System.Drawing.Size(80, 36);
-            this.btnnNuevoPuerpera.TabIndex = 48;
+            this.btnnNuevoPuerpera.TabIndex = 5;
             this.btnnNuevoPuerpera.Text = "Nuevo";
             this.btnnNuevoPuerpera.UseVisualStyleBackColor = false;
             this.btnnNuevoPuerpera.Click += new System.EventHandler(this.button10_Click);
@@ -3930,7 +3931,7 @@
             this.dtpFechaAtencionPuerpera.Location = new System.Drawing.Point(161, 54);
             this.dtpFechaAtencionPuerpera.Name = "dtpFechaAtencionPuerpera";
             this.dtpFechaAtencionPuerpera.Size = new System.Drawing.Size(200, 22);
-            this.dtpFechaAtencionPuerpera.TabIndex = 3;
+            this.dtpFechaAtencionPuerpera.TabIndex = 2;
             // 
             // dtpFechaSupPuerpera
             // 
@@ -4125,14 +4126,14 @@
             this.DataListadoPlani.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DataListadoPlani.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.DataListadoPlani, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle55.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle55.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle55.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
-            dataGridViewCellStyle55.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle55.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle55.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataListadoPlani.DefaultCellStyle = dataGridViewCellStyle55;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListadoPlani.DefaultCellStyle = dataGridViewCellStyle12;
             this.DataListadoPlani.GridColor = System.Drawing.Color.White;
             this.DataListadoPlani.Location = new System.Drawing.Point(12, 251);
             this.DataListadoPlani.MultiSelect = false;
@@ -4164,7 +4165,7 @@
             this.btnEliminarPlani.Location = new System.Drawing.Point(749, 204);
             this.btnEliminarPlani.Name = "btnEliminarPlani";
             this.btnEliminarPlani.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarPlani.TabIndex = 43;
+            this.btnEliminarPlani.TabIndex = 7;
             this.btnEliminarPlani.Text = "Eliminar";
             this.btnEliminarPlani.UseVisualStyleBackColor = false;
             this.btnEliminarPlani.Click += new System.EventHandler(this.btnEliminarPlani_Click);
@@ -4183,7 +4184,7 @@
             this.btnCancelarPlani.Location = new System.Drawing.Point(845, 202);
             this.btnCancelarPlani.Name = "btnCancelarPlani";
             this.btnCancelarPlani.Size = new System.Drawing.Size(90, 38);
-            this.btnCancelarPlani.TabIndex = 39;
+            this.btnCancelarPlani.TabIndex = 8;
             this.btnCancelarPlani.Text = "Cancelar";
             this.btnCancelarPlani.UseVisualStyleBackColor = false;
             this.btnCancelarPlani.Click += new System.EventHandler(this.btnCancelarPlani_Click);
@@ -4202,7 +4203,7 @@
             this.btnEditarPlani.Location = new System.Drawing.Point(653, 204);
             this.btnEditarPlani.Name = "btnEditarPlani";
             this.btnEditarPlani.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarPlani.TabIndex = 40;
+            this.btnEditarPlani.TabIndex = 6;
             this.btnEditarPlani.Text = "Editar";
             this.btnEditarPlani.UseVisualStyleBackColor = false;
             this.btnEditarPlani.Click += new System.EventHandler(this.btnEditarPlani_Click);
@@ -4221,7 +4222,7 @@
             this.btnGuardarPlani.Location = new System.Drawing.Point(98, 193);
             this.btnGuardarPlani.Name = "btnGuardarPlani";
             this.btnGuardarPlani.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarPlani.TabIndex = 41;
+            this.btnGuardarPlani.TabIndex = 5;
             this.btnGuardarPlani.Text = "Guardar";
             this.btnGuardarPlani.UseVisualStyleBackColor = false;
             this.btnGuardarPlani.Click += new System.EventHandler(this.btnGuardarPlani_Click);
@@ -4240,7 +4241,7 @@
             this.btnNuevoPlani.Location = new System.Drawing.Point(12, 192);
             this.btnNuevoPlani.Name = "btnNuevoPlani";
             this.btnNuevoPlani.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoPlani.TabIndex = 42;
+            this.btnNuevoPlani.TabIndex = 4;
             this.btnNuevoPlani.Text = "Nuevo";
             this.btnNuevoPlani.UseVisualStyleBackColor = false;
             this.btnNuevoPlani.Click += new System.EventHandler(this.btnNuevoPlani_Click);
@@ -4266,7 +4267,7 @@
             this.cmbMetodo.Location = new System.Drawing.Point(6, 37);
             this.cmbMetodo.Name = "cmbMetodo";
             this.cmbMetodo.Size = new System.Drawing.Size(622, 21);
-            this.cmbMetodo.TabIndex = 2;
+            this.cmbMetodo.TabIndex = 3;
             // 
             // label30
             // 
@@ -4378,15 +4379,14 @@
             this.TapaAdicional.Controls.Add(this.bunifuSeparator13);
             this.TapaAdicional.Controls.Add(this.lblMensajeAdicional);
             this.bunifuTransition1.SetDecoration(this.TapaAdicional, BunifuAnimatorNS.DecorationType.None);
-            this.TapaAdicional.Dock = System.Windows.Forms.DockStyle.Fill;
             this.TapaAdicional.GradientBottomLeft = System.Drawing.Color.White;
             this.TapaAdicional.GradientBottomRight = System.Drawing.Color.White;
             this.TapaAdicional.GradientTopLeft = System.Drawing.Color.White;
             this.TapaAdicional.GradientTopRight = System.Drawing.Color.White;
-            this.TapaAdicional.Location = new System.Drawing.Point(0, 25);
+            this.TapaAdicional.Location = new System.Drawing.Point(0, 277);
             this.TapaAdicional.Name = "TapaAdicional";
             this.TapaAdicional.Quality = 10;
-            this.TapaAdicional.Size = new System.Drawing.Size(951, 511);
+            this.TapaAdicional.Size = new System.Drawing.Size(951, 259);
             this.TapaAdicional.TabIndex = 50;
             this.TapaAdicional.Visible = false;
             // 
@@ -4454,14 +4454,14 @@
             this.dataListadoAdicional.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataListadoAdicional.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.dataListadoAdicional, BunifuAnimatorNS.DecorationType.None);
-            dataGridViewCellStyle65.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle65.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle65.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle65.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
-            dataGridViewCellStyle65.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle65.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle65.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataListadoAdicional.DefaultCellStyle = dataGridViewCellStyle65;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle13.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(164)))), ((int)(((byte)(72)))));
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataListadoAdicional.DefaultCellStyle = dataGridViewCellStyle13;
             this.dataListadoAdicional.GridColor = System.Drawing.Color.White;
             this.dataListadoAdicional.Location = new System.Drawing.Point(14, 300);
             this.dataListadoAdicional.MultiSelect = false;
@@ -4493,7 +4493,7 @@
             this.btnEliminarAdicional.Location = new System.Drawing.Point(751, 235);
             this.btnEliminarAdicional.Name = "btnEliminarAdicional";
             this.btnEliminarAdicional.Size = new System.Drawing.Size(90, 36);
-            this.btnEliminarAdicional.TabIndex = 48;
+            this.btnEliminarAdicional.TabIndex = 7;
             this.btnEliminarAdicional.Text = "Eliminar";
             this.btnEliminarAdicional.UseVisualStyleBackColor = false;
             this.btnEliminarAdicional.Click += new System.EventHandler(this.btnEliminarAdicional_Click);
@@ -4512,7 +4512,7 @@
             this.btnCancelarAdicional.Location = new System.Drawing.Point(847, 234);
             this.btnCancelarAdicional.Name = "btnCancelarAdicional";
             this.btnCancelarAdicional.Size = new System.Drawing.Size(90, 36);
-            this.btnCancelarAdicional.TabIndex = 44;
+            this.btnCancelarAdicional.TabIndex = 8;
             this.btnCancelarAdicional.Text = "Cancelar";
             this.btnCancelarAdicional.UseVisualStyleBackColor = false;
             this.btnCancelarAdicional.Click += new System.EventHandler(this.btnCancelarAdicional_Click);
@@ -4531,7 +4531,7 @@
             this.btnEditarAdicional.Location = new System.Drawing.Point(655, 235);
             this.btnEditarAdicional.Name = "btnEditarAdicional";
             this.btnEditarAdicional.Size = new System.Drawing.Size(90, 36);
-            this.btnEditarAdicional.TabIndex = 45;
+            this.btnEditarAdicional.TabIndex = 6;
             this.btnEditarAdicional.Text = "Editar";
             this.btnEditarAdicional.UseVisualStyleBackColor = false;
             this.btnEditarAdicional.Click += new System.EventHandler(this.btnEditarAdicional_Click);
@@ -4550,7 +4550,7 @@
             this.btnGuardarAdicional.Location = new System.Drawing.Point(100, 234);
             this.btnGuardarAdicional.Name = "btnGuardarAdicional";
             this.btnGuardarAdicional.Size = new System.Drawing.Size(87, 36);
-            this.btnGuardarAdicional.TabIndex = 46;
+            this.btnGuardarAdicional.TabIndex = 5;
             this.btnGuardarAdicional.Text = "Guardar";
             this.btnGuardarAdicional.UseVisualStyleBackColor = false;
             this.btnGuardarAdicional.Click += new System.EventHandler(this.btnGuardarAdicional_Click);
@@ -4569,7 +4569,7 @@
             this.btnNuevoAdicional.Location = new System.Drawing.Point(14, 233);
             this.btnNuevoAdicional.Name = "btnNuevoAdicional";
             this.btnNuevoAdicional.Size = new System.Drawing.Size(80, 36);
-            this.btnNuevoAdicional.TabIndex = 47;
+            this.btnNuevoAdicional.TabIndex = 4;
             this.btnNuevoAdicional.Text = "Nuevo";
             this.btnNuevoAdicional.UseVisualStyleBackColor = false;
             this.btnNuevoAdicional.Click += new System.EventHandler(this.btnNuevoAdicional_Click);
@@ -4596,7 +4596,7 @@
             this.txtTelefono.Location = new System.Drawing.Point(14, 94);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(120, 22);
-            this.txtTelefono.TabIndex = 1;
+            this.txtTelefono.TabIndex = 2;
             // 
             // txtObservacion
             // 
@@ -4607,7 +4607,7 @@
             this.txtObservacion.Multiline = true;
             this.txtObservacion.Name = "txtObservacion";
             this.txtObservacion.Size = new System.Drawing.Size(917, 81);
-            this.txtObservacion.TabIndex = 1;
+            this.txtObservacion.TabIndex = 3;
             // 
             // txtNombreContacto
             // 
@@ -4657,22 +4657,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.VertSlide;
             this.bunifuTransition1.Cursor = null;
-            animation5.AnimateOnlyDifferences = true;
-            animation5.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.BlindCoeff")));
-            animation5.LeafCoeff = 0F;
-            animation5.MaxTime = 1F;
-            animation5.MinTime = 0F;
-            animation5.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicCoeff")));
-            animation5.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation5.MosaicShift")));
-            animation5.MosaicSize = 0;
-            animation5.Padding = new System.Windows.Forms.Padding(0);
-            animation5.RotateCoeff = 0F;
-            animation5.RotateLimit = 0F;
-            animation5.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.ScaleCoeff")));
-            animation5.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation5.SlideCoeff")));
-            animation5.TimeCoeff = 0F;
-            animation5.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation5;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // bunifuElipse1
             // 
@@ -4691,10 +4691,12 @@
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.KeyPreview = true;
             this.Name = "frmEmbarazo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Embarazo";
             this.Load += new System.EventHandler(this.frmEmbarazo_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmEmbarazo_KeyDown);
             this.panel1.ResumeLayout(false);
             this.panelSinGesta.ResumeLayout(false);
             this.panelSinGesta.PerformLayout();
@@ -4705,15 +4707,21 @@
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DataListadoInmunizacion)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             this.TapaControl.ResumeLayout(false);
             this.TapaControl.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAtencion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DataListadoControles)).EndInit();
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DataListadoInmunizacion)).EndInit();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            this.TapaExamenes.ResumeLayout(false);
+            this.TapaExamenes.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbExamen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataListadoExamen)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
@@ -4728,12 +4736,6 @@
             this.tabPage14.ResumeLayout(false);
             this.tabPage14.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataListadoCALCIO)).EndInit();
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.TapaExamenes.ResumeLayout(false);
-            this.TapaExamenes.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbExamen)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataListadoExamen)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             this.TapaEcografia.ResumeLayout(false);

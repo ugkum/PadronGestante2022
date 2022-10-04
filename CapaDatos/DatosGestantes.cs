@@ -6,6 +6,7 @@ using System.Text;
 using System.Data;
 using System.Data.SqlClient;
 using CapaEntidad;
+using System.Diagnostics;
 
 namespace CapaDatos
 {
@@ -26,6 +27,23 @@ namespace CapaDatos
             return dt;
         }
 
+        public string generarCodigo()
+        {
+            Conectar();
+            SqlCommand cmd = new SqlCommand("select nroDoc from documento", Conectar());
+            
+            return (int.Parse(cmd.ExecuteScalar().ToString().Substring(0, 8)) + 1).ToString("00000000");
+
+        }
+
+        public void modificarNroCorrelativo(string nro)
+        {
+            Conectar();
+            string sql = "UPDATE documento SET nroDoc='" + nro + "'";
+            SqlCommand cmd = new SqlCommand(sql, Conectar());
+            cmd.ExecuteNonQuery();
+            Desconectar();
+        }
         public DataTable UltimoRegistro()
         {
             Conectar();

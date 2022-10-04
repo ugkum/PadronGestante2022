@@ -369,8 +369,19 @@ namespace CapaPresentacion
                 return;
             }
 
+            int UltimoId = 0;
+            DataTable ultimoGestaDT = objGesta.UltimoRegistro();
+            if (ultimoGestaDT.Rows.Count > 0)
+            {
+                UltimoId =Convert.ToInt32( ultimoGestaDT.Rows[0][0].ToString());
+            }
+            else
+            {
+                UltimoId = 1;
+            }
             //datos del gestante
             EntidadGestante objEg = new EntidadGestante();
+            objEg.id_gestantes = UltimoId;
             objEg.tipoDoc = cmbTipoDoc.Text;
             objEg.nroDoc = txtNroDocumento.Text;
             objEg.nombre = txtNombre.Text;
@@ -428,7 +439,12 @@ namespace CapaPresentacion
                     objAtencion.registrarAtencionGestante(1,UltimoRegisto, int.Parse(lblNombreIpress.Name), this.txtHistoriaCli.Text, "ACTIVO");
                 }
                
-
+                //actualizar correlativo
+                if(cmbTipoDoc.Text=="SIN DOCUMENTO")
+                {
+                    String nroCorre = objGesta.generarCodigo();
+                    objGesta.modificarNroCorrelativo(nroCorre);
+                }
 
                 MessageBox.Show("Gestante Registrado Safisfactoriamente", "Registro de Gestante", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -785,6 +801,14 @@ namespace CapaPresentacion
         private void txtNombre2_Leave(object sender, EventArgs e)
         {
             txtNombre2.BackColor = Color.White;
+        }
+
+        private void cmbTipoDoc_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if(cmbTipoDoc.Text == "SIN DOCUMENTO")
+            {
+                txtNroDocumento.Text = objGesta.generarCodigo();
+            }
         }
 
         private void txtMaterno_KeyPress(object sender, KeyPressEventArgs e)

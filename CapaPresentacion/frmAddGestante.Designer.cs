@@ -429,11 +429,13 @@
             "DNI",
             "CARNET DE EXTRANJERIA",
             "RUC",
-            "PASAPORTE"});
+            "PASAPORTE",
+            "SIN DOCUMENTO"});
             this.cmbTipoDoc.Location = new System.Drawing.Point(123, 64);
             this.cmbTipoDoc.Name = "cmbTipoDoc";
             this.cmbTipoDoc.Size = new System.Drawing.Size(135, 25);
             this.cmbTipoDoc.TabIndex = 1;
+            this.cmbTipoDoc.SelectedIndexChanged += new System.EventHandler(this.cmbTipoDoc_SelectedIndexChanged);
             this.cmbTipoDoc.Enter += new System.EventHandler(this.comboBox1_Enter);
             this.cmbTipoDoc.Leave += new System.EventHandler(this.comboBox1_Leave);
             // 
@@ -951,9 +953,9 @@
             this.panelPregunta.Controls.Add(this.labelNombreGestante);
             this.panelPregunta.Controls.Add(this.panel13);
             this.panelPregunta.Controls.Add(this.label10);
-            this.panelPregunta.Location = new System.Drawing.Point(0, 0);
+            this.panelPregunta.Location = new System.Drawing.Point(406, 0);
             this.panelPregunta.Name = "panelPregunta";
-            this.panelPregunta.Size = new System.Drawing.Size(913, 471);
+            this.panelPregunta.Size = new System.Drawing.Size(507, 278);
             this.panelPregunta.TabIndex = 14;
             this.panelPregunta.Visible = false;
             this.panelPregunta.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPregunta_Paint);
@@ -1210,7 +1212,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(913, 470);
+            this.ClientSize = new System.Drawing.Size(913, 465);
             this.Controls.Add(this.txtNombre2);
             this.Controls.Add(this.panelPregunta);
             this.Controls.Add(this.cmbGrupoSanguineo);

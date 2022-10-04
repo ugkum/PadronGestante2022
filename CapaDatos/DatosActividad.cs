@@ -24,8 +24,29 @@ namespace CapaDatos
             cmd.Parameters.AddWithValue("@fecha_atencion", objAc.fecha_atencion);
             cmd.Parameters.AddWithValue("@id_embarazo", objAc.id_embarazo);
             cmd.Parameters.AddWithValue("@resultado", objAc.resultado);
-            cmd.ExecuteNonQuery();
-            Desconectar();
+            try
+            {
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception)
+            {
+                cmd.Dispose();
+                Desconectar();
+            }
+            finally
+            {
+                try
+                {
+                    Desconectar();
+                }
+                catch (Exception ex)
+                {
+
+                    Console.WriteLine(ex);
+                }
+                
+            }
+            
         }
 
         public void EditarActividad(EntidadActividad objAc)

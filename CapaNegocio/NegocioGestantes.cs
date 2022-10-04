@@ -19,7 +19,14 @@ namespace CapaNegocio
             return objGes.listarGestantes(idIpress, estado, texto);
 
         }
-
+        public string generarCodigo()
+        {
+            return objGes.generarCodigo();
+        }
+        public void modificarNroCorrelativo(string nro)
+        {
+            objGes.modificarNroCorrelativo(nro);
+        }
         public DataSet Imprimir_Atenciones_Gestante_del_Embarazo(int codigo)
         {
             return objGes.Imprimir_Atenciones_Gestante_del_Embarazo(codigo);

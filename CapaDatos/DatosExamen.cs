@@ -31,10 +31,14 @@ namespace CapaDatos
             {
                 cmd.Dispose();
                 Desconectar();
-                
+
             }
-            cmd.Dispose();
-            Desconectar();
+            finally
+            {
+                cmd.Dispose();
+                Desconectar();
+            }
+            
             
         }
 

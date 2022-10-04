@@ -33,8 +33,12 @@ namespace CapaDatos
                 Desconectar();
 
             }
-            cmd.Dispose();
-            Desconectar();
+            finally
+            {
+                cmd.Dispose();
+                Desconectar();
+            }
+           
         }
 
         public void editarVacunas(EntidadVacunas objEVac)
