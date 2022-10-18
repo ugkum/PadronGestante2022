@@ -403,6 +403,7 @@
             this.btnImprimir.Size = new System.Drawing.Size(69, 31);
             this.btnImprimir.TabIndex = 9;
             this.btnImprimir.UseVisualStyleBackColor = false;
+            this.btnImprimir.Visible = false;
             this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
             // 
             // panelSinGesta

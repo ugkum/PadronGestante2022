@@ -1801,16 +1801,22 @@ namespace CapaPresentacion
             {
                 nroExamenes = new List<int>();
                 nroExamenes.Clear();
-                for (int i = 0; i < 2; i++) { nroExamenes.Add(i); }
+                for (int i = 1; i < 3; i++) { nroExamenes.Add(i); }
 
                 for (int i = 0; i < this.dataListadoExamen.Rows.Count; i++)
                 {
                     if (this.dataListadoExamen.Rows[i].Cells[1].Value.ToString() == this.cmbTipoExamen.Text)
                     {
+                        
                         if (this.dataListadoExamen.Rows[i].Cells[2].Value.ToString() == "1") { nroExamenes.Remove(1); }
                         if (this.dataListadoExamen.Rows[i].Cells[2].Value.ToString() == "2") { nroExamenes.Remove(2); }
                     }
 
+                }
+                cmbtNroExamen.Items.Clear();
+                foreach (int item in nroExamenes)
+                {
+                    cmbtNroExamen.Items.Add(item);
                 }
                 if (cmbTipoExamen.Text == "SIFILIS" || cmbTipoExamen.Text == "VIH")
                 {
@@ -1912,7 +1918,7 @@ namespace CapaPresentacion
         }
         void listarExamenesEnCombo()
         {
-
+            
             cmbTipoExamen.Items.Clear();
             cmbTipoExamen.Items.Add("SIFILIS");
             cmbTipoExamen.Items.Add("VIH");
@@ -2040,6 +2046,7 @@ namespace CapaPresentacion
 
         private void btnEditarExamen_Click(object sender, EventArgs e)
         {
+
             esEditarExamen = "SI";
             this.cmbTipoExamen.Enabled = false;
             this.cmbtNroExamen.Enabled = false;
@@ -2057,6 +2064,7 @@ namespace CapaPresentacion
         {
             try
             {
+                esEditarExamen = "SI";
                 listarExamenesEnCombo();
                 
                 

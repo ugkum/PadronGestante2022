@@ -43,6 +43,8 @@
             this.rblocal = new System.Windows.Forms.RadioButton();
             this.rbred = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -65,7 +67,6 @@
             this.txtServidor.Name = "txtServidor";
             this.txtServidor.Size = new System.Drawing.Size(180, 29);
             this.txtServidor.TabIndex = 1;
-            this.txtServidor.Text = ".";
             // 
             // label2
             // 
@@ -84,7 +85,6 @@
             this.txtBaseDeDatos.Name = "txtBaseDeDatos";
             this.txtBaseDeDatos.Size = new System.Drawing.Size(401, 29);
             this.txtBaseDeDatos.TabIndex = 1;
-            this.txtBaseDeDatos.Text = "BD_PADRON_GEST";
             // 
             // groupBox1
             // 
@@ -119,7 +119,6 @@
             this.txtContrasena.Name = "txtContrasena";
             this.txtContrasena.Size = new System.Drawing.Size(112, 29);
             this.txtContrasena.TabIndex = 1;
-            this.txtContrasena.Text = "sa123";
             this.txtContrasena.UseSystemPasswordChar = true;
             // 
             // label4
@@ -139,7 +138,6 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(180, 29);
             this.txtUsuario.TabIndex = 1;
-            this.txtUsuario.Text = "sa";
             // 
             // label3
             // 
@@ -155,9 +153,9 @@
             // 
             this.btnConectar.Image = global::CapaPresentacion.Properties.Resources.exportar;
             this.btnConectar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConectar.Location = new System.Drawing.Point(13, 235);
+            this.btnConectar.Location = new System.Drawing.Point(413, 235);
             this.btnConectar.Name = "btnConectar";
-            this.btnConectar.Size = new System.Drawing.Size(140, 44);
+            this.btnConectar.Size = new System.Drawing.Size(105, 44);
             this.btnConectar.TabIndex = 4;
             this.btnConectar.Text = "CONECTAR";
             this.btnConectar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -166,9 +164,9 @@
             // 
             // btnCancelar
             // 
-            this.btnCancelar.Location = new System.Drawing.Point(159, 235);
+            this.btnCancelar.Location = new System.Drawing.Point(524, 235);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(175, 44);
+            this.btnCancelar.Size = new System.Drawing.Size(105, 44);
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
@@ -207,11 +205,33 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Elige Tipo de Conexion :";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(12, 245);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(89, 34);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Guardar Conexion";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(107, 245);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(78, 34);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Abrir Conexion";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // frmConexionConfigurado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 291);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnConectar);
@@ -221,6 +241,7 @@
             this.Name = "frmConexionConfigurado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Configuracion de la Conexion Servidor Local";
+            this.Load += new System.EventHandler(this.frmConexionConfigurado_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -248,5 +269,7 @@
         private System.Windows.Forms.RadioButton rblocal;
         private System.Windows.Forms.RadioButton rbred;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

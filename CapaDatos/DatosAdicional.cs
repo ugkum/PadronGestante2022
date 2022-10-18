@@ -12,6 +12,52 @@ namespace CapaDatos
     public class DatosAdicional:DatosConexion
     {
 
+
+        //limpiaando base de datos
+        public bool LimpiarGestante()
+        {
+            Conectar();
+            string sql = "truncate table gestante " +
+                "truncate table atencion " +
+                "truncate table detalleUbicacion " +
+                "truncate table adicional " +
+                "truncate table embarazo " +
+                "truncate table actividad " +
+                "truncate table controles " +
+                "truncate table ecografia " +
+                "truncate table examenes " +
+                "truncate table formula_obstetrica " +
+                "truncate table vacunas " +
+                "truncate table suplementacion " +
+                "truncate table panificacion_familiar " +
+                "truncate table puerperio ";
+            SqlCommand cmd = new SqlCommand(sql, Conectar());
+            
+            cmd.CommandTimeout = 0;
+            try
+            {
+               int res = cmd.ExecuteNonQuery();
+                if(res>0)
+                {
+                    return true;
+                }
+              
+                    return false;
+                
+            }
+            catch (Exception)
+            {
+               
+                cmd.Dispose();
+                return false;
+            }
+            finally
+            {
+                Desconectar();
+            }
+           
+        }
+
         public DataTable listarAdicionalGestante(int idGestante)
         {
             Conectar();

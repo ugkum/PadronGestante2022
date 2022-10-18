@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Data.SqlClient;
+using System.Globalization;
 
 namespace CapaDatos
 {
@@ -11,16 +12,32 @@ namespace CapaDatos
 
         SqlConnection con;
 
+       public static string servidor;
+       public static string basedatos; 
+       public static string usua;
+       public static string pass;
+        
 
         public SqlConnection Conectar()
         {
             try
             {
-                //1: Conexion Local
-                //con = new SqlConnection(@"SERVER=DESKTOP-ICB9S84;DATABASE=BD_PADRON_GEST;User=sa;Password=sa123");
-                //2: Conexion red Local
-                con = new SqlConnection(@"SERVER=UTIE\UTIE\,49500;DATABASE=BD_PADRON_GEST;User=sa;Password=root");
+                if(usua=="" && pass == "")
+                {
+                    //conexion sin usuario
+                    con = new SqlConnection(@"SERVER=" + servidor + ";DATABASE=" + basedatos + ";Integrated Security=SSPI");
+                    Console.WriteLine("Conexion sin usuario");
+                }
+                else 
+                {
+                    //conexion con usuario
+                    con = new SqlConnection(@"SERVER=" + servidor + ";DATABASE=" + basedatos + ";User=" + usua + ";Password=" + pass + "");
+                    Console.WriteLine("Conexion con usuario");
+                }
+                //cadena conexion red
+                //con = new SqlConnection(@"SERVER=UTIE\UTIE\,49500;DATABASE=BD_PADRON_GEST;User=sa;Password=root");
                 con.Open();
+                Console.WriteLine("Conexion Exitosa");
             }
             catch (Exception)
             {

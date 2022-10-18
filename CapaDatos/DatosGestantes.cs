@@ -55,11 +55,12 @@ namespace CapaDatos
             return dt;
         }
 
-        public DataTable ListarNotificacionControlesGestante()
+        public DataTable ListarNotificacionControlesGestante(int idEss)
         {
             Conectar();
             SqlDataAdapter da = new SqlDataAdapter("sp_listar_controles_notificados", Conectar());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.AddWithValue("@idEs", idEss);
             DataTable dt = new DataTable();
             da.Fill(dt);
             Desconectar();

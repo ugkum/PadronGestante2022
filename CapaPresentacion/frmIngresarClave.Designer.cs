@@ -32,11 +32,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmIngresarClave));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.bunifuSeparator1 = new Bunifu.Framework.UI.BunifuSeparator();
             this.label2 = new System.Windows.Forms.Label();
             this.txtClave = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -54,7 +54,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(711, 65);
+            this.panel1.Size = new System.Drawing.Size(464, 65);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -68,12 +68,23 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(93, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(135, 17);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Codigo de Producto:";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(365, 9);
+            this.label1.Location = new System.Drawing.Point(92, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(334, 30);
             this.label1.TabIndex = 0;
@@ -82,11 +93,11 @@
             // bunifuSeparator1
             // 
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuSeparator1.LineColor = System.Drawing.Color.DimGray;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(34, 83);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(37, 186);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(639, 10);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(389, 10);
             this.bunifuSeparator1.TabIndex = 1;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -97,28 +108,18 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(40, 100);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(254, 21);
+            this.label2.Size = new System.Drawing.Size(366, 21);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Codigo de Registro de SPN-RSSC";
+            this.label2.Text = "Codigo de Registro de Sistema Padron Gestante:";
             // 
             // txtClave
             // 
+            this.txtClave.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
             this.txtClave.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtClave.Location = new System.Drawing.Point(38, 124);
             this.txtClave.Name = "txtClave";
-            this.txtClave.Size = new System.Drawing.Size(635, 46);
+            this.txtClave.Size = new System.Drawing.Size(388, 46);
             this.txtClave.TabIndex = 3;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(366, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(135, 17);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Codigo de Producto:";
             // 
             // bunifuElipse1
             // 
@@ -135,9 +136,9 @@
             this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(461, 212);
+            this.button1.Location = new System.Drawing.Point(315, 202);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(103, 63);
+            this.button1.Size = new System.Drawing.Size(49, 40);
             this.button1.TabIndex = 4;
             this.toolTip1.SetToolTip(this.button1, "Cancelar Activación");
             this.button1.UseVisualStyleBackColor = true;
@@ -153,9 +154,9 @@
             this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(570, 212);
+            this.button2.Location = new System.Drawing.Point(370, 202);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 63);
+            this.button2.Size = new System.Drawing.Size(56, 40);
             this.button2.TabIndex = 4;
             this.toolTip1.SetToolTip(this.button2, "Activar Sistema");
             this.button2.UseVisualStyleBackColor = true;
@@ -171,7 +172,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(711, 298);
+            this.ClientSize = new System.Drawing.Size(464, 254);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtClave);

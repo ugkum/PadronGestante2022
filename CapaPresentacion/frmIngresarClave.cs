@@ -19,22 +19,29 @@ namespace CapaPresentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.Tag = "";
+            Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             if (txtClave.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Ingrese clave");
+                MessageBox.Show("Ingrese clave","Clave de activacion",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                return;
+            }
+            if (Properties.Settings.Default.ProductoRegistrado == true)
+            {
+                MessageBox.Show("Producto Activo", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
 
             if (txtClave.Text == Properties.Settings.Default.Serial)
             {
-                MessageBox.Show("Producto registrado con exito");
+                
+                MessageBox.Show("Producto registrado con exito","Activado",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 Properties.Settings.Default.ProductoRegistrado = true;
-                Properties.Settings.Default.FechaCaducidad = DateTime.Now.AddSeconds(10);
+                Properties.Settings.Default.FechaCaducidad = DateTime.Now.AddMonths(3);
                 Properties.Settings.Default.Save();
                 this.Tag = "A";
                     
@@ -42,7 +49,7 @@ namespace CapaPresentacion
             }
             else
             {
-                MessageBox.Show("Clave invalida");
+                MessageBox.Show("Clave invalida","Informacion",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
             
         }

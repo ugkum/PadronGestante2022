@@ -86,20 +86,23 @@ namespace CapaPresentacion
             DataTable dt = objEmbarao.Listar_todos_Gestante_Activos();
             if (dt.Rows.Count > 0)
             {
-                for(int i = 0; i < dt.Rows.Count; i++)
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
                     DataListado.Rows.Add(
                     dt.Rows[i][0].ToString(),
                      dt.Rows[i][1].ToString(),
-                     DateTime.Parse(dt.Rows[i][2].ToString()).ToShortDateString(),
+                     dt.Rows[i][2].ToString(),
                        dt.Rows[i][3].ToString(),
-                       DateTime.Parse( dt.Rows[i][4].ToString()).ToShortDateString(),
-                        DateTime.Parse( dt.Rows[i][5].ToString()).ToShortDateString(),
+                      dt.Rows[i][4].ToString(),
+                       dt.Rows[i][5].ToString(),
                           dt.Rows[i][6].ToString(),
                            dt.Rows[i][7].ToString()
-                           
-                           
-                    ); 
+
+
+                );
+                    DataListado.Columns[2].DefaultCellStyle.Format = "dd/MM/yyyy";
+                    DataListado.Columns[4].DefaultCellStyle.Format = "dd/MM/yyyy";
+                    DataListado.Columns[5].DefaultCellStyle.Format = "dd/MM/yyyy";
                 }
 
                 //formato columnas
@@ -145,46 +148,46 @@ namespace CapaPresentacion
         }
 
 
-        void listarControlesNorifiacion()
-        {
-            DataTable dt = objGesta.ListarNotificacionControlesGestante();
-            if (dt.Rows.Count > 0)
-            {
+        //void listarControlesNorifiacion()
+        //{
+        //    DataTable dt = objGesta.ListarNotificacionControlesGestante();
+        //    if (dt.Rows.Count > 0)
+        //    {
 
-                dataGridView1.DataSource = dt;
+        //        dataGridView1.DataSource = dt;
 
-                dataGridView1.Columns[2].Visible = false;
-                dataGridView1.Columns[5].Visible = false;
-                dataGridView1.Columns[6].Visible = false;
+        //        dataGridView1.Columns[2].Visible = false;
+        //        dataGridView1.Columns[5].Visible = false;
+        //        dataGridView1.Columns[6].Visible = false;
 
-                dataGridView1.Columns[0].Width = 150;
-                dataGridView1.Columns[1].Width = 250;
-                dataGridView1.Columns[3].Width = 100;
-                dataGridView1.Columns[4].Width = 150;
-                dataGridView1.Columns[7].Width = 200;
-                dataGridView1.Columns[8].Width = 200;
+        //        dataGridView1.Columns[0].Width = 150;
+        //        dataGridView1.Columns[1].Width = 250;
+        //        dataGridView1.Columns[3].Width = 100;
+        //        dataGridView1.Columns[4].Width = 150;
+        //        dataGridView1.Columns[7].Width = 200;
+        //        dataGridView1.Columns[8].Width = 200;
 
-                this.DataListado.EnableHeadersVisualStyles = false;
+        //        this.DataListado.EnableHeadersVisualStyles = false;
 
-                DataGridViewCellStyle stiloCabesa = new DataGridViewCellStyle();
+        //        DataGridViewCellStyle stiloCabesa = new DataGridViewCellStyle();
 
 
-                stiloCabesa.BackColor = Color.White;
-                stiloCabesa.ForeColor = Color.Black;
-                stiloCabesa.Font = new Font("Segoe UI", 10, FontStyle.Regular | FontStyle.Bold);
+        //        stiloCabesa.BackColor = Color.White;
+        //        stiloCabesa.ForeColor = Color.Black;
+        //        stiloCabesa.Font = new Font("Segoe UI", 10, FontStyle.Regular | FontStyle.Bold);
 
-                this.dataGridView1.ColumnHeadersDefaultCellStyle = stiloCabesa;
-            }
-        }
+        //        this.dataGridView1.ColumnHeadersDefaultCellStyle = stiloCabesa;
+        //    }
+        //}
                     private void frmReporteGeneral_Load(object sender, EventArgs e)
                     {
                         graficar();
-                        listarEmbarazos();
-                        cargarResumenGeneralReporte();
-                        listarControlesNorifiacion();
-            cargarUbicacionIpress();
+            listarEmbarazos();
+            cargarResumenGeneralReporte();
             
-                    }
+            cargarUbicacionIpress();
+
+        }
 
         void cargarUbicacionIpress()
         {
@@ -205,6 +208,7 @@ namespace CapaPresentacion
                 cmbEss.DataSource= dt;
                 cmbEss.DisplayMember = "Nombre_Establecimiento";
                 cmbEss.ValueMember = "Id_Establecimiento";
+                cmbEss.SelectedIndex = 1;
             }
         }
         private void bunifuCustomLabel10_Click(object sender, EventArgs e)
@@ -252,6 +256,27 @@ namespace CapaPresentacion
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void cmbEss_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.DataSource = objGesta.ListarNotificacionControlesGestante(int.Parse(cmbEss.SelectedValue.ToString()));
+                dataGridView1.Columns[0].Width = 200;
+                dataGridView1.Columns[1].Width = 200;
+                dataGridView1.Columns[2].Visible = false;
+                dataGridView1.Columns[3].Width = 150;
+                dataGridView1.Columns[4].Width = 150;
+                dataGridView1.Columns[5].Visible = false;
+                dataGridView1.Columns[6].Width = 100;
+                dataGridView1.Columns[7].Width = 100;
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Ocurrio un error al mostrar");
+                
+            }
         }
     }
 }

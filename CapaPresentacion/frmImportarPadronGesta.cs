@@ -111,6 +111,30 @@ namespace CapaPresentacion
         int idEmbarazo = 1;
         private void btnImportar_Click(object sender, EventArgs e)
         {
+            //obtener el ultimo ID DE GESTANTE
+            NegocioGestantes objGesta = new NegocioGestantes();
+            DataTable dt = objGesta.UltimoRegistro();
+            if (dt.Rows.Count > 0)
+            {
+                idGestante = int.Parse(dt.Rows[0][0].ToString());
+            }
+            //id ultimo atencion
+            NegocioAtencionPaciente objAtencion = new NegocioAtencionPaciente();
+            DataTable dtUltimoAtencion = objAtencion.ObtenerUltimoRegistroAtencion();
+            if (dtUltimoAtencion.Rows.Count > 0)
+            {
+                idAtencion = Convert.ToInt32(dtUltimoAtencion.Rows[0][0].ToString()) + 1;
+            }
+
+            //id ultimo embarazo
+            NegocioEmbarazo objEmbarazo = new NegocioEmbarazo();
+            DataTable dstultimoEm = objEmbarazo.ultimoEmbarazo();
+            if (dstultimoEm.Rows.Count > 0)
+            {
+                idEmbarazo = Convert.ToInt32(dstultimoEm.Rows[0][0].ToString()) + 1;
+            }
+            /*------------------------------------------------------------------------------------*/
+
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
             {
                 idGestante=idGestante+1;
@@ -126,7 +150,7 @@ namespace CapaPresentacion
               
                 //1: datos gestante
                 EntidadGestante objGestante = new EntidadGestante();
-                NegocioGestantes objGesta = new NegocioGestantes();
+               
                 objGestante.id_gestantes = idGestante;
                 if (dataGridView1.Rows[i].Cells[7].Value.ToString() == "") { objGestante.tipoDoc = ""; } else { objGestante.tipoDoc = dataGridView1.Rows[i].Cells[7].Value.ToString(); }
                 if (dataGridView1.Rows[i].Cells[8].Value.ToString() == "") { objGestante.nroDoc = ""; } else { objGestante.nroDoc = dataGridView1.Rows[i].Cells[8].Value.ToString(); }
@@ -168,7 +192,7 @@ namespace CapaPresentacion
                 objUbicacion.RegistrarUbicacion_procedure(departamento,provincia,distrito,centro_poblado,direccion_actual,objGestante.id_gestantes);//registrmos detalle ubicacion de la gestabte
 
                 //4: Datos de la atencion
-                NegocioAtencionPaciente objAtencion = new NegocioAtencionPaciente();
+                
                 string HistoriaClinica;
                 if (dataGridView1.Rows[i].Cells[0].Value.ToString() == "") { HistoriaClinica = ""; } else {HistoriaClinica= dataGridView1.Rows[i].Cells[0].Value.ToString(); }
                 string estadoAtencion = "ACTIVO";
@@ -177,7 +201,7 @@ namespace CapaPresentacion
 
                 //5: crear embarazo
                 EntidadEmbarazo objEm = new EntidadEmbarazo();
-                NegocioEmbarazo objEmbarazo = new NegocioEmbarazo();
+               
                 idEmbarazo+=1;
                 objEm.id_embaazo=idEmbarazo;
                 if (dataGridView1.Rows[i].Cells[25].Value.ToString() == "") { objEm.fecha_ultima_regla = DateTime.Now; } else { objEm.fecha_ultima_regla =DateTime.Parse( dataGridView1.Rows[i].Cells[25].Value.ToString()); }

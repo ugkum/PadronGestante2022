@@ -31,9 +31,9 @@ namespace CapaNegocio
         {
             return objGes.Imprimir_Atenciones_Gestante_del_Embarazo(codigo);
         }
-        public DataTable ListarNotificacionControlesGestante()
+        public DataTable ListarNotificacionControlesGestante(int idEss)
         {
-            return objGes.ListarNotificacionControlesGestante();
+            return objGes.ListarNotificacionControlesGestante(idEss);
         }
         public DataTable UltimoRegistro()
         {

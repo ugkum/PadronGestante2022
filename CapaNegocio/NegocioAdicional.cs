@@ -13,6 +13,10 @@ namespace CapaNegocio
     {
         DatosAdicional objAdicional = new DatosAdicional();
 
+        public bool LimpiarGestante()
+        {
+           return objAdicional.LimpiarGestante();
+        }
         public DataTable listarAdicionalGestante(int idGestante)
         {
             return objAdicional.listarAdicionalGestante(idGestante);

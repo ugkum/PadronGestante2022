@@ -57,6 +57,7 @@
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblFalta = new System.Windows.Forms.Label();
             this.lblFechaCaducidad = new System.Windows.Forms.Label();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.lblNotificacion = new System.Windows.Forms.Label();
@@ -75,6 +76,9 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verMasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.configurarConexionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.activarProductoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.limpiarBDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cerrarSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rbActivo = new System.Windows.Forms.RadioButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -155,7 +159,7 @@
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(0, 58);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(846, 446);
+            this.panel5.Size = new System.Drawing.Size(824, 446);
             this.panel5.TabIndex = 3;
             // 
             // panel7
@@ -165,7 +169,7 @@
             this.panel7.BackColor = System.Drawing.Color.LightCoral;
             this.panel7.Location = new System.Drawing.Point(14, 373);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(828, 1);
+            this.panel7.Size = new System.Drawing.Size(806, 1);
             this.panel7.TabIndex = 2;
             // 
             // pictureBox3
@@ -187,7 +191,7 @@
             this.lblMensajeBien.ForeColor = System.Drawing.Color.LightCoral;
             this.lblMensajeBien.Location = new System.Drawing.Point(11, 298);
             this.lblMensajeBien.Name = "lblMensajeBien";
-            this.lblMensajeBien.Size = new System.Drawing.Size(834, 72);
+            this.lblMensajeBien.Size = new System.Drawing.Size(812, 72);
             this.lblMensajeBien.TabIndex = 0;
             this.lblMensajeBien.Text = "Seleccione un Establecimiento";
             this.lblMensajeBien.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -237,7 +241,7 @@
             this.DataListado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.DataListado.RowTemplate.Height = 48;
             this.DataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataListado.Size = new System.Drawing.Size(846, 446);
+            this.DataListado.Size = new System.Drawing.Size(824, 446);
             this.DataListado.TabIndex = 4;
             this.DataListado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListado_CellClick);
             this.DataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListado_CellContentClick);
@@ -332,9 +336,9 @@
             this.panel4.Controls.Add(this.flowLayoutPanel2);
             this.panel4.Controls.Add(this.pictureBox1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(846, 58);
+            this.panel4.Location = new System.Drawing.Point(824, 58);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(175, 446);
+            this.panel4.Size = new System.Drawing.Size(197, 446);
             this.panel4.TabIndex = 2;
             // 
             // flowLayoutPanel2
@@ -344,9 +348,10 @@
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(175, 373);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(197, 373);
             this.flowLayoutPanel2.TabIndex = 1;
             this.flowLayoutPanel2.Visible = false;
+            this.flowLayoutPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.flowLayoutPanel2_Paint);
             // 
             // pictureBox1
             // 
@@ -354,7 +359,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 373);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(175, 73);
+            this.pictureBox1.Size = new System.Drawing.Size(197, 73);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -363,6 +368,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.Controls.Add(this.lblFalta);
             this.panel3.Controls.Add(this.lblFechaCaducidad);
             this.panel3.Controls.Add(this.lblTiempo);
             this.panel3.Controls.Add(this.lblNotificacion);
@@ -379,20 +385,28 @@
             this.panel3.Size = new System.Drawing.Size(1021, 58);
             this.panel3.TabIndex = 1;
             // 
+            // lblFalta
+            // 
+            this.lblFalta.AutoSize = true;
+            this.lblFalta.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFalta.Location = new System.Drawing.Point(16, 29);
+            this.lblFalta.Name = "lblFalta";
+            this.lblFalta.Size = new System.Drawing.Size(0, 21);
+            this.lblFalta.TabIndex = 8;
+            // 
             // lblFechaCaducidad
             // 
             this.lblFechaCaducidad.AutoSize = true;
-            this.lblFechaCaducidad.Location = new System.Drawing.Point(16, 35);
+            this.lblFechaCaducidad.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaCaducidad.Location = new System.Drawing.Point(16, 9);
             this.lblFechaCaducidad.Name = "lblFechaCaducidad";
-            this.lblFechaCaducidad.Size = new System.Drawing.Size(43, 17);
+            this.lblFechaCaducidad.Size = new System.Drawing.Size(0, 13);
             this.lblFechaCaducidad.TabIndex = 7;
-            this.lblFechaCaducidad.Text = "label1";
-            this.lblFechaCaducidad.Visible = false;
             // 
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(16, 8);
+            this.lblTiempo.Location = new System.Drawing.Point(143, 5);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(43, 17);
             this.lblTiempo.TabIndex = 7;
@@ -405,17 +419,18 @@
             this.lblNotificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblNotificacion.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotificacion.ForeColor = System.Drawing.Color.White;
-            this.lblNotificacion.Location = new System.Drawing.Point(906, 5);
+            this.lblNotificacion.Location = new System.Drawing.Point(906, -1);
             this.lblNotificacion.Name = "lblNotificacion";
-            this.lblNotificacion.Size = new System.Drawing.Size(20, 19);
+            this.lblNotificacion.Size = new System.Drawing.Size(30, 29);
             this.lblNotificacion.TabIndex = 6;
+            this.lblNotificacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblNotificacion.Click += new System.EventHandler(this.lblNotificacion_Click);
             // 
             // pictureBox4
             // 
             this.pictureBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(881, 3);
+            this.pictureBox4.Location = new System.Drawing.Point(882, 5);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(45, 49);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -472,6 +487,9 @@
             this.toolStripMenuItem2,
             this.ayudaToolStripMenuItem,
             this.verMasToolStripMenuItem,
+            this.configurarConexionToolStripMenuItem,
+            this.activarProductoToolStripMenuItem,
+            this.limpiarBDToolStripMenuItem,
             this.cerrarSistemaToolStripMenuItem});
             this.menuToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.menuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("menuToolStripMenuItem.Image")));
@@ -551,8 +569,35 @@
             this.verMasToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.verMasToolStripMenuItem.Text = "Ver mas";
             // 
+            // configurarConexionToolStripMenuItem
+            // 
+            this.configurarConexionToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.exportar;
+            this.configurarConexionToolStripMenuItem.Name = "configurarConexionToolStripMenuItem";
+            this.configurarConexionToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
+            this.configurarConexionToolStripMenuItem.Text = "Configurar Conexion";
+            this.configurarConexionToolStripMenuItem.Click += new System.EventHandler(this.configurarConexionToolStripMenuItem_Click);
+            // 
+            // activarProductoToolStripMenuItem
+            // 
+            this.activarProductoToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.no_hay_resultados;
+            this.activarProductoToolStripMenuItem.Name = "activarProductoToolStripMenuItem";
+            this.activarProductoToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
+            this.activarProductoToolStripMenuItem.Text = "Activar Producto";
+            this.activarProductoToolStripMenuItem.Visible = false;
+            this.activarProductoToolStripMenuItem.Click += new System.EventHandler(this.activarProductoToolStripMenuItem_Click);
+            // 
+            // limpiarBDToolStripMenuItem
+            // 
+            this.limpiarBDToolStripMenuItem.Enabled = false;
+            this.limpiarBDToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.importar;
+            this.limpiarBDToolStripMenuItem.Name = "limpiarBDToolStripMenuItem";
+            this.limpiarBDToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
+            this.limpiarBDToolStripMenuItem.Text = "Limpiar BD";
+            this.limpiarBDToolStripMenuItem.Click += new System.EventHandler(this.limpiarBDToolStripMenuItem_Click);
+            // 
             // cerrarSistemaToolStripMenuItem
             // 
+            this.cerrarSistemaToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.boton_x;
             this.cerrarSistemaToolStripMenuItem.Name = "cerrarSistemaToolStripMenuItem";
             this.cerrarSistemaToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
             this.cerrarSistemaToolStripMenuItem.Text = "Cerrar Sistema";
@@ -575,7 +620,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(216, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(230, 16);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(30, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -586,7 +631,7 @@
             // txtBuscar
             // 
             this.txtBuscar.BackColor = System.Drawing.Color.White;
-            this.txtBuscar.Location = new System.Drawing.Point(252, 12);
+            this.txtBuscar.Location = new System.Drawing.Point(266, 16);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(336, 25);
             this.txtBuscar.TabIndex = 1;
@@ -716,6 +761,10 @@
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.Label lblFechaCaducidad;
         private System.Windows.Forms.ToolStripMenuItem importarPadronGestanteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem limpiarBDToolStripMenuItem;
+        private System.Windows.Forms.Label lblFalta;
+        private System.Windows.Forms.ToolStripMenuItem activarProductoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem configurarConexionToolStripMenuItem;
     }
 }
 

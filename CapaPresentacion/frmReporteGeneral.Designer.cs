@@ -64,6 +64,8 @@
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.imagen = new System.Windows.Forms.DataGridViewImageColumn();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbEss = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuGradientPanel5 = new Bunifu.Framework.UI.BunifuGradientPanel();
@@ -74,8 +76,6 @@
             this.lblGestando = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.cmbEss = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -469,6 +469,26 @@
             this.tabPage3.Text = "CONTROLES PROGRAMADOS ";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 6);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(208, 17);
+            this.label1.TabIndex = 7;
+            this.label1.Text = "SELECCIONAR ESTABLECIMIENTO: ";
+            // 
+            // cmbEss
+            // 
+            this.cmbEss.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.cmbEss.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cmbEss.FormattingEnabled = true;
+            this.cmbEss.Location = new System.Drawing.Point(214, 4);
+            this.cmbEss.Name = "cmbEss";
+            this.cmbEss.Size = new System.Drawing.Size(336, 25);
+            this.cmbEss.TabIndex = 6;
+            this.cmbEss.SelectedIndexChanged += new System.EventHandler(this.cmbEss_SelectedIndexChanged);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -620,25 +640,6 @@
             this.bunifuCustomLabel11.Size = new System.Drawing.Size(92, 21);
             this.bunifuCustomLabel11.TabIndex = 0;
             this.bunifuCustomLabel11.Text = "GESTANDO";
-            // 
-            // cmbEss
-            // 
-            this.cmbEss.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.cmbEss.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
-            this.cmbEss.FormattingEnabled = true;
-            this.cmbEss.Location = new System.Drawing.Point(214, 4);
-            this.cmbEss.Name = "cmbEss";
-            this.cmbEss.Size = new System.Drawing.Size(336, 25);
-            this.cmbEss.TabIndex = 6;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 6);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 17);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "SELECCIONAR ESTABLECIMIENTO: ";
             // 
             // frmReporteGeneral
             // 

@@ -137,7 +137,7 @@ namespace CapaPresentacion
 
 
 
-        string idMicro;
+        string idMicro="5151";
         string idMicro2;
         private void boton_click(object sender, EventArgs e){
             try
@@ -186,7 +186,7 @@ namespace CapaPresentacion
             }
 
                 listarPacientesPorEstablecimiento(int.Parse(idMicro));
-
+                listarControlesNorifiacion();
             }
             catch (Exception)
             {
@@ -248,7 +248,7 @@ namespace CapaPresentacion
                 }
 
                 //configuamos tamaño de columnas
-                DataListado.Columns[0].Width = 40;
+                DataListado.Columns[0].Visible = false;
                 DataListado.Columns[0].DefaultCellStyle.Padding = new Padding(7, 5,7, 5);
                 
                 DataListado.Columns[1].Width = 40;
@@ -259,7 +259,7 @@ namespace CapaPresentacion
                 DataListado.Columns[4].Width = 90;
                 DataListado.Columns[4].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 DataListado.Columns[5].Width = 100;
-                DataListado.Columns[6].Width = 300;
+                DataListado.Columns[6].Width = 280;
                 DataListado.Columns[7].Width = 100;
                 DataListado.Columns[7].DefaultCellStyle.Format = "dd/MM/yyyy";
                 DataListado.Columns[8].Width = 80;
@@ -366,16 +366,28 @@ namespace CapaPresentacion
             if (Properties.Settings.Default.ProductoRegistrado == false)
             {
                 panel3.BackColor = Color.IndianRed;
+                panel3.BackColor = Color.White;
 
                 if (Properties.Settings.Default.HaIngresado == false)
                 {
-
-                    timer1.Start();
-                    lblTiempo.Text = DateTime.Now.ToString();
-                    Properties.Settings.Default.FechaCaducidad = DateTime.Now.AddSeconds(10);
-                    Properties.Settings.Default.HaIngresado = true;
-                    lblFechaCaducidad.Text = Properties.Settings.Default.FechaCaducidad.ToString();
-                    Properties.Settings.Default.Save();
+                    if(Properties.Settings.Default.HaIngresado == true)
+                    {
+                        MessageBox.Show("Es la primera vez que ingresa","Sistema de Padron de Gestante",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                        timer1.Start();
+                        lblTiempo.Text = DateTime.Now.ToString();
+                        Properties.Settings.Default.FechaCaducidad = DateTime.Now.AddMinutes(1);
+                        Properties.Settings.Default.HaIngresado = true;
+                        lblFechaCaducidad.Text ="Fecha Caducidad : "+ Properties.Settings.Default.FechaCaducidad.ToString();
+                        Properties.Settings.Default.Save();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No es la primera vez que ingresa", "Sistema de Padron de Gestante", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                        timer1.Start();
+                        lblTiempo.Text = DateTime.Now.ToString();
+                        lblFechaCaducidad.Text = "Fecha Caducidad : " + Properties.Settings.Default.FechaCaducidad.ToString();
+                    }
+                    
                 }
                 else
                 {
@@ -388,16 +400,7 @@ namespace CapaPresentacion
             }
             else
             {
-              
-                panel3.BackColor = Color.White;
-                //MessageBox.Show("Bienvenidos al sistema de Padron de Gestante");
-                
-                    timer1.Start();
-                    lblTiempo.Text = DateTime.Now.ToString();
-                    Properties.Settings.Default.FechaCaducidad = DateTime.Now.AddSeconds(10);
-                    Properties.Settings.Default.HaIngresado = true;
-                    lblFechaCaducidad.Text = Properties.Settings.Default.FechaCaducidad.ToString();
-                    Properties.Settings.Default.Save();
+                MessageBox.Show("BIENVENIDOS A SISTEMA DE PADRON DE GESTANTE","PRODUCTO ACTIVADO",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 
             }
         }
@@ -406,14 +409,18 @@ namespace CapaPresentacion
             
 
                 cargarUbicacionIpress();
-                
-                //cargarMicroredes();
-                //listarControlesNorifiacion();
-            //iniciar_proceso_activacion();
+
+            //cargarMicroredes();
+            listarControlesNorifiacion();
+            iniciar_proceso_activacion();
         }
         public void actualizarTiempo()
         {
             lblTiempo.Text = DateTime.Now.ToString();
+            DateTime fechaIni = DateTime.Parse(lblTiempo.Text);
+            DateTime fechFin = DateTime.Parse(Properties.Settings.Default.FechaCaducidad.ToString());
+            lblFalta.Text = "Falta : " + ( fechFin- fechaIni).ToString();
+            
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -527,7 +534,7 @@ namespace CapaPresentacion
 
                 frmEmbarazo objEmb = new frmEmbarazo();
                 objEmb.lblgestante.Name = DataListado.CurrentRow.Cells[3].Value.ToString();
-                objEmb.lblgestante.Text = "Sra. " +  DataListado.CurrentRow.Cells[6].Value.ToString();
+                objEmb.lblgestante.Text = DataListado.CurrentRow.Cells[6].Value.ToString();
              
                 objMas.Show();
                 objEmb.ShowDialog();
@@ -615,8 +622,12 @@ namespace CapaPresentacion
 
         private void cerrarSistemaToolStripMenuItem_Click_1(object sender, EventArgs e)
         {
-            this.Dispose();
-            Application.Exit();
+         if(MessageBox.Show("¿Estas seguro que quiere cerrar sistema?", "Confirmar", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                this.Dispose();
+                Application.Exit();
+                this.Close();
+            }
         }
 
         private void eportarPadronNomimalToolStripMenuItem_Click(object sender, EventArgs e)
@@ -654,7 +665,11 @@ namespace CapaPresentacion
 
         void listarControlesNorifiacion()
         {
-            DataTable dt = objGestante.ListarNotificacionControlesGestante();
+            if (idMicro.Trim().Length == 0)
+            {
+                idMicro = "5151";
+            }
+            DataTable dt = objGestante.ListarNotificacionControlesGestante(Convert.ToInt32( idMicro));
             if (dt.Rows.Count > 0)
             {
                 int cantn = 0;
@@ -818,6 +833,8 @@ namespace CapaPresentacion
             }
         }
 
+        //producto no activado confirmar salida auto
+        string salida;
         private void timer1_Tick(object sender, EventArgs e)
         {
             actualizarTiempo();
@@ -833,6 +850,10 @@ namespace CapaPresentacion
                 if (obj.Tag.ToString() == "A")
                 {
                     iniciar_proceso_activacion();
+                }else 
+                {
+                    salida = "SI";
+                    this.Close();
                 }
             }
         }
@@ -857,10 +878,17 @@ namespace CapaPresentacion
                 this.Dispose();
                 Application.Exit();
                 e.Cancel = false;
+                
             }
             else
             {
                 e.Cancel = true;
+            }
+            if (salida == "SI")
+            {
+                this.Dispose();
+                Application.Exit();
+                e.Cancel = false;
             }
         }
 
@@ -877,6 +905,47 @@ namespace CapaPresentacion
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void limpiarBDToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NegocioAdicional objAdicional = new NegocioAdicional();
+           if(objAdicional.LimpiarGestante() == true)
+            {
+                MessageBox.Show("La base datos ha sido Limpiado Correctamente","Mensaje",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Ocurrio errore al Limpiar Base de datos","Advertencia",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+        }
+
+        private void activarProductoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmIngresarClave objActivar = new frmIngresarClave();
+            frmMascara objMas = new frmMascara();
+            objMas.Show();
+            objActivar.ShowDialog();
+            
+            objMas.Hide();
+            if (objActivar.Tag .ToString()== "")
+            {
+                iniciar_proceso_activacion();
+            }
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void configurarConexionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConexionConfigurado objConexionConfigurado = new frmConexionConfigurado();
+            frmMascara objm = new frmMascara();
+            objm.Show();
+            objConexionConfigurado.ShowDialog();
+            objm.Hide();
         }
     }
 }

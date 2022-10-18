@@ -60,6 +60,7 @@
     <Compile Include="NegocioSuplementacion.cs" />
     <Compile Include="NegocioVacunas.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PropiedadConexion.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">

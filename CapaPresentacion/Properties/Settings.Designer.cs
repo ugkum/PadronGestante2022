@@ -49,6 +49,7 @@ namespace CapaPresentacion.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("10/10/2022 07:05:00")]
         public global::System.DateTime FechaCaducidad {
             get {
                 return ((global::System.DateTime)(this["FechaCaducidad"]));
@@ -60,7 +61,7 @@ namespace CapaPresentacion.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("ASCD")]
+        [global::System.Configuration.DefaultSettingValueAttribute("1997")]
         public string Serial {
             get {
                 return ((string)(this["Serial"]));
