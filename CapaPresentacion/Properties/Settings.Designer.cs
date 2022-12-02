@@ -49,7 +49,7 @@ namespace CapaPresentacion.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("10/10/2022 07:05:00")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2022-12-31")]
         public global::System.DateTime FechaCaducidad {
             get {
                 return ((global::System.DateTime)(this["FechaCaducidad"]));

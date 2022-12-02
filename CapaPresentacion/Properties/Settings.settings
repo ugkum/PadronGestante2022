@@ -9,7 +9,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="FechaCaducidad" Type="System.DateTime" Scope="User">
-      <Value Profile="(Default)">10/10/2022 07:05:00</Value>
+      <Value Profile="(Default)">2022-12-31</Value>
     </Setting>
     <Setting Name="Serial" Type="System.String" Scope="User">
       <Value Profile="(Default)">1997</Value>

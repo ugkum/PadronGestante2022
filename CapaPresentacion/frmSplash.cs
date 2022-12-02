@@ -31,7 +31,7 @@ namespace CapaPresentacion
             }
             this.Hide();
             timer1.Stop();
-            frmPrincipal objP = new frmPrincipal();
+            frmConexionConfigurado objP = new frmConexionConfigurado();
             objP.Show();
            
         }

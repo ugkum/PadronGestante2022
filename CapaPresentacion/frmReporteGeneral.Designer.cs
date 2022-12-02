@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReporteGeneral));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -76,6 +76,12 @@
             this.lblGestando = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.cmbEESSGesta = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.bunifuGradientPanel1.SuspendLayout();
             this.bunifuGradientPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -225,7 +231,7 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(3, 29);
+            this.pictureBox2.Location = new System.Drawing.Point(3, 25);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(58, 61);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -322,10 +328,10 @@
             // chart1
             // 
             this.chart1.BorderSkin.BackColor = System.Drawing.Color.Salmon;
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            chartArea5.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart1.Legends.Add(legend5);
             this.chart1.Location = new System.Drawing.Point(10, 27);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Berry;
@@ -347,6 +353,8 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.cmbEESSGesta);
+            this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.DataListado);
             this.tabPage2.Location = new System.Drawing.Point(4, 26);
             this.tabPage2.Name = "tabPage2";
@@ -377,17 +385,16 @@
             this.Column8,
             this.imagen});
             this.DataListado.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataListado.DefaultCellStyle = dataGridViewCellStyle1;
-            this.DataListado.Dock = System.Windows.Forms.DockStyle.Fill;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataListado.DefaultCellStyle = dataGridViewCellStyle9;
             this.DataListado.GridColor = System.Drawing.Color.White;
-            this.DataListado.Location = new System.Drawing.Point(3, 3);
+            this.DataListado.Location = new System.Drawing.Point(3, 38);
             this.DataListado.MultiSelect = false;
             this.DataListado.Name = "DataListado";
             this.DataListado.ReadOnly = true;
@@ -398,7 +405,7 @@
             this.DataListado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.DataListado.RowTemplate.Height = 48;
             this.DataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataListado.Size = new System.Drawing.Size(1102, 355);
+            this.DataListado.Size = new System.Drawing.Size(1102, 320);
             this.DataListado.TabIndex = 5;
             // 
             // Column1
@@ -458,6 +465,10 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.label4);
+            this.tabPage3.Controls.Add(this.label6);
+            this.tabPage3.Controls.Add(this.label5);
+            this.tabPage3.Controls.Add(this.label3);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.cmbEss);
             this.tabPage3.Controls.Add(this.dataGridView1);
@@ -472,20 +483,20 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 6);
+            this.label1.Location = new System.Drawing.Point(10, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 17);
+            this.label1.Size = new System.Drawing.Size(122, 17);
             this.label1.TabIndex = 7;
-            this.label1.Text = "SELECCIONAR ESTABLECIMIENTO: ";
+            this.label1.Text = "ESTABLECIMIENTO: ";
             // 
             // cmbEss
             // 
             this.cmbEss.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.cmbEss.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
             this.cmbEss.FormattingEnabled = true;
-            this.cmbEss.Location = new System.Drawing.Point(214, 4);
+            this.cmbEss.Location = new System.Drawing.Point(138, 6);
             this.cmbEss.Name = "cmbEss";
-            this.cmbEss.Size = new System.Drawing.Size(336, 25);
+            this.cmbEss.Size = new System.Drawing.Size(265, 25);
             this.cmbEss.TabIndex = 6;
             this.cmbEss.SelectedIndexChanged += new System.EventHandler(this.cmbEss_SelectedIndexChanged);
             // 
@@ -499,17 +510,19 @@
             this.dataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle10;
+            this.dataGridView1.EnableHeadersVisualStyles = false;
             this.dataGridView1.GridColor = System.Drawing.Color.White;
-            this.dataGridView1.Location = new System.Drawing.Point(3, 39);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 65);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -520,7 +533,7 @@
             this.dataGridView1.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dataGridView1.RowTemplate.Height = 30;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(1102, 319);
+            this.dataGridView1.Size = new System.Drawing.Size(1102, 293);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             this.dataGridView1.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dataGridView1_CellFormatting);
@@ -622,9 +635,9 @@
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(3, 29);
+            this.pictureBox5.Location = new System.Drawing.Point(3, 25);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(58, 61);
+            this.pictureBox5.Size = new System.Drawing.Size(58, 64);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
@@ -640,6 +653,68 @@
             this.bunifuCustomLabel11.Size = new System.Drawing.Size(92, 21);
             this.bunifuCustomLabel11.TabIndex = 0;
             this.bunifuCustomLabel11.Text = "GESTANDO";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(8, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(115, 17);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "ESTABLECIMIENTO";
+            // 
+            // cmbEESSGesta
+            // 
+            this.cmbEESSGesta.FormattingEnabled = true;
+            this.cmbEESSGesta.Location = new System.Drawing.Point(129, 6);
+            this.cmbEESSGesta.Name = "cmbEESSGesta";
+            this.cmbEESSGesta.Size = new System.Drawing.Size(274, 25);
+            this.cmbEESSGesta.TabIndex = 7;
+            this.cmbEESSGesta.SelectedIndexChanged += new System.EventHandler(this.cmbEESSGesta_SelectedIndexChanged);
+            // 
+            // label3
+            // 
+            this.label3.BackColor = System.Drawing.Color.Green;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(403, 45);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(300, 18);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "ULTIMO CONTROL";
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.Color.Crimson;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(705, 45);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(199, 18);
+            this.label4.TabIndex = 8;
+            this.label4.Text = "PROXIMO CONTROL";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.Color.SteelBlue;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(3, 45);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(214, 18);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "ESTABLECIMIENTO";
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.SteelBlue;
+            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(218, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(184, 18);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "NOMBRE Y APELLIDOS";
             // 
             // frmReporteGeneral
             // 
@@ -678,6 +753,7 @@
             this.tabPage1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataListado)).EndInit();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
@@ -738,5 +814,11 @@
         internal System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cmbEss;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cmbEESSGesta;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }

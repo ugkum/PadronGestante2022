@@ -51,6 +51,14 @@ namespace CapaNegocio
         {
             return objGes.ReporteGeneral_Resumen();
         }
+        public DataTable ReporteGeneral_Resumen_TOTAL_GESTANTE()
+        {
+            return objGes.ReporteGeneral_Resumen_TOTAL_GESTANTE();
+        }
+        public DataTable ReporteGeneral_Resumen_TOTAL_EMBARAZO_POR_ESTADO()
+        {
+            return objGes.ReporteGeneral_Resumen_TOTAL_EMBARAZO_POR_ESTADO();
+        }
         public DataTable BuscarGestante_por_dni_para_agregar_solo_atencion(string dni)
         {
             return objGes.BuscarGestante_por_dni_para_agregar_solo_atencion(dni);

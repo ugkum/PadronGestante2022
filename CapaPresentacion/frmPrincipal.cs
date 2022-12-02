@@ -137,7 +137,7 @@ namespace CapaPresentacion
 
 
 
-        string idMicro="5151";
+        string idMicro="";
         string idMicro2;
         private void boton_click(object sender, EventArgs e){
             try
@@ -145,7 +145,7 @@ namespace CapaPresentacion
 
                 focoSeleccionado = (sender as Button).Text;
                 
-                idMicro = (sender as Button).Name;
+                
 
                 foreach (Control panel in flowLayoutPanel1.Controls)
             {
@@ -166,7 +166,8 @@ namespace CapaPresentacion
             }
 
             idMicro2 = (sender as Button).Name;
-            foreach (Control panel in flowLayoutPanel1.Controls)
+             idMicro = (sender as Button).Name;
+                foreach (Control panel in flowLayoutPanel1.Controls)
                 {
                 if(panel is Panel)
                 {
@@ -665,9 +666,10 @@ namespace CapaPresentacion
 
         void listarControlesNorifiacion()
         {
+            flowLayoutPanel2.Controls.Clear();
             if (idMicro.Trim().Length == 0)
             {
-                idMicro = "5151";
+                return;
             }
             DataTable dt = objGestante.ListarNotificacionControlesGestante(Convert.ToInt32( idMicro));
             if (dt.Rows.Count > 0)
@@ -676,7 +678,7 @@ namespace CapaPresentacion
                 flowLayoutPanel2.Controls.Clear();
                 for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    if (dt.Rows[i][7].ToString() != "En Espera")
+                    if (dt.Rows[i][8].ToString() != "En Espera")
                     {
                         cantn++;
                        
@@ -946,6 +948,11 @@ namespace CapaPresentacion
             objm.Show();
             objConexionConfigurado.ShowDialog();
             objm.Hide();
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

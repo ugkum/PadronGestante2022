@@ -130,7 +130,7 @@ namespace CapaPresentacion
 
                 Random miAleatorio = new Random();
 
-               int num= miAleatorio.Next(1, 10);
+               int num= miAleatorio.Next(1, 99999);
                 
 
 

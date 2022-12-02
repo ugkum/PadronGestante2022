@@ -42,6 +42,7 @@ namespace CapaPresentacion
                 MessageBox.Show("Producto registrado con exito","Activado",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 Properties.Settings.Default.ProductoRegistrado = true;
                 Properties.Settings.Default.FechaCaducidad = DateTime.Now.AddMonths(3);
+                
                 Properties.Settings.Default.Save();
                 this.Tag = "A";
                     

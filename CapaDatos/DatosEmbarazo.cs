@@ -114,12 +114,24 @@ namespace CapaDatos
             return dt;
         }
 
-        //
+        //Listar todos los gestantes activos de microred
         public DataTable Listar_todos_Gestante_Activos()
         {
             Conectar();
             SqlDataAdapter da = new SqlDataAdapter("Listar_todos_Gestante_Activos", Conectar());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            Desconectar();
+            return dt;
+        }
+        //listar todos los gestante activos por establecimiento
+        public DataTable Listar_todos_Gestante_Activos_por_establecimiento(string id)
+        {
+            Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("sp_gestante_activo_por_ess", Conectar());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            da.SelectCommand.Parameters.AddWithValue("@ID", id);
             DataTable dt = new DataTable();
             da.Fill(dt);
             Desconectar();

@@ -4933,5 +4933,10 @@ namespace CapaPresentacion
                 
             }
         }
+
+        private void DataListado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

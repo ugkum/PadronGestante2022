@@ -29,11 +29,19 @@ namespace CapaDatos
 
         public string generarCodigo()
         {
-            Conectar();
-            SqlCommand cmd = new SqlCommand("select nroDoc from documento", Conectar());
-            
-            return (int.Parse(cmd.ExecuteScalar().ToString().Substring(0, 8)) + 1).ToString("00000000");
+            string codigo = "00000001";
+            try
+            {
+                Conectar();
+                SqlCommand cmd = new SqlCommand("select nroDoc from documento", Conectar());
 
+              codigo= (int.Parse(cmd.ExecuteScalar().ToString().Substring(0, 8)) + 1).ToString("00000000");
+            }
+            catch (Exception)
+            {
+                codigo = "00000001";
+            }
+            return codigo;
         }
 
         public void modificarNroCorrelativo(string nro)
@@ -135,6 +143,27 @@ namespace CapaDatos
         {
             Conectar();
             SqlDataAdapter da = new SqlDataAdapter("sp_resumen_reporte_general", Conectar());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            Desconectar();
+            return dt;
+        }
+        public DataTable ReporteGeneral_Resumen_TOTAL_GESTANTE()
+        {
+            Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("SP_TOTAL_GESTANTE", Conectar());
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            Desconectar();
+            return dt;
+        }
+
+        public DataTable ReporteGeneral_Resumen_TOTAL_EMBARAZO_POR_ESTADO()
+        {
+            Conectar();
+            SqlDataAdapter da = new SqlDataAdapter("SP_TOTAL_EMBARAZO_POR_ESTADO", Conectar());
             da.SelectCommand.CommandType = CommandType.StoredProcedure;
             DataTable dt = new DataTable();
             da.Fill(dt);

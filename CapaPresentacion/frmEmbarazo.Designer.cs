@@ -733,9 +733,8 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataListado.DefaultCellStyle = dataGridViewCellStyle1;
-            this.DataListado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataListado.GridColor = System.Drawing.Color.White;
-            this.DataListado.Location = new System.Drawing.Point(0, 39);
+            this.DataListado.Location = new System.Drawing.Point(0, 80);
             this.DataListado.MultiSelect = false;
             this.DataListado.Name = "DataListado";
             this.DataListado.ReadOnly = true;
@@ -747,9 +746,10 @@
             this.DataListado.RowTemplate.DividerHeight = 2;
             this.DataListado.RowTemplate.Height = 35;
             this.DataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataListado.Size = new System.Drawing.Size(331, 513);
+            this.DataListado.Size = new System.Drawing.Size(331, 472);
             this.DataListado.TabIndex = 5;
             this.DataListado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListado_CellClick);
+            this.DataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListado_CellContentClick);
             // 
             // Eli
             // 

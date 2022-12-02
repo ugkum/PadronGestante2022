@@ -70,6 +70,7 @@ namespace CapaPresentacion
                     cmbTipoDoc.Text = dstGe.Rows[0][1].ToString();
                     txtNroDocumento.Text = dstGe.Rows[0][2].ToString();
                     txtNombre.Text = dstGe.Rows[0][3].ToString();
+                    txtNombre2.Text= dstGe.Rows[0][28].ToString();
                     txtPaterno.Text = dstGe.Rows[0][4].ToString();
                     txtMaterno.Text = dstGe.Rows[0][5].ToString();
                     txtFechaNac.Text = DateTime.Parse( dstGe.Rows[0][6].ToString()).ToShortDateString();
@@ -339,6 +340,28 @@ namespace CapaPresentacion
 
         }
 
+        void limpiar()
+        {
+            cmbTipoDoc.Text="";
+            txtNroDocumento.Clear();
+            txtNombre.Clear();
+            txtPaterno.Clear();
+            txtMaterno.Clear();
+            txtFechaNac.Clear();
+            txtEdad.Clear();
+            txtTipoSangre.SelectedIndex = -1;
+            cmbTipoSeguro.SelectedIndex = -1;
+            cmbIdioma.SelectedIndex = -1;
+            cmbEtnia.SelectedIndex = -1;
+            cmbNivelInstruccion.SelectedIndex = -1;
+            cmbEstadoCivil.SelectedIndex = -1;
+            cmbDepartamento.SelectedText=dep;
+            cmbProvincia.SelectedText = prov;
+            cmbDistrito.SelectedText = distr;
+            txtCentroPoblado.Clear();
+            txtHistoriaCli.Clear();
+            cmbTipoDoc.Focus();
+        }
         void limpiar()
         {
             cmbTipoDoc.Text="";

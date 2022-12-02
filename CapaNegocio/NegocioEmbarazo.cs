@@ -55,5 +55,10 @@ namespace CapaNegocio
         {
             return objEmbarazo.Listar_todos_Gestante_Activos();
         }
+
+        public DataTable Listar_todos_Gestante_Activos_por_establecimiento(string id)
+        {
+            return objEmbarazo.Listar_todos_Gestante_Activos_por_establecimiento(id);
+        }
     }
 }

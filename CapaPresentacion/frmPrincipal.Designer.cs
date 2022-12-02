@@ -85,9 +85,6 @@
             this.txtBuscar = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.bunifuElipse3 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -150,16 +147,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1021, 504);
             this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.panel7);
             this.panel5.Controls.Add(this.pictureBox3);
             this.panel5.Controls.Add(this.lblMensajeBien);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(0, 58);
+            this.panel5.Location = new System.Drawing.Point(0, 309);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(824, 446);
+            this.panel5.Size = new System.Drawing.Size(571, 195);
             this.panel5.TabIndex = 3;
             // 
             // panel7
@@ -169,7 +166,7 @@
             this.panel7.BackColor = System.Drawing.Color.LightCoral;
             this.panel7.Location = new System.Drawing.Point(14, 373);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(806, 1);
+            this.panel7.Size = new System.Drawing.Size(553, 1);
             this.panel7.TabIndex = 2;
             // 
             // pictureBox3
@@ -191,7 +188,7 @@
             this.lblMensajeBien.ForeColor = System.Drawing.Color.LightCoral;
             this.lblMensajeBien.Location = new System.Drawing.Point(11, 298);
             this.lblMensajeBien.Name = "lblMensajeBien";
-            this.lblMensajeBien.Size = new System.Drawing.Size(812, 72);
+            this.lblMensajeBien.Size = new System.Drawing.Size(559, 72);
             this.lblMensajeBien.TabIndex = 0;
             this.lblMensajeBien.Text = "Seleccione un Establecimiento";
             this.lblMensajeBien.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -228,7 +225,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataListado.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DataListado.Dock = System.Windows.Forms.DockStyle.Fill;
             this.DataListado.GridColor = System.Drawing.Color.White;
             this.DataListado.Location = new System.Drawing.Point(0, 58);
             this.DataListado.MultiSelect = false;
@@ -241,7 +237,7 @@
             this.DataListado.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.DataListado.RowTemplate.Height = 48;
             this.DataListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DataListado.Size = new System.Drawing.Size(824, 446);
+            this.DataListado.Size = new System.Drawing.Size(624, 446);
             this.DataListado.TabIndex = 4;
             this.DataListado.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListado_CellClick);
             this.DataListado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataListado_CellContentClick);
@@ -419,9 +415,9 @@
             this.lblNotificacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblNotificacion.Font = new System.Drawing.Font("Calibri", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNotificacion.ForeColor = System.Drawing.Color.White;
-            this.lblNotificacion.Location = new System.Drawing.Point(906, -1);
+            this.lblNotificacion.Location = new System.Drawing.Point(907, 7);
             this.lblNotificacion.Name = "lblNotificacion";
-            this.lblNotificacion.Size = new System.Drawing.Size(30, 29);
+            this.lblNotificacion.Size = new System.Drawing.Size(20, 20);
             this.lblNotificacion.TabIndex = 6;
             this.lblNotificacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblNotificacion.Click += new System.EventHandler(this.lblNotificacion_Click);
@@ -499,6 +495,7 @@
             // 
             // usuarioToolStripMenuItem
             // 
+            this.usuarioToolStripMenuItem.Enabled = false;
             this.usuarioToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("usuarioToolStripMenuItem.Image")));
             this.usuarioToolStripMenuItem.Name = "usuarioToolStripMenuItem";
             this.usuarioToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
@@ -506,6 +503,7 @@
             // 
             // verRadarToolStripMenuItem
             // 
+            this.verRadarToolStripMenuItem.Enabled = false;
             this.verRadarToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("verRadarToolStripMenuItem.Image")));
             this.verRadarToolStripMenuItem.Name = "verRadarToolStripMenuItem";
             this.verRadarToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
@@ -588,7 +586,6 @@
             // 
             // limpiarBDToolStripMenuItem
             // 
-            this.limpiarBDToolStripMenuItem.Enabled = false;
             this.limpiarBDToolStripMenuItem.Image = global::CapaPresentacion.Properties.Resources.importar;
             this.limpiarBDToolStripMenuItem.Name = "limpiarBDToolStripMenuItem";
             this.limpiarBDToolStripMenuItem.Size = new System.Drawing.Size(255, 24);
@@ -650,21 +647,6 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            // 
-            // bunifuElipse1
-            // 
-            this.bunifuElipse1.ElipseRadius = 0;
-            this.bunifuElipse1.TargetControl = this;
-            // 
-            // bunifuElipse2
-            // 
-            this.bunifuElipse2.ElipseRadius = 20;
-            this.bunifuElipse2.TargetControl = this.lblNotificacion;
-            // 
-            // bunifuElipse3
-            // 
-            this.bunifuElipse3.ElipseRadius = 0;
-            this.bunifuElipse3.TargetControl = this;
             // 
             // timer1
             // 
@@ -752,10 +734,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn condicion;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label lblNotificacion;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        //private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
         private System.Windows.Forms.ToolStripMenuItem cerrarSistemaToolStripMenuItem;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
+        //private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        //private Bunifu.Framework.UI.BunifuElipse bunifuElipse3;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lblTiempo;
